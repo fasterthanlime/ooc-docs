@@ -6,6 +6,8 @@
 Welcome to ooc's documentation!
 ===============================
 
+Hello!
+
 Contents:
 
 .. toctree::
