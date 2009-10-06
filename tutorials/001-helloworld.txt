@@ -1,0 +1,6 @@
+
+=========================
+"Hello world!" println()
+=========================
+
+No main method needed =) Blah blah.
