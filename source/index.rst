@@ -8,8 +8,6 @@ Welcome to ooc's documentation!
 
 Contents:
 
-test. NUMBER TWOOOO!
-
 .. toctree::
    :maxdepth: 2
 
