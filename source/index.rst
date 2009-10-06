@@ -6,12 +6,12 @@
 Welcome to ooc's documentation!
 ===============================
 
-Hello!
-
 Contents:
 
 .. toctree::
    :maxdepth: 2
+
+   language/index.rst
 
 Indices and tables
 ==================
