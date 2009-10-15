@@ -46,7 +46,7 @@ to a C library and keep no reference to it. The object will become
 unreachable, and will be collected.
 
 An example of that is if you pass an ooc gc-allocated object as a
-gpointer *data to a Gtk+ callback. As a workaround, either keep a
+gpointer \*data to a Gtk+ callback. As a workaround, either keep a
 reference to it somewhere reachable (e.g. in your ooc code) or allocate
 it manually.
 

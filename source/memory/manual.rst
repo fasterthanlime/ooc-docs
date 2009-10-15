@@ -27,8 +27,10 @@ definitions::
 As you can see, aliasing gc_malloc to malloc etc. is very easy and has
 no runtime cost (e.g. occurences of gc_malloc are just replaced with malloc)
 
-.. note:: To use a custom sdk, specify its path by setting the OOC_SDK environment
-variable before launching ooc
+.. note::
+    
+    To use a custom sdk, specify its path by setting the OOC_SDK environment
+    variable before launching ooc
 
 *Step 3: PROFIT!*
 
