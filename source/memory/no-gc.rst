@@ -15,8 +15,8 @@ That way, it won't try to link with libgc.
 Step 2: change the definitions of gc_[malloc, realloc, free] in sdk/ooclib.ooc
 ------------------------------------------------------------------------------
 
-A good example of that is the `ooc-ti project <http://github.com/nddrylliog/ooc-ti>`_
- (for running ooc applications on a TI89/92/v200 calculator), which uses a custom SDK with no GC.
+A good example of that is the `ooc-ti project <http://github.com/nddrylliog/ooc-ti>`_ (for running
+ ooc applications on a TI89/92/v200 calculator), which uses a custom SDK with no GC.
 
 Here's the part of the sdk/ooclib.ooc file with memory allocation related
 definitions::

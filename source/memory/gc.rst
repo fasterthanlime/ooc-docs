@@ -27,6 +27,10 @@ Example::
     
     // or
     arr2 = gc_calloc(Int 32 size, 100) : Int32*
+    
+You can still use good old malloc/free and do things by hand.
+
+You might also want to `completely disable the GC <no-gc>`_ in certain cases.
 
 Are there cases where memory is not freed?
 ------------------------------------------
