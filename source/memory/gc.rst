@@ -2,7 +2,7 @@ The Garbage Collector
 =====================
 
 The Garbage Collector (GC) currently used in ooc is 
-the _Boehm GC: http://www.hpl.hp.com/personal/Hans_Boehm/gc/
+the `Boehm GC <http://www.hpl.hp.com/personal/Hans_Boehm/gc/>`_
 
 It's a conservative GC, which basically means it plays well 
 with languages like C and C++, where you don't have precise type information.
@@ -15,7 +15,7 @@ impossible that the Boehm GC would be replaced by another one,
 and it would be quite awesome if it was written in ooc itself.
 
 How should I allocate memory?
-=============================
+-----------------------------
 
 Just use gc_malloc, gc_realloc, gc_calloc instead of the regular ones,
 and don't worry about free.
@@ -29,12 +29,12 @@ Example::
     arr2 = gc_calloc(Int 32 size, 100) : Int32*
 
 Are there cases where memory is not freed?
-==========================================
+------------------------------------------
 
 Not that we're aware of
 
 Are there cases where memory is freed even though it's still used?
-==================================================================
+------------------------------------------------------------------
 
 Some rare cases, yeah. If the address of an allocated object is not
 reachable for the GC, it may be collected even though still used

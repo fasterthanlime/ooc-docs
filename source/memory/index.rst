@@ -5,3 +5,4 @@ Memory  management in ooc
     :maxdepth: 2
 
     gc.rst
+	no-gc.rst
