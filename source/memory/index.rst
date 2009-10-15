@@ -2,7 +2,7 @@ Memory  management in ooc
 =========================
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
 
 	gc.rst
-    no-gc.rst
+    nogc.rst
