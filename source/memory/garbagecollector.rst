@@ -14,8 +14,7 @@ It is somewhat an easy solution for now though. It's not entirely
 impossible that the Boehm GC would be replaced by another one,
 and it would be quite awesome if it was written in ooc itself.
 
-How should I allocate memory?
------------------------------
+*How should I allocate memory?*
 
 Just use gc_malloc, gc_realloc, gc_calloc instead of the regular ones,
 and don't worry about free.
@@ -32,13 +31,11 @@ You can still use good old malloc/free and do things by hand.
 
 You might also want to `completely disable the GC <no-gc>`_ in certain cases.
 
-Are there cases where memory is not freed?
-------------------------------------------
+*Are there cases where memory is not freed?*
 
 Not that we're aware of
 
-Are there cases where memory is freed even though it's still used?
-------------------------------------------------------------------
+*Are there cases where memory is freed even though it's still used?*
 
 Some rare cases, yeah. If the address of an allocated object is not
 reachable for the GC, it may be collected even though still used

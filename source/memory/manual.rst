@@ -3,8 +3,7 @@ Disabling the Garbage Collector
 
 In embedded environment, often you just can't afford a garbage collector.
 
-Step 1: use -nogc to avoid linking with libgc
----------------------------------------------
+*Step 1: use -nogc to avoid linking with libgc*
 
 If you want to compile without the gc, use the -nogc compiler flag, e.g.
 
@@ -12,8 +11,7 @@ If you want to compile without the gc, use the -nogc compiler flag, e.g.
 
 That way, it won't try to link with libgc.
 
-Step 2: change the definitions of gc_[malloc, realloc, free] in sdk/ooclib.ooc
-------------------------------------------------------------------------------
+*Step 2: change the definitions of gc_[malloc, realloc, free] in sdk/ooclib.ooc*
 
 A good example of that is the `ooc-ti project <http://github.com/nddrylliog/ooc-ti>`_ (for running
  ooc applications on a TI89/92/v200 calculator), which uses a custom SDK with no GC.
@@ -32,8 +30,7 @@ no runtime cost (e.g. occurences of gc_malloc are just replaced with malloc)
 .. note:: To use a custom sdk, specify its path by setting the OOC_SDK environment
 variable before launching ooc
 
-Step 3: PROFIT!
----------------
+*Step 3: PROFIT!*
 
 If you're disabling the GC just to manual memory management, you may want to
 check out alternative malloc implementations, 
