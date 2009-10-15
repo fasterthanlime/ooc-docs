@@ -12,6 +12,7 @@ Contents:
    :maxdepth: 2
 
    language/index.rst
+   memory/index.rst
    bindings.rst
 
 Indices and tables
