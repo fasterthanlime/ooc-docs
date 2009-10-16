@@ -14,6 +14,7 @@ Contents:
    language/index.rst
    memory/index.rst
    bindings.rst
+   json.rst
 
 Indices and tables
 ==================
