@@ -70,8 +70,8 @@ A tag defines an unique name for an entity. It is a mini description language:
     tag: modifier "(" parameters ")" 
        : identifier
     parameters: tag { "," tag }
-    identifier: [a-zA-Z0-9\_ ]+
-    modifier: [a-zA-Z0-9\_]+
+    identifier: [a-zA-Z0-9_ ]+
+    modifier: [a-zA-Z0-9_]+
 
 Some examples for valid tags::
 
