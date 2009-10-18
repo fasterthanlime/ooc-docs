@@ -49,7 +49,7 @@ Now, let us start wrapping the functions::
     print_entry: extern func (entry: EntryStruct*) -> Int
 
 You see, we are just repeating the definitions in ooc syntax, with one
-difference: We are using the :class:`String` type insted of Char* because the
+difference: We are using the :class:`String` type instead of Char* because the
 ooc standard library defines a tasty cover for ``String`` that has some really
 convenient methods.
 

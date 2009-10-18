@@ -22,7 +22,8 @@ import sys, os
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = []
+extensions = ['sphinx.ext.todo']
+todo_include_todos = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -175,7 +176,7 @@ htmlhelp_basename = 'oocdoc'
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   ('index', 'ooc.tex', u'ooc Documentation',
-   u'Amos Wenger \\& the ooc crew', 'manual'),
+   u'nddrylliog \\& the ooc crew', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
