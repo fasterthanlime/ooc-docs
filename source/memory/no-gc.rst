@@ -3,6 +3,13 @@ Disabling the Garbage Collector
 
 In embedded environment, often you just can't afford a garbage collector.
 
+.. note::
+
+        Of course, if you use the current SDK without the GC, it will just leak like a smoking donkey.
+        That said, since there are many people interested in an SDK that doesn't rely on the
+        GC, we'll do something about it. I'm thinking maybe version(!gc) {} blocks would be
+        useful here. Anyway, we need more docs =)
+
 *Step 1: use -nogc to avoid linking with libgc*
 
 If you want to compile without the gc, use the -nogc compiler flag, e.g.
