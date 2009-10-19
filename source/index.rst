@@ -11,7 +11,9 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+
    language/index.rst
+   compiler.rst
    memory/index.rst
    portable/index.rst
    ooc-slim/index.rst
