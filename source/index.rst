@@ -11,9 +11,11 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+<<<<<<< HEAD
 
-   language/index.rst
+   language.rst
    compiler.rst
+   sdk/index.rst
    memory/index.rst
    portable/index.rst
    ooc-slim/index.rst
