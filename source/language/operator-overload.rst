@@ -23,13 +23,13 @@ Let's see the difference::
     b3 := add(b1, b2) // 'add' is called
     b4 := b1 + b2 // 'operator +' is called.
 
-Valid operators are listed below:
+Valid operators are listed below::
 
-  * + - / *
-  * == != < <= > >=
-  * = += -= /= *=
-  * []
-  * []= (three arguments: the third is the rvalue of the assignment)
+    + - / *
+    == != < <= > >=
+    = += -= /= *=
+    []
+    []= // three arguments: the third is the rvalue of the assignment
 
 It is not yet possible to define operator overloads as methods.
 

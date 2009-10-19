@@ -11,12 +11,13 @@ for all platforms in one case.
 Syntax
 ------
 
-version-block ::= "version" "(" <version-expr> ")" "{" <block> "}"
-version-expr ::= <version-name>
-version-expr ::= "(" <version-expr> ")"
-version-expr ::= "!" <version-expr>
-version-expr ::= <version-expr> && <version-expr>
-version-expr ::= <version-expr> || <version-expr>
+.. productionlist::
+    version-block ::= "version" "(" <version-expr> ")" "{" <block> "}"
+    version-expr ::= <version-name>
+    version-expr ::= "(" <version-expr> ")"
+    version-expr ::= "!" <version-expr>
+    version-expr ::= <version-expr> && <version-expr>
+    version-expr ::= <version-expr> || <version-expr>
 
 Examples
 --------
@@ -36,17 +37,19 @@ Here are some examples of combinations of version-expr::
 Builtin version-names
 ---------------------
 
-windows -> __WIN32
-linux   -> __linux__
-unix    -> __unix__    
-beos    -> __BEOS__
-haiku   -> __HAIKU__
-apple   -> __APPLE_
-gnuc    -> __GNUC__
-i386    -> __i386__
-x86     -> __X86__
-x86_64  -> __X86_64_
-64      -> __X86_64_
+::
+
+    windows -> __WIN32
+    linux   -> __linux__
+    unix    -> __unix__    
+    beos    -> __BEOS__
+    haiku   -> __HAIKU__
+    apple   -> __APPLE_
+    gnuc    -> __GNUC__
+    i386    -> __i386__
+    x86     -> __X86__
+    x86_64  -> __X86_64_
+    64      -> __X86_64_
 
 If you use another name, it will write is as-is in the #ifdef,
 which means you can add your own typedefs if you want.
