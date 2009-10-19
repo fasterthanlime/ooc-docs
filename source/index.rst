@@ -12,6 +12,7 @@ Contents:
    :maxdepth: 2
 
    language.rst
+   sdk/index.rst
    memory/index.rst
    portable/index.rst
    ooc-slim/index.rst
