@@ -1,7 +1,7 @@
 Disabling the Garbage Collector
 ===============================
 
-In embedded environment, often you just can't afford a garbage collector.
+In embedded environments, often you just can't afford a garbage collector.
 
 .. note::
 
@@ -17,6 +17,10 @@ If you want to compile without the gc, use the -nogc compiler flag, e.g.
 .. ooc -nogc myfile.ooc
 
 That way, it won't try to link with libgc.
+
+.. note::
+
+    Remember, to see what commands ooc launches, use the -v flag
 
 *Step 2: change the definitions of gc_[malloc, realloc, free] in sdk/ooclib.ooc*
 

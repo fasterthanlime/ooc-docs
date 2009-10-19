@@ -13,6 +13,7 @@ Contents:
 
    language/index.rst
    memory/index.rst
+   portable/index.rst
    bindings.rst
    json.rst
 
