@@ -5,4 +5,5 @@ The ooc language
     :maxdepth: 2
 
     helloworld.rst
+    operator-overload.rst
     syntax.rst
