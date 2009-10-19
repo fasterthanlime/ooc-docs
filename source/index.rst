@@ -11,8 +11,6 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-<<<<<<< HEAD
-
    language.rst
    compiler.rst
    sdk/index.rst
