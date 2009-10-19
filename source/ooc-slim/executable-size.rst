@@ -18,7 +18,7 @@ linked statically to help distributing ooc executables everywhere. If you need p
 with -v and see that it's the libgc.a
 
 If you have installed the Boehm GC properly and have a libgc.so somewhere (e.g. in /usr/lib or
- /usr/local/lib for *nix), you can try the "-dyngc" switch. Down to 31KB for me =) Better.
+ /usr/local/lib for \*nix), you can try the "-dyngc" switch. Down to 31KB for me =) Better.
 
 Stripping brings it down to 19KB which begins to become acceptable.
 
@@ -46,7 +46,7 @@ The first thing you probably want to do at this point is alias gc_[malloc, reall
 to the regular malloc, realloc, free. Be warned though, if you use the rest of the SDK as
 is, it will just leak like MediaDefender's internal e-mails.
 
-..note ::
+.. note::
 
     It's planned to make the SDK modular, e.g. either depending on the GC or not (with version blocks)
     If you're interested come on IRC, so we can discuss it all together =)
