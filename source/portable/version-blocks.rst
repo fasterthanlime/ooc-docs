@@ -12,12 +12,12 @@ Syntax
 ------
 
 .. productionlist::
-    version-block ::= "version" "(" <version-expr> ")" "{" <block> "}"
-    version-expr ::= <version-name>
-    version-expr ::= "(" <version-expr> ")"
-    version-expr ::= "!" <version-expr>
-    version-expr ::= <version-expr> && <version-expr>
-    version-expr ::= <version-expr> || <version-expr>
+    version-block : "version" "(" <version-expr> ")" "{" <block> "}"
+    version-expr : <version-name>
+    version-expr : "(" <version-expr> ")"
+    version-expr : "!" <version-expr>
+    version-expr : <version-expr> && <version-expr>
+    version-expr : <version-expr> || <version-expr>
 
 Examples
 --------
