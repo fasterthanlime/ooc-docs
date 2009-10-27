@@ -34,13 +34,14 @@ Here are some examples of combinations of version-expr::
         println()
     }
 
-Builtin version-names
----------------------
+Built-in version-names
+----------------------
 
 ::
 
     windows -> __WIN32
     linux   -> __linux__
+    solaris -> __sun
     unix    -> __unix__    
     beos    -> __BEOS__
     haiku   -> __HAIKU__
@@ -51,7 +52,7 @@ Builtin version-names
     x86_64  -> __X86_64_
     64      -> __X86_64_
 
-If you use another name, it will write is as-is in the #ifdef,
+If you use another name, it will write it as-is in the #ifdef,
 which means you can add your own typedefs if you want.
 (E.g. pass them with +-DYOURTYPEDEF=1 if you're using gcc)
 
