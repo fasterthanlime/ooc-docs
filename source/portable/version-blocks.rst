@@ -39,7 +39,7 @@ Built-in version-names
 
 ::
 
-    windows -> __WIN32
+    windows -> (__WIN32__ || __WIN64__)
     linux   -> __linux__
     solaris -> __sun
     unix    -> __unix__    
@@ -49,8 +49,10 @@ Built-in version-names
     gnuc    -> __GNUC__
     i386    -> __i386__
     x86     -> __X86__
-    x86_64  -> __X86_64_
-    64      -> __X86_64_
+    x86_64  -> __x86_64__
+    ppc     -> __ppc__
+    ppc64   -> __ppc64__
+    64      -> (__x86_64__ || __ppc64__)
 
 If you use another name, it will write it as-is in the #ifdef,
 which means you can add your own typedefs if you want.
