@@ -50,9 +50,9 @@ Built-in version-names
     i386    -> __i386__
     x86     -> __X86__
     x86_64  -> __x86_64__
-	ppc 	-> __ppc__
-	ppc64	-> __ppc64__
-	64      -> (__x86_64__ || __ppc64__)
+    ppc 	-> __ppc__
+    ppc64	-> __ppc64__
+    64      -> (__x86_64__ || __ppc64__)
 
 If you use another name, it will write it as-is in the #ifdef,
 which means you can add your own typedefs if you want.
