@@ -39,7 +39,7 @@ Built-in version-names
 
 ::
 
-    windows -> __WIN32
+    windows -> (__WIN32__ || __WIN64__)
     linux   -> __linux__
     solaris -> __sun
     unix    -> __unix__    
