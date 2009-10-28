@@ -13,6 +13,7 @@ Contents:
 
    language.rst
    compiler.rst
+   libs.rst
    sdk/index.rst
    memory/index.rst
    portable/index.rst
