@@ -10,8 +10,8 @@ There are several ways
   - Either: copy the ooc-cairo directory to /usr/lib/ooc/ and you're all set.
   - Or: ln -s /path/to/ooc-cairo  /usr/lib/ooc/ and you're good.
   - If you don't want to put your libs in /usr/lib/ooc/, adjust the OOC_LIBS
-  environment variable (in the /usr/bin/ooc launcher script, for example,
-  or in /etc/environment, or in your Makefile, or..)
+    environment variable (in the /usr/bin/ooc launcher script, for example,
+    or in /etc/environment, or in your Makefile, or..)
   
 
 Example - gtk hello world
