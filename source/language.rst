@@ -444,7 +444,7 @@ prints:
     Got param of type Int and size 4
     It's an Int! and its value is 42
     
-    
+.. code-block:: ooc    
     
     Container: class <T> {
       content: T
