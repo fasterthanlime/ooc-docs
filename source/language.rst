@@ -424,6 +424,8 @@ closures
 generic functions
 ^^^^^^^^^^^^^^^^^
 
+The following code:
+
 .. code-block:: ooc
 
     printType: func <T> (param: T) {
@@ -443,7 +445,9 @@ prints:
     It's a char! and its value is 'c'
     Got param of type Int and size 4
     It's an Int! and its value is 42
-    
+   
+The following code:
+
 .. code-block:: ooc    
     
     Container: class <T> {
