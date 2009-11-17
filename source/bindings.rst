@@ -28,7 +28,7 @@ Then, you have to create a cover for the struct; let's call it ``EntryStruct``
 
 ::
 
-    EntryStruct: cover from Entry {
+    EntryStruct: cover from struct _Entry {
 	m_name: extern String
 	m_age: extern Int
     }
@@ -36,7 +36,7 @@ Then, you have to create a cover for the struct; let's call it ``EntryStruct``
 It would be nice to get rid of these ``m_`` prefixes. That's easy; you can
 specify aliases by passing the original name to the ``extern`` keyword::
 
-    EntryStruct: cover from Entry {
+    EntryStruct: cover from struct _Entry {
 	name: extern(m_name) String
 	age: extern(m_age) Int
     }
@@ -96,7 +96,7 @@ that::
 
     include test
 
-    EntryStruct: cover from Entry {
+    EntryStruct: cover from struct _Entry {
 	name: extern(m_name) String
 	age: extern(m_age) Int
     }
