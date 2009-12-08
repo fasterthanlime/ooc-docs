@@ -31,9 +31,32 @@ You can still use good old malloc/free and do things by hand.
 
 You might also want to `completely disable the GC <no-gc.html>`_ in certain cases.
 
+*What about destructors/finalizers?*
+
+For an excellent explanation on the difference between destructors and finalizers,
+read the `presentation from Hans-J. Boehm <http://www.hpl.hp.com/personal/Hans_Boehm/popl03/web/>`_
+
+To define a finalizer for an object, just overload its __destroy__ method,
+
+Example::
+
+    PCRE: class {
+        __destroy__: func {
+            pcre_free(pcre) // avoid memory leaks
+        }
+    }
+
+For performance reasons, if the __destroy__ method is empty, it won't be registered
+as a finalizer to the Boehm GC, thus saving a lot of CPU cycles. According to the Boehm
+GC documentation, a finalized object may be up to 5x slower to track, so this optimisation
+is worthwile.
+
 *Are there cases where memory is not freed?*
 
-Not that we're aware of
+According to the Boehm GC documentation, it *may* happen, although
+it's quite unlikely, and they "avoid growing leaks", as they say.
+
+For more information, please refer to the `Boehm GC FAQ<http://www.hpl.hp.com/personal/Hans_Boehm/gc/faq.html>`_
 
 *Are there cases where memory is freed even though it's still used?*
 
