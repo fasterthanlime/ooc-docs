@@ -197,13 +197,13 @@ combination of these can be included or left out.
         doSecondThing()
     }
 
-For function overloading[#]_, you must specify a suffix. This will be used
+For function overloading [#overload]_, you must specify a suffix. This will be used
 for the C function name and can also be used to call a specific
 version of an overloaded function. It is specified like so:
 
-.. [#] Do not confuse overloading with overriding. Overloading simply allows
-       you to create several functions with the same name that recieve or
-       return different types of arguments.
+.. [#overload] Do not confuse overloading with overriding. Overloading simply
+      allows you to create several functions with the same name that recieve
+      or return different types of arguments.
 
 .. code-block:: ooc
 
