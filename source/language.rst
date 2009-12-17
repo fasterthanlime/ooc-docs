@@ -173,14 +173,73 @@ casting
 function declaration
 ^^^^^^^^^^^^^^^^^^^^
 
+Function definitions can have an argument list, a return value, a
+suffix (used for overloading), and a number of special keywords. Any
+combination of these can be included or left out.
+
 .. code-block:: ooc
 
+    // two Int arguments, return is Int
     add: func (a: Int, b: Int) -> Int {
         return a + b
     }
     
-    add: func (a, b: Int) -> Int { a + b } // multi-decl, and return is optional.
-    exit: extern func  // no '->' = void func, extern = defined elsewhere
+    // both a and b are Int, and the return keyword is optional.
+    add: func (a, b: Int) -> Int { a + b }
+
+    // function with no return
+    println: func (s: String) { print(s + "\n") }
+
+    // no argument list = takes no argument
+    // no '->' = void func (no return)
+    doStuff: func {
+        doFirstThing()
+        doSecondThing()
+    }
+
+For function overloading, you must specify a suffix. This will be used
+for the C function name and can also be used to call a specific
+version of an overloaded function. It is specified like so:
+
+.. code-block:: ooc
+
+     print: func ~withString (s: String) { puts(s) }
+     print: func ~withChar (c: Char) { putc(c) }
+
+     print("Hello, ooc!") // calls print~withString()
+     print('\n') // calls print~withChar()
+
+     // calling a specific version
+     print~withChar('a')
+
+Note: You can leave the suffix off of one of the functions, but only
+one of them.
+
+You can also use these other keywords, before the 'func' keyword:
+proto:
+    Adds function prototypes in the generated C file (e.g. when you're
+    missing a header)
+inline:
+    Just like C inline (Hint to the compiler to make calling this
+    function faster, usually by substituting calls to this function
+    with the actual code of the function. It's generally used for
+    functions that will be called very often)
+extern:
+    Means it is defined elsewhere, e.g. in some C code. By default it
+    uses the name of the ooc function being defined but you can also
+    use it with an argument to wrap a C function with a different
+    name.
+
+.. code-block:: ooc
+
+    // wraps C 'exit'
+    exit: extern func
+    
+    // wraps C 'puts', but will be called in ooc as putString(s)
+    putString: extern(puts) func (str: String) -> Int
+
+    // exactly the same as above. naming extern arguments is optional
+    putString: extern(puts) func (String) -> Int
 
 classes
 ^^^^^^^
