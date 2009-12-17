@@ -216,6 +216,7 @@ Note: You can leave the suffix off of one of the functions, but only
 one of them.
 
 You can also use these other keywords, before the 'func' keyword:
+
 proto
     Adds function prototypes in the generated C file (e.g. when you're
     missing a header)
