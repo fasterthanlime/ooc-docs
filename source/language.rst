@@ -216,15 +216,15 @@ Note: You can leave the suffix off of one of the functions, but only
 one of them.
 
 You can also use these other keywords, before the 'func' keyword:
-proto:
+proto
     Adds function prototypes in the generated C file (e.g. when you're
     missing a header)
-inline:
+inline
     Just like C inline (Hint to the compiler to make calling this
     function faster, usually by substituting calls to this function
     with the actual code of the function. It's generally used for
     functions that will be called very often)
-extern:
+extern
     Means it is defined elsewhere, e.g. in some C code. By default it
     uses the name of the ooc function being defined but you can also
     use it with an argument to wrap a C function with a different
