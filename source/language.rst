@@ -234,7 +234,7 @@ extern
 .. code-block:: ooc
 
     // wraps C 'exit'
-    exit: extern func
+    exit: extern func (status: Int)
     
     // wraps C 'puts', but will be called in ooc as putString(s)
     putString: extern(puts) func (str: String) -> Int
