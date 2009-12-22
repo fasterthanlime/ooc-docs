@@ -51,6 +51,8 @@ Content of a .use file
 gtk.use contains something like::
 
     Name: GTK+ 2.0
+    Version: head
+    Origin: git://github.com/nddrylliog/ooc-gtk.git
     Description: GNU User interface Toolkit
     Pkgs: gtk+-2.0
     Includes: gtk/gtk.h, gdk/gdk.h
@@ -64,6 +66,15 @@ Valid directives in .use files
 ------------------------------
 
 The Name and Description directives are merely for humans
+
+Version contains the name of this specific version. This can be ``0.1``, or
+``2.12``, or ``3.7-alpha``, or ``head``. The ``head`` version makes clear
+that this usefile describes the bleeding-edge version of the package, usually
+located in a git repository.
+
+The Origin directive lets us know how to get the sourcecode. This can be
+an ordinary url (``http://myserver.com/packages/ooc-gtk.tar.gz``, ``ftp://.../ooc-gtk.tar.gz``)
+or a ``git://`` url, usually for the ``head`` version.
 
 The Pkgs directive defines which pkg-config package to use. This allows
 to portably define include paths, library paths (-I and -L for gcc)
