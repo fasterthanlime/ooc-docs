@@ -1,3 +1,5 @@
+.. _libs:
+
 Using and creating ooc libraries, or the magic of .use files
 ============================================================
 
