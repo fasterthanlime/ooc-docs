@@ -52,7 +52,7 @@ Create softlinks to all package directories in the lib directory::
     ln -s `pwd`/oocini $OOC_LIBS
     ln -s `pwd`/gifnooc $OOC_LIBS
     ln -s `pwd`/deadlogger $OOC_LIBS
-    ln -s `pwd`/ooc-iniparser $OOC_LIBS
+    ln -s `pwd`/ooc-uriparser $OOC_LIBS
     ln -s `pwd`/ooc-yajl $OOC_LIBS
 
 Now, you can install reincarnate::
