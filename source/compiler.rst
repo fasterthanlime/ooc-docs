@@ -38,3 +38,15 @@ is rebuilt.
 In fact, .c/.h files aren't really compiled in sequence. Several gcc
 processes are launched in parallel, to speed up the compilation process.
 
++...
+----
+
+The ooc will pass options prepended with ``+`` to the compiler. So, if you
+want to pass the ``-pedantic`` flag to the compiler, invoke ooc like this::
+
+    ooc +-pedantic test.ooc
+
+Even options with values work this way. If you want to pass ``-L ~/libs`` to the compiler, do::
+
+    ooc +-L +~/libs test.ooc
+
