@@ -61,7 +61,7 @@ Short-term memory leaks
 According to the Boehm GC documentation, it *may* happen, although
 it's quite unlikely, and they "avoid growing leaks", as they say.
 
-For more information, please refer to the `Boehm GC FAQ<http://www.hpl.hp.com/personal/Hans_Boehm/gc/faq.html>`_
+For more information, please refer to the `Boehm GC FAQ <http://www.hpl.hp.com/personal/Hans_Boehm/gc/faq.html>`_
 
 Memory freed too soon
 ---------------------

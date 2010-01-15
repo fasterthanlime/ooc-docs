@@ -32,8 +32,8 @@ The `-v` compiler option prints the commands ooc executes. By default, it links 
 .. note::
 
     A ".a" file is a static version of a library.
-    Dynamic libraries usually have the ".so" extension on most *nix,
-    .dll on Win32, and .dylib on Apple
+    Dynamic libraries usually have the ".so" extension on most \*nix,
+    .dll on Win32, and .dylib on Apple.
 
 If you have installed the Boehm GC properly you can try the "-dyngc" switch. Down to 31KB for me =) Better.
 
