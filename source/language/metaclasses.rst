@@ -86,7 +86,7 @@ Let's say we have::
     Cat: class {
     
         growl: func { "Rrrrr, my address is %d" format(this) println() }
-        createCat: func -> This { new() }
+        createCat: static func -> This { new() }
     
     }
 
