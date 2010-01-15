@@ -1,5 +1,5 @@
-The SDK
-=======
+SDK reference
+=============
 
 .. toctree::
     :maxdepth: 2

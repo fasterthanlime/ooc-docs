@@ -5,12 +5,14 @@ In embedded environments, often you just can't afford a garbage collector.
 
 .. note::
 
-        Of course, if you use the current SDK without the GC, it will just leak like a smoking donkey.
+        Of course, if you use the current SDK without the GC, it will just leak through every hole
         That said, since there are many people interested in an SDK that doesn't rely on the
-        GC, we'll do something about it. I'm thinking maybe version(!gc) {} blocks would be
-        useful here. Anyway, we need more docs =)
+        GC, we'll do something about it. I'm thinking maybe version(!gc) {} blocks would be useful here.
 
-*Step 1: use -nogc to avoid linking with libgc*
+Command line options
+--------------------
+
+*Step 1: use -gc=off to avoid linking with libgc*
 
 If you want to compile without the gc, use the -nogc compiler flag, e.g.
 
@@ -20,7 +22,10 @@ That way, it won't try to link with libgc.
 
 .. note::
 
-    Remember, to see what commands ooc launches, use the -v flag
+    Remember, to see what commands ooc launches, use the `-v` compiler option
+
+Aliasing gc_malloc
+------------------
 
 *Step 2: change the definitions of gc_[malloc, realloc, free] in sdk/ooclib.ooc*
 
@@ -41,7 +46,7 @@ no runtime cost (e.g. occurences of gc_malloc are just replaced with malloc)
 .. note::
     
     To use a custom sdk, specify its path by setting the OOC_SDK environment
-    variable before launching ooc
+    variable before launching ooc.
 
 *Step 3: PROFIT!*
 

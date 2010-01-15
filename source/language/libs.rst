@@ -1,7 +1,7 @@
 .. _libs:
 
-Using and creating ooc libraries, or the magic of .use files
-============================================================
+ooc libraries (.use files)
+==========================
 
 Installing ooc libs
 -------------------

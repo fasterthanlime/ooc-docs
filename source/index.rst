@@ -3,24 +3,18 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to ooc's documentation!
-===============================
+Overview
+========
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
 
-   language.rst
-   compiler.rst
-   libs.rst
-   packages.rst
+   language/index.rst
    sdk/index.rst
-   memory/index.rst
-   portable/index.rst
-   ooc-slim/index.rst
-   bindings.rst
-   json.rst
+   compilers/index.rst
+   addons/index.rst
 
 Indices and tables
 ==================

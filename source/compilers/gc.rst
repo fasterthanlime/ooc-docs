@@ -4,8 +4,8 @@ The Garbage Collector
 The Garbage Collector (GC) currently used in ooc is 
 the `Boehm GC <http://www.hpl.hp.com/personal/Hans_Boehm/gc/>`_
 
-It's a conservative GC, which basically means it plays well 
-with languages like C and C++, where you don't have precise type information.
+It's a `conservative GC <http://en.wikipedia.org/wiki/Garbage_collection_%28computer_science%29#Precise_vs._conservative_and_internal_pointers>`_,
+which basically means it plays well with languages like C and C++, where you don't have precise type information.
 
 The Boehm GC has been developed for years and is very stable and
 well-tested, thus we're not afraid to use it.
@@ -14,7 +14,8 @@ It is somewhat an easy solution for now though. It's not entirely
 impossible that the Boehm GC would be replaced by another one,
 and it would be quite awesome if it was written in ooc itself.
 
-*How should I allocate memory?*
+Memory allocation
+-----------------
 
 Just use gc_malloc, gc_realloc, gc_calloc instead of the regular ones,
 and don't worry about free.
@@ -31,7 +32,8 @@ You can still use good old malloc/free and do things by hand.
 
 You might also want to `completely disable the GC <no-gc.html>`_ in certain cases.
 
-*What about destructors/finalizers?*
+Finalizers (and destructors)
+----------------------------
 
 For an excellent explanation on the difference between destructors and finalizers,
 read the `presentation from Hans-J. Boehm <http://www.hpl.hp.com/personal/Hans_Boehm/popl03/web/>`_
@@ -51,12 +53,18 @@ as a finalizer to the Boehm GC, thus saving a lot of CPU cycles. According to th
 GC documentation, a finalized object may be up to 5x slower to track, so this optimisation
 is worthwile.
 
-*Are there cases where memory is not freed?*
+Short-term memory leaks
+-----------------------
+
+*Does the GC sometimes leak memory?*
 
 According to the Boehm GC documentation, it *may* happen, although
 it's quite unlikely, and they "avoid growing leaks", as they say.
 
 For more information, please refer to the `Boehm GC FAQ<http://www.hpl.hp.com/personal/Hans_Boehm/gc/faq.html>`_
+
+Memory freed too soon
+---------------------
 
 *Are there cases where memory is freed even though it's still used?*
 
