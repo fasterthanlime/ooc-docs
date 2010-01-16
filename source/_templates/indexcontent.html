@@ -1,0 +1,16 @@
+{% extends "defindex.html" %}
+{% block tables %}
+  <table class="contentstable" align="center"><tr>
+    <td width="50%">
+      <p class="biglink"><a class="biglink" href="{{ pathto("language/index") }}">language</a><br/>
+        <span class="linkdescr">syntax etc.</span></p>
+      <p class="biglink"><a class="biglink" href="{{ pathto("sdk/index") }}">sdk</a><br/>
+         <span class="linkdescr">the reference.</span></p>
+    </td><td width="50%">
+      <p class="biglink"><a class="biglink" href="{{ pathto("compilers/index") }}">compilers</a><br/>
+         <span class="linkdescr">j/ooc and rock.</span></p>
+      <p class="biglink"><a class="biglink" href="{{ pathto("addons/index") }}">addons</a><br/>
+         <span class="linkdescr">if you want more.</span></p>
+    </td></tr>
+  </table>
+{% endblock %}
