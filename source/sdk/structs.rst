@@ -1,10 +1,43 @@
 structs/
 ========
 
+List
+----
+
+.. module:: structs/List
+
+.. class:: List
+
+    The abstract List class contains some member functions for basic list actions.
+
+    .. memberfunction:: add(element: T)
+    .. memberfunction:: add~withIndex(index: Int, element: T)
+    .. memberfunction:: addAll(list: Iterable<T>)
+    .. memberfunction:: addAll~atStart(start: Int, list: Iterable<T>)
+    .. memberfunction:: clear()
+    .. memberfunction:: removeLast() -> Bool
+    .. memberfunction:: contains(element: T) -> Bool
+    .. memberfunction:: replace(oldie, kiddo: T) -> Bool
+    .. memberfunction:: get(index: Int) -> T
+    .. memberfunction:: indexOf(element: T) -> Int
+    .. memberfunction:: isEmpty() -> Bool
+    .. memberfunction:: lastIndexOf(element: T) -> Int
+    .. memberfunction:: removeAt(index: Int) -> T
+    .. memberfunction:: remove(element: T) -> Bool
+    .. memberfunction:: set(index: Int, element: T)
+    .. memberfunction:: size() -> Int
+    .. memberfunction:: iterator() -> Iterator<T>
+    .. memberfunction:: clone() -> List<T>
+    .. memberfunction:: lastIndex() -> Int
+    .. memberfunction:: toArray() -> Pointer
+    .. memberfunction:: each(f: Func)
+
 Array
 -----
 
-The :mod:`sdk/structs/Array` module contains a simple, non-resizeable, generic list
+.. module:: structs/Array
+
+The :mod:`structs/Array` module contains a simple, non-resizeable, generic list
 class which takes care of you::
 
     import sdk/structs/Array
@@ -28,8 +61,10 @@ class which takes care of you::
 ArrayList
 ---------
 
-In the :mod:`sdk/structs/ArrayList` module, we have a resizeable generic list class which
-implements the :class:`List<T>` interface::
+.. module:: structs/ArrayList
+
+In the :mod:`structs/ArrayList` module, we have a resizeable generic list class which
+implements the :class:`structs/List/List` interface::
 
     import sdk/structs/ArrayList
     // we can pass an initial capacity here. No worries, it's a growing buffer, but if you
