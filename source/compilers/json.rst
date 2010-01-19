@@ -136,7 +136,7 @@ Entities
 A function entity has the following attributes:
 
 ``name``
-    Although the name is identical to the tag, it contains the name of the function. Wow.
+    Although the name is identical to the tag, it contains the name of the function. It also contains the suffix (if given), separated by a "~" char. So, a ``doSomething: func ~string`` would have the name "doSomething~string".
 ``modifiers``
     A list of function modifiers. Possible modifiers are:
 
@@ -217,6 +217,8 @@ additional attributes:
     The tag of the class this class extends, or ``null``.
 ``members``
     A list of 2-element lists ``[name, entity]``.
+``abstract``
+    A boolean that describes if the class is abstract or not.
 
 ``cover``
 ~~~~~~~~~
