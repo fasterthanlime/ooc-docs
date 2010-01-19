@@ -31,22 +31,10 @@ Example ooc code
 The JSON format
 ---------------
 
-The root structure is an objects that connects symbol names to objects; let's call them
-entities.
+The root structure is a list of 2-element lists that contain symbol names (first element) and objects (second element);
+let's call them entities.
 
-It only contains the "root" entities which are part of the global namespaces (no class members)
-
-.. code-block:: javascript
-
-    {
-	"Something": { ... },
-	"SomethingSpecial": { ... },
-	"CoolFloat": { ... },
-	"ohYeah": { ... },
-	"five": { ... },
-	"killCoolFloat": { ... },
-	"killInteger": { ... }
-    }
+It only contains the "root" entities which are part of the global namespaces (no class members).
 
 Now, each entity has some essential keys:
 
@@ -80,40 +68,7 @@ Some examples for valid tags::
     array(Int, 10)
     memberFunction(MyClass, yeaahh)
 
-Tags for ordinary functions (i.e. not member functions), classes, covers and global variables are just the name of the symbol:
-
-.. code-block:: javascript
-
-    {
-	"Something": {
-	    "type": "class",
-	    "tag": "Something"
-	},
-	"SomethingSpecial": {
-	    "type": "class",
-	    "tag": "SomethingSpecial"
-	},
-	"CoolFloat": {
-	    "type": "cover",
-	    "tag": "CoolFloat"
-	},
-	"five": {
-	    "type": "variable",
-	    "tag". "five"
-	},
-	"ohYeah": {
-	    "type": "function",
-	    "tag": "ohYeah"
-	},
-	"killCoolFloat": {
-	    "type": "function",
-	    "tag": "killCoolFloat"
-	},
-	"killInteger": {
-	    "type": "function",
-	    "tag": "killInteger"
-	}
-    }
+Tags for ordinary functions (i.e. not member functions), classes, covers and global variables are just the name of the symbol.
 
 Tags for members are consisting of a describing modifier and the class tag and the member name as parameters:
 
@@ -171,7 +126,8 @@ A function entity has the following attributes:
 ``memberFunction``
 ~~~~~~~~~~~~~~~~~~
 
-A member function entity has the same attributes as the :ref:`function entity <json-function-entity>`.
+A member function entity has the same attributes as the :ref:`function entity <json-function-entity>`,
+but a ``memberFunction`` tag.
 
 .. note:: The convenient ``This`` type has to be resolved by the compiler.
 	
@@ -180,7 +136,7 @@ A member function entity has the same attributes as the :ref:`function entity <j
 ``globalVariable``
 ~~~~~~~~~~~~~~~~~~
 
-``name``	
+``name``
     Guess what!
 ``modifiers``
     A list of modifiers. Possible modifiers:
@@ -193,16 +149,15 @@ A member function entity has the same attributes as the :ref:`function entity <j
     The tag of the type of the variable.
 
     .. note:: The compiler has to resolve the type of the variable for implicit assignments (``:=``).
+``extern``
+    Either ``true`` (if it's an extern field, but not aliased) or a string containing the original name of
+    the field (if it's an aliased extern field).
 
 ``field``
 ~~~~~~~~~
 
-A field entity has the same attributes as the :ref:`globalVariable entity <json-globalVariable-entity>`, but some
-additional attributes:
-
-``extern``
-    Either ``true`` (if it's an extern field, but not aliased) or a string containing the original name of
-    the field (if it's an aliased extern field).
+A field entity has the same attributes as the :ref:`globalVariable entity <json-globalVariable-entity>`, but a
+``field`` tag.
 
 .. _json-class-entity:
 
@@ -227,57 +182,3 @@ Same attributes as :ref:`class <json-class-entity>`, but additionally:
 
 ``from``
     The tag of the type we're covering.
-
-Result
-------
-
-In the end, we have:
-
-.. todo:: Incomplete
-
-.. code-block:: javascript
-
-     {
-	"Something": {
-	    "type": "class",
-	    "tag": "Something",
-	    "name": "Something",
-	    "genericTypes": [],
-	    "extends": null,
-	    "members": [
-		["value", {
-		    "type": "field",
-		    "tag": "field(value)",
-		    "name": "value",
-		    "value": null,
-		    "varType": "Int",
-		    "extern": false
-		},
-		]
-	    ]
-	},
-	"SomethingSpecial": {
-	    "type": "class",
-	    "tag": "SomethingSpecial"
-	},
-	"CoolFloat": {
-	    "type": "cover",
-	    "tag": "CoolFloat"
-	},
-	"five": {
-	    "type": "variable",
-	    "tag". "five"
-	},
-	"ohYeah": {
-	    "type": "function",
-	    "tag": "ohYeah"
-	},
-	"killCoolFloat": {
-	    "type": "function",
-	    "tag": "killCoolFloat"
-	},
-	"killInteger": {
-	    "type": "function",
-	    "tag": "killInteger"
-	}
-    }
