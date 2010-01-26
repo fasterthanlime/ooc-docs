@@ -49,6 +49,15 @@ Now, each entity has some essential keys:
 ``tag``
     defines an unique name for the entity.
 
+The following keys exist for all entity types **except** ``field``:
+
+``unmangled``
+    If the user has marked the entity as ``unmangled``, but didn't specify
+    a name, this is ``true``. If the user has marked this entity and
+    provided a name, this is the name. Otherwise, this is ``false``.
+``fullName``
+    The full, mangled name of the entity, like it appears in the C sourcecode.
+
 Tags
 ~~~~
 
@@ -107,6 +116,8 @@ A function entity has the following attributes:
     the function (if it's an aliased extern function).
 ``returnType``
     Either ``null`` if the function has no return value or the tag of the return type.
+``doc``
+    The oocdoc comment if available, or ``null``.
 ``arguments``
     A list of 2-element lists ``[name, argument tag, modifiers or null]``.
     Example::
@@ -174,6 +185,8 @@ A field entity has the same attributes as the :ref:`globalVariable entity <json-
     A list of 2-element lists ``[name, entity]``.
 ``abstract``
     A boolean that describes if the class is abstract or not.
+``doc``
+    A string containing the oocdoc comment if available, or ``null``.
 
 ``cover``
 ~~~~~~~~~
