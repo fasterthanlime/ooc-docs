@@ -1,5 +1,5 @@
-Writing bindings
-================
+Writing bindings manually
+=========================
 
 You can use any C library from ooc very easily. All what you need is to write
 some code to let the compiler know the functions and types you are using.

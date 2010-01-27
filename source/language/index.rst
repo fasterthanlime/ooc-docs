@@ -8,4 +8,4 @@ Language reference
     metaclasses.rst
     version-blocks.rst
     libs.rst
-    bindings.rst
+    bindings/index.rst
