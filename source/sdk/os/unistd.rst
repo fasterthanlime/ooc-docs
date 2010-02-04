@@ -5,31 +5,23 @@ os/unistd
 
 .. function:: chdir (String) -> Int
     
-
 .. function:: dup2 (Int, Int) -> Int
     
-
 .. function:: execv (String, String*) -> Int
     
-
 .. function:: execvp (String, String*) -> Int
     
-
 .. function:: execve (String, String*, String*) -> Int
     
-
 .. function:: fileno (FILE*) -> Int
     
-
 .. function:: fork -> Int
     
-
 .. function:: pipe (arg: Int*) -> Int
     
+.. data:: PIPE_BUF
 
-.. globalVariable:: PIPE_BUF
+.. data:: STDOUT_FILENO
 
-.. globalVariable:: STDOUT_FILENO
-
-.. globalVariable:: STDERR_FILENO
+.. data:: STDERR_FILENO
 

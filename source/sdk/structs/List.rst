@@ -10,14 +10,12 @@ structs/List
         Appends the specified element to the end of this list.
         
         
-    
     .. memberfunction:: add~withIndex (index: Int, element: T)
         
         Inserts the specified element at the specified position in
         this list. 
         
         
-    
     .. memberfunction:: addAll (list: Iterable<T>)
         
         Appends all of the elements in the specified Collection to the
@@ -25,20 +23,17 @@ structs/List
         specified Collection's Iterator.
         
         
-    
     .. memberfunction:: addAll~atStart (start: Int, list: Iterable<T>)
         
         Inserts all of the elements in the specified Collection into
         this list, starting at the specified position.
         
         
-    
     .. memberfunction:: clear
         
         Removes all of the elements from this list.
         
         
-    
     .. memberfunction:: removeLast -> Bool
         
         Removes the last element of the list, if any (=non-empty list).
@@ -46,52 +41,44 @@ structs/List
         was empty.
         
         
-    
     .. memberfunction:: contains (element: T) -> Bool
         
         @return true if this list contains the specified element.
         
         
-    
     .. memberfunction:: replace (oldie, kiddo: T) -> Bool
         
         @return true if oldie has been replaced by kiddo
         
         
-    
     .. memberfunction:: get (index: Int) -> T
         
         @return the element at the specified position in this list.
         
         
-    
     .. memberfunction:: indexOf (element: T) -> Int
         
         @return the index of the first occurence of the given argument,
         (testing for equality using the equals method), or -1 if not found
         
         
-    
     .. memberfunction:: isEmpty -> Bool
         
         @return true if this list has no elements.
         
         
-    
     .. memberfunction:: lastIndexOf (element: T) -> Int
         
         @return the index of the last occurrence of the specified object
         in this list.
         
         
-    
     .. memberfunction:: removeAt (index: Int) -> T
         
         Removes the element at the specified position in this list.
         @return the element just removed
         
         
-    
     .. memberfunction:: remove (element: T) -> Bool
         
         Removes a single instance of the specified element from this list,
@@ -100,69 +87,55 @@ structs/List
         removed
         
         
-    
     .. memberfunction:: set (index: Int, element: T) -> T
         
         Replaces the element at the specified position in this list with
         the specified element.
         
         
-    
     .. memberfunction:: size -> Int
         
         @return the number of elements in this list.
         
         
-    
     .. memberfunction:: iterator -> Iterator<T>
         
         @return an interator on this list
         
         
-    
     .. memberfunction:: clone -> List<T>
         
         @return a copy of this list
         
         
-    
     .. memberfunction:: first -> T
         
         @return the first element of this list
         
         
-    
     .. memberfunction:: last -> T
         
         @return the last element of this list
         
         
-    
     .. memberfunction:: lastIndex -> Int
         
         @return the last index of this list (e.g. size() - 1)
         
         
-    
     .. memberfunction:: reverse
         
         Reverse this list (destructive)
         
         
-    
     .. memberfunction:: toArray -> Pointer
         
         Convert this list to a raw C array
         
         
-    
     .. memberfunction:: each (f: Func)
         
-    
     .. memberfunction:: join~string (str: String) -> String
         
-    
     .. memberfunction:: join~char (chr: Char) -> String
         
-    
-

@@ -7,19 +7,14 @@ text/regexp/RegexpBackend
     
     .. memberfunction:: setPattern (pattern: String, options: Int)
         
-    
     .. memberfunction:: getPattern -> String
         
-    
     .. memberfunction:: getName -> String
         
-    
     .. memberfunction:: matches (haystack: String) -> Bool
         
-    
     .. memberfunction:: matches~withOptions (haystack: String, options: Int) -> Bool
         
-    
     .. field:: PCRE
     
     .. field:: POSIX
@@ -28,4 +23,3 @@ text/regexp/RegexpBackend
     
     .. field:: pattern
     
-

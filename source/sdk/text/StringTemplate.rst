@@ -7,5 +7,3 @@ text/StringTemplate
     
     .. memberfunction:: formatTemplate (values: HashMap<T>) -> String
         
-    
-

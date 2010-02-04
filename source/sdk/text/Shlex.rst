@@ -5,27 +5,20 @@ text/Shlex
 
 .. class:: Shlex
     
-    .. memberfunction:: new -> Shlex
+    .. staticmemberfunction:: new -> Shlex
         
-    
     .. memberfunction:: init
         
-    
     .. memberfunction:: _add (unquote: Bool)
         
-    
     .. memberfunction:: close -> ArrayList<T>
         
-    
     .. memberfunction:: feed~char (chr: Char)
         
-    
     .. memberfunction:: feed~string (s: String)
         
-    
-    .. memberfunction:: split (s: String) -> ArrayList<T>
+    .. staticmemberfunction:: split (s: String) -> ArrayList<T>
         
-    
     .. field:: state
     
     .. field:: buffer
@@ -34,12 +27,11 @@ text/Shlex
     
     .. field:: backslash
     
+.. data:: WAIT
 
-.. globalVariable:: WAIT
+.. data:: WORD
 
-.. globalVariable:: WORD
+.. data:: SQUOTED
 
-.. globalVariable:: SQUOTED
-
-.. globalVariable:: DQUOTED
+.. data:: DQUOTED
 

@@ -5,82 +5,73 @@ os/mmap
 
 .. function:: mmap (Pointer, SizeT, Int, Int, Int, Int) -> Pointer
     
-
 .. function:: munmap (Pointer, SizeT) -> Int
     
-
 .. function:: mprotect (Pointer, SizeT, Int) -> Int
     
-
 .. function:: madvise (Pointer, SizeT, Int) -> Int
     
-
 .. function:: mincore (Pointer, SizeT, Char*) -> Int
     
-
 .. function:: minherit (Pointer, SizeT, Int) -> Int
     
-
 .. function:: msync (Pointer, SizeT, Int) -> Int
     
-
 .. function:: mlock (Pointer, SizeT) -> Int
     
-
 .. function:: munlock (Pointer, SizeT) -> Int
     
+.. data:: PROT_EXEC
 
-.. globalVariable:: PROT_EXEC
+.. data:: PROT_WRITE
 
-.. globalVariable:: PROT_WRITE
+.. data:: PROT_READ
 
-.. globalVariable:: PROT_READ
+.. data:: PROT_NONE
 
-.. globalVariable:: PROT_NONE
+.. data:: MAP_FIXED
 
-.. globalVariable:: MAP_FIXED
+.. data:: MAP_SHARED
 
-.. globalVariable:: MAP_SHARED
+.. data:: MAP_PRIVATE
 
-.. globalVariable:: MAP_PRIVATE
+.. data:: MAP_DENYWRITE
 
-.. globalVariable:: MAP_DENYWRITE
+.. data:: MAP_EXECUTABLE
 
-.. globalVariable:: MAP_EXECUTABLE
+.. data:: MAP_NORESERVE
 
-.. globalVariable:: MAP_NORESERVE
+.. data:: MAP_LOCKED
 
-.. globalVariable:: MAP_LOCKED
+.. data:: MAP_GROWSDOWN
 
-.. globalVariable:: MAP_GROWSDOWN
+.. data:: MAP_ANONYMOUS
 
-.. globalVariable:: MAP_ANONYMOUS
+.. data:: MAP_ANON
 
-.. globalVariable:: MAP_ANON
+.. data:: MAP_FILE
 
-.. globalVariable:: MAP_FILE
+.. data:: MAP_32BIT
 
-.. globalVariable:: MAP_32BIT
+.. data:: MAP_POPULATE
 
-.. globalVariable:: MAP_POPULATE
+.. data:: MAP_NONBLOCK
 
-.. globalVariable:: MAP_NONBLOCK
+.. data:: MAP_FAILED
 
-.. globalVariable:: MAP_FAILED
+.. data:: MADV_NORMAL
 
-.. globalVariable:: MADV_NORMAL
+.. data:: MADV_SEQUENTIAL
 
-.. globalVariable:: MADV_SEQUENTIAL
+.. data:: MADV_RANDOM
 
-.. globalVariable:: MADV_RANDOM
+.. data:: MADV_WILLNEED
 
-.. globalVariable:: MADV_WILLNEED
+.. data:: MADV_DONTNEED
 
-.. globalVariable:: MADV_DONTNEED
+.. data:: MS_ASYNC
 
-.. globalVariable:: MS_ASYNC
+.. data:: MS_SYNC
 
-.. globalVariable:: MS_SYNC
-
-.. globalVariable:: MS_INVALIDATE
+.. data:: MS_INVALIDATE
 

@@ -5,34 +5,28 @@ structs/HashMap
 
 .. class:: HashEntry<T>
     
-    .. memberfunction:: new (key: String, value: T) -> HashEntry<T>
+    .. staticmemberfunction:: new (key: String, value: T) -> HashEntry<T>
         
-    
     .. memberfunction:: init (key: String, value: T)
         
-    
     .. field:: T
     
     .. field:: key
     
     .. field:: value
     
-
 .. class:: HashMap<T>
     
-    .. memberfunction:: new -> HashMap<T>
+    .. staticmemberfunction:: new -> HashMap<T>
         
-    
     .. memberfunction:: init
         
         Returns a hash table with 100 buckets
         @return HashTable
         
         
-    
-    .. memberfunction:: new~withCapacity (capacity: UInt) -> HashMap<T>
+    .. staticmemberfunction:: new~withCapacity (capacity: UInt) -> HashMap<T>
         
-    
     .. memberfunction:: init~withCapacity (capacity: UInt)
         
         Returns a hash table of a specified bucket capacity.
@@ -40,7 +34,6 @@ structs/HashMap
         @return HashTable
         
         
-    
     .. memberfunction:: murmurHash (keyTagazok: T, seed: UInt) -> UInt
         
         Port of Austin Appleby's Murmur Hash implementation
@@ -51,7 +44,6 @@ structs/HashMap
         @param UInt seed The seed value
         
         
-    
     .. memberfunction:: ac_X31_hash (s: String) -> UInt
         
         khash's ac_X31_hash_string
@@ -61,7 +53,6 @@ structs/HashMap
         @return UInt
         
         
-    
     .. memberfunction:: getEntry (key: String) -> HashEntry<T>
         
         Returns the HashEntry associated with a key.
@@ -70,7 +61,6 @@ structs/HashMap
         @return HashEntry
         
         
-    
     .. memberfunction:: put (key: String, value: T) -> Bool
         
         Puts a key/value pair in the hash table. If the pair already exists,
@@ -80,13 +70,11 @@ structs/HashMap
         @return Bool
         
         
-    
     .. memberfunction:: add (key: String, value: T) -> Bool
         
         Alias of put
         
         
-    
     .. memberfunction:: get (key: String) -> T
         
         Returns the value associated with the key. Returns null if the key
@@ -95,13 +83,11 @@ structs/HashMap
         @return Object
         
         
-    
     .. memberfunction:: isEmpty -> Bool
         
         @return true if this map is empty, false if not
         
         
-    
     .. memberfunction:: contains (key: String) -> Bool
         
         Returns whether or not the key exists in the hash table.
@@ -109,7 +95,6 @@ structs/HashMap
         @return Bool
         
         
-    
     .. memberfunction:: remove (key: String) -> Bool
         
         Removes the entry associated with the key
@@ -117,7 +102,6 @@ structs/HashMap
         @return Bool
         
         
-    
     .. memberfunction:: resize (_capacity: UInt) -> Bool
         
         Resizes the hash table to a new capacity
@@ -125,13 +109,10 @@ structs/HashMap
         @return Bool
         
         
-    
     .. memberfunction:: iterator -> Iterator<T>
         
-    
     .. memberfunction:: clear
         
-    
     .. field:: size
     
     .. field:: capacity
@@ -140,32 +121,23 @@ structs/HashMap
     
     .. field:: keys
     
-
 .. class:: HashMapValueIterator<T>
     
-    .. memberfunction:: new (map: HashMap<T>) -> HashMapValueIterator<T>
+    .. staticmemberfunction:: new (map: HashMap<T>) -> HashMapValueIterator<T>
         
-    
     .. memberfunction:: init (map: HashMap<T>)
         
-    
     .. memberfunction:: hasNext -> Bool
         
-    
     .. memberfunction:: next -> T
         
-    
     .. memberfunction:: hasPrev -> Bool
         
-    
     .. memberfunction:: prev -> T
         
-    
     .. memberfunction:: remove -> Bool
         
-    
     .. field:: map
     
     .. field:: index
     
-

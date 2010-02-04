@@ -5,75 +5,53 @@ os/Time
 
 .. function:: GetLocalTime (SystemTime*)
     
-
 .. function:: Sleep (UInt)
     
-
 .. function:: time (TimeT*) -> TimeT
     
-
 .. function:: localtime (TimeT*) -> TMStruct*
     
-
 .. function:: gettimeofday (TimeVal*, TimeZone*) -> Int
     
-
 .. function:: usleep (UInt)
     
-
 .. cover:: SystemTime
     
-
 .. cover:: TimeT
     
-
 .. cover:: TimeZone
     
-
 .. cover:: TMStruct
     
-
 .. cover:: TimeVal
     
-
 .. class:: Time
     
-    .. memberfunction:: new -> Time
+    .. staticmemberfunction:: new -> Time
         
-    
     .. memberfunction:: init
         
-    
-    .. memberfunction:: microtime -> LLong
+    .. staticmemberfunction:: microtime -> LLong
         
-    
-    .. memberfunction:: microsec -> UInt
+    .. staticmemberfunction:: microsec -> UInt
         
-    
-    .. memberfunction:: sec -> UInt
+    .. staticmemberfunction:: sec -> UInt
         
-    
-    .. memberfunction:: min -> UInt
+    .. staticmemberfunction:: min -> UInt
         
-    
-    .. memberfunction:: hour -> UInt
+    .. staticmemberfunction:: hour -> UInt
         
-    
-    .. memberfunction:: sleepSec (duration: Float)
+    .. staticmemberfunction:: sleepSec (duration: Float)
         
-    
-    .. memberfunction:: sleepMilli (duration: UInt)
+    .. staticmemberfunction:: sleepMilli (duration: UInt)
         
-    
-    .. memberfunction:: sleepMicro (duration: UInt)
+    .. staticmemberfunction:: sleepMicro (duration: UInt)
         
-    
+.. data:: st
 
-.. globalVariable:: st
+.. data:: tv
 
-.. globalVariable:: tv
+.. data:: tt
 
-.. globalVariable:: tt
-
-.. globalVariable:: val
+.. data:: val
 

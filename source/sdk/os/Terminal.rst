@@ -5,12 +5,10 @@ os/Terminal
 
 .. class:: Attr
     
-    .. memberfunction:: new -> Attr
+    .. staticmemberfunction:: new -> Attr
         
-    
     .. memberfunction:: init
         
-    
     .. field:: reset
     
     .. field:: bright
@@ -25,15 +23,12 @@ os/Terminal
     
     .. field:: hidden
     
-
 .. class:: Color
     
-    .. memberfunction:: new -> Color
+    .. staticmemberfunction:: new -> Color
         
-    
     .. memberfunction:: init
         
-    
     .. field:: black
     
     .. field:: red
@@ -52,38 +47,29 @@ os/Terminal
     
     .. field:: white
     
-
 .. class:: Terminal
     
-    .. memberfunction:: new -> Terminal
+    .. staticmemberfunction:: new -> Terminal
         
-    
     .. memberfunction:: init
         
-    
-    .. memberfunction:: setColor (f, b: Int)
+    .. staticmemberfunction:: setColor (f, b: Int)
         
         Set foreground and background color 
         
-    
-    .. memberfunction:: setFgColor (c: Int)
+    .. staticmemberfunction:: setFgColor (c: Int)
         
         Set foreground color 
         
-    
-    .. memberfunction:: setBgColor (c: Int)
+    .. staticmemberfunction:: setBgColor (c: Int)
         
         Set background color 
         
-    
-    .. memberfunction:: setAttr (att: Int)
+    .. staticmemberfunction:: setAttr (att: Int)
         
         Set text attribute 
         
-    
-    .. memberfunction:: reset
+    .. staticmemberfunction:: reset
         
         Reset the terminal colors and attributes 
         
-    
-

@@ -207,7 +207,7 @@ class ClassmemberDesc(OOCDesc):
                                                           clsname)
             else:
                 return _('%s() (%s static member function)') % (methname, clsname)
-        elif self.desctype == 'attribute':
+        elif self.desctype == 'field':
             try:
                 clsname, attrname = name.rsplit(' ', 1)
             except ValueError:
@@ -216,9 +216,9 @@ class ClassmemberDesc(OOCDesc):
                 else:
                     return name
             if modname and add_modules:
-                return _('%s (%s/%s attribute)') % (attrname, modname, clsname)
+                return _('%s (%s/%s field)') % (attrname, modname, clsname)
             else:
-                return _('%s (%s attribute)') % (attrname, clsname)
+                return _('%s (%s field)') % (attrname, clsname)
         else:
             return ''
 
@@ -238,6 +238,6 @@ directives.register_directive('cover', directive_dwim(ClasslikeDesc))
 
 directives.register_directive('memberfunction', directive_dwim(ClassmemberDesc))
 directives.register_directive('staticmemberfunction', directive_dwim(ClassmemberDesc))
-directives.register_directive('attribute', directive_dwim(ClassmemberDesc))
+directives.register_directive('field', directive_dwim(ClassmemberDesc))
 
 

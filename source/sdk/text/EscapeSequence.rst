@@ -5,13 +5,11 @@ text/EscapeSequence
 
 .. class:: EscapeSequence
     
-    .. memberfunction:: new -> EscapeSequence
+    .. staticmemberfunction:: new -> EscapeSequence
         
-    
     .. memberfunction:: init
         
-    
-    .. memberfunction:: getCharacter (sequence: String, chr: Char*) -> Int
+    .. staticmemberfunction:: getCharacter (sequence: String, chr: Char*) -> Int
         
         This is a function for decoding an escape sequence. It supports
         the most common escape sequences and also hexadecimal (\x0a) and
@@ -24,18 +22,15 @@ text/EscapeSequence
         `EscapeSequence invalid` (like for "\u").
         
         
-    
-    .. memberfunction:: unescape (s: String) -> String
+    .. staticmemberfunction:: unescape (s: String) -> String
         
         Unescape the string `s`. This will handle hexadecimal, octal and one-character escape
         escape sequences. Unknown escape sequences will just get the '\\' stripped. ("\\u" -> "u")
         
         
-    
     .. field:: valid
     
     .. field:: needMore
     
     .. field:: invalid
     
-

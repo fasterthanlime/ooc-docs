@@ -5,42 +5,31 @@ text/StringTokenizer
 
 .. class:: StringTokenizer
     
-    .. memberfunction:: new~withCharWithoutMaxSplits (input: String, delim: Char) -> StringTokenizer
+    .. staticmemberfunction:: new~withCharWithoutMaxSplits (input: String, delim: Char) -> StringTokenizer
         
-    
     .. memberfunction:: init~withCharWithoutMaxSplits (input: String, delim: Char)
         
-    
-    .. memberfunction:: new~withStringWithoutMaxSplits (input, delim: String) -> StringTokenizer
+    .. staticmemberfunction:: new~withStringWithoutMaxSplits (input, delim: String) -> StringTokenizer
         
-    
     .. memberfunction:: init~withStringWithoutMaxSplits (input, delim: String)
         
-    
-    .. memberfunction:: new~withChar (input: String, delim: Char, maxSplits: Int) -> StringTokenizer
+    .. staticmemberfunction:: new~withChar (input: String, delim: Char, maxSplits: Int) -> StringTokenizer
         
-    
     .. memberfunction:: init~withChar (input: String, delim: Char, maxSplits: Int)
         
-    
-    .. memberfunction:: new~withString (input, delim: String, maxSplits: Int) -> StringTokenizer
+    .. staticmemberfunction:: new~withString (input, delim: String, maxSplits: Int) -> StringTokenizer
         
-    
     .. memberfunction:: init~withString (input, delim: String, maxSplits: Int)
         
-    
     .. memberfunction:: iterator -> Iterator<T>
         
-    
     .. memberfunction:: hasNext -> Bool
         
-    
     .. memberfunction:: nextToken -> String
         
         @return the next token, or null if we're at the end.
         
         
-    
     .. field:: input
     
     .. field:: delim
@@ -53,47 +42,33 @@ text/StringTokenizer
     
     .. field:: splits
     
-
 .. class:: StringTokenizerIterator<T>
     
-    .. memberfunction:: new (st: StringTokenizer) -> StringTokenizerIterator<T>
+    .. staticmemberfunction:: new (st: StringTokenizer) -> StringTokenizerIterator<T>
         
-    
     .. memberfunction:: init (st: StringTokenizer)
         
-    
     .. memberfunction:: hasNext -> Bool
         
-    
     .. memberfunction:: next -> T
         
-    
     .. memberfunction:: hasPrev -> Bool
         
-    
     .. memberfunction:: prev -> T
         
-    
     .. memberfunction:: remove -> Bool
         
-    
     .. field:: st
     
     .. field:: index
     
-
 .. cover:: String
     
     .. memberfunction:: split~withString (s: String, maxSplits: Int) -> StringTokenizer
         
-    
     .. memberfunction:: split~withChar (c: Char, maxSplits: Int) -> StringTokenizer
         
-    
     .. memberfunction:: split~withStringWithoutMaxSplits (s: String) -> StringTokenizer
         
-    
     .. memberfunction:: split~withCharWithoutMaxSplits (c: Char) -> StringTokenizer
         
-    
-
