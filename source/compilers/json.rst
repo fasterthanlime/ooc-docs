@@ -134,6 +134,8 @@ A function entity has the following attributes:
 	    ["foobar", "pointer(Int)", null]
 	]
 
+.. note:: If a function has varargs, the last element in the "arguments" list will be an argument named "..." with the type "": ``["...", "", null]``.
+
 ``memberFunction``
 ~~~~~~~~~~~~~~~~~~
 
