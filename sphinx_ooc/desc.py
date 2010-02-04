@@ -11,9 +11,9 @@ from sphinx.util.compat import Directive, directive_dwim
 ooc_sig_re = re.compile(
     r'''^ ([\w<>/]*[ /])?            # class name(s)
           ([\w<>~]+)  \s*             # thing name
-          (?: \((.*)\)           # optional: arguments
-           (?:\s* -> \s* (.*))?  #           return annotation
-          )? $                   # and nothing more
+          (?: \((.*)\))?           # optional: arguments
+          (?:\s* -> \s* (.*))?  #           return annotation
+          $                   # and nothing more
           ''', re.VERBOSE)
 ooc_paramlist_re = re.compile(r'([\[\],])')  # split at '[', ']' and ','
 
