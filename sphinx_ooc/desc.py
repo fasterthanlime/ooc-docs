@@ -57,8 +57,8 @@ class OOCDesc(DescDirective):
         prefix = self.get_signature_prefix(sig)
         if prefix:
             signode += addnodes.desc_annotation(prefix, prefix)
-        if classname:
-            signode += addnodes.desc_addname(classname, classname)
+        #if classname:
+        #   signode += addnodes.desc_addname(classname, classname)
 
         # exceptions are a special case, since they are documented in the
         # 'exceptions' module.
@@ -66,7 +66,7 @@ class OOCDesc(DescDirective):
             modname = self.options.get('module', self.env.currmodule)
             if modname and modname != 'exceptions':
                 nodetext = modname + '/'
-                signode += addnodes.desc_addname(nodetext, nodetext)
+                # signode += addnodes.desc_addname(nodetext, nodetext)
 
         signode += addnodes.desc_name(name, name)
         if not arglist:
