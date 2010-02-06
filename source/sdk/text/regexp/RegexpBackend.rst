@@ -15,11 +15,11 @@ text/regexp/RegexpBackend
         
     .. memberfunction:: matches~withOptions (haystack: String, options: Int) -> Bool
         
-    .. field:: PCRE
+    .. field:: PCRE -> Int
     
-    .. field:: POSIX
+    .. field:: POSIX -> Int
     
-    .. field:: DEFAULT_TYPE
+    .. field:: DEFAULT_TYPE -> Int
     
-    .. field:: pattern
+    .. field:: pattern -> String
     

@@ -17,5 +17,5 @@ native/win32/types
     
 .. cover:: FileTime
     
-.. data:: INVALID_HANDLE_VALUE
+.. data:: INVALID_HANDLE_VALUE -> Handle
 

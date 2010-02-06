@@ -41,9 +41,9 @@ structs/LinkedList
         
     .. memberfunction:: print
         
-    .. field:: size
+    .. field:: size -> Int
     
-    .. field:: first
+    .. field:: first -> Node<T>
     
-    .. field:: last
+    .. field:: last -> Node<T>
     

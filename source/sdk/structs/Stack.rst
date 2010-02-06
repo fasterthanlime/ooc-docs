@@ -27,5 +27,5 @@ structs/Stack
         
     .. memberfunction:: iterator -> Iterator<T>
         
-    .. field:: data
+    .. field:: data -> ArrayList<T>
     

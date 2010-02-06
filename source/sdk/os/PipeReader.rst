@@ -15,7 +15,7 @@ os/PipeReader
         
     .. memberfunction:: toString -> String
         
-    .. field:: pipe
+    .. field:: pipe -> Pipe
     
-    .. field:: buf
+    .. field:: buf -> String
     

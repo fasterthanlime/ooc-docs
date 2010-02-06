@@ -25,9 +25,9 @@ os/FileDescriptor
         
     .. memberfunction:: _errMsg (var: Int, funcName: String)
         
-.. data:: STDIN_FILENO
+.. data:: STDIN_FILENO -> FileDescriptor
 
-.. data:: STDOUT_FILENO
+.. data:: STDOUT_FILENO -> FileDescriptor
 
-.. data:: STDERR_FILENO
+.. data:: STDERR_FILENO -> FileDescriptor
 

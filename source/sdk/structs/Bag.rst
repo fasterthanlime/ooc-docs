@@ -33,5 +33,5 @@ structs/Bag
         
     .. memberfunction:: size -> Int
         
-    .. field:: data
+    .. field:: data -> ArrayList<T>
     

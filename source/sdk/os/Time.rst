@@ -47,11 +47,11 @@ os/Time
         
     .. staticmemberfunction:: sleepMicro (duration: UInt)
         
-.. data:: st
+.. data:: st -> SystemTime
 
-.. data:: tv
+.. data:: tv -> TimeVal
 
-.. data:: tt
+.. data:: tt -> TimeT
 
-.. data:: val
+.. data:: val -> TMStruct*
 

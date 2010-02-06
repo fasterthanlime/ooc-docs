@@ -19,9 +19,9 @@ os/unistd
     
 .. function:: pipe (arg: Int*) -> Int
     
-.. data:: PIPE_BUF
+.. data:: PIPE_BUF -> Int
 
-.. data:: STDOUT_FILENO
+.. data:: STDOUT_FILENO -> Int
 
-.. data:: STDERR_FILENO
+.. data:: STDERR_FILENO -> Int
 

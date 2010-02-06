@@ -170,11 +170,11 @@ io/File
         :return: the current working directory
         
         
-    .. field:: MAX_PATH_LENGTH
+    .. field:: MAX_PATH_LENGTH -> Int
     
-    .. field:: path
+    .. field:: path -> String
     
-    .. field:: separator
+    .. field:: separator -> Char
     
-    .. field:: pathDelimiter
+    .. field:: pathDelimiter -> Char
     

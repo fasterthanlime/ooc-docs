@@ -19,5 +19,5 @@ io/Reader
         
     .. memberfunction:: skip (offset: Int)
         
-    .. field:: marker
+    .. field:: marker -> Long
     

@@ -9,19 +9,19 @@ os/Terminal
         
     .. memberfunction:: init
         
-    .. field:: reset
+    .. field:: reset -> Int
     
-    .. field:: bright
+    .. field:: bright -> Int
     
-    .. field:: dim
+    .. field:: dim -> Int
     
-    .. field:: under
+    .. field:: under -> Int
     
-    .. field:: blink
+    .. field:: blink -> Int
     
-    .. field:: reverse
+    .. field:: reverse -> Int
     
-    .. field:: hidden
+    .. field:: hidden -> Int
     
 .. class:: Color
     
@@ -29,23 +29,23 @@ os/Terminal
         
     .. memberfunction:: init
         
-    .. field:: black
+    .. field:: black -> Int
     
-    .. field:: red
+    .. field:: red -> Int
     
-    .. field:: green
+    .. field:: green -> Int
     
-    .. field:: yellow
+    .. field:: yellow -> Int
     
-    .. field:: blue
+    .. field:: blue -> Int
     
-    .. field:: magenta
+    .. field:: magenta -> Int
     
-    .. field:: cyan
+    .. field:: cyan -> Int
     
-    .. field:: grey
+    .. field:: grey -> Int
     
-    .. field:: white
+    .. field:: white -> Int
     
 .. class:: Terminal
     

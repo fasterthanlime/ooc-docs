@@ -52,19 +52,19 @@ os/Process
         You can pass null as data, stdoutData or stderrData.
         
         
-    .. field:: args
+    .. field:: args -> ArrayList<T>
     
-    .. field:: executable
+    .. field:: executable -> String
     
-    .. field:: stdOut
+    .. field:: stdOut -> Pipe
     
-    .. field:: stdIn
+    .. field:: stdIn -> Pipe
     
-    .. field:: stdErr
+    .. field:: stdErr -> Pipe
     
-    .. field:: buf
+    .. field:: buf -> String*
     
-    .. field:: env
+    .. field:: env -> HashMap<T>
     
-    .. field:: cwd
+    .. field:: cwd -> String
     

@@ -32,9 +32,9 @@ text/EscapeSequence
         
         Escape a string. This will replace non-printable characters with equivalents like \something or \x??. *
         
-    .. field:: valid
+    .. field:: valid -> Int
     
-    .. field:: needMore
+    .. field:: needMore -> Int
     
-    .. field:: invalid
+    .. field:: invalid -> Int
     

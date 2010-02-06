@@ -33,9 +33,9 @@ text/StringBuffer
         
     .. memberfunction:: toString -> String
         
-    .. field:: size
+    .. field:: size -> SizeT
     
-    .. field:: capacity
+    .. field:: capacity -> SizeT
     
-    .. field:: data
+    .. field:: data -> String
     

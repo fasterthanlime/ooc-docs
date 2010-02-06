@@ -75,9 +75,9 @@ lang/stdio
         
     .. memberfunction:: write~precise (str: Char*, offset, length: SizeT) -> SizeT
         
-.. data:: stdout
+.. data:: stdout -> FStream
 
-.. data:: stderr
+.. data:: stderr -> FStream
 
-.. data:: stdin
+.. data:: stdin -> FStream
 

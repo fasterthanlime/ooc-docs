@@ -235,25 +235,25 @@ lang/types
         
     .. memberfunction:: inheritsFrom (T: Class) -> Bool
         
-    .. field:: instanceSize
+    .. field:: instanceSize -> SizeT
     
-    .. field:: size
+    .. field:: size -> SizeT
     
-    .. field:: name
+    .. field:: name -> String
     
-    .. field:: super
+    .. field:: super -> Class
     
-    .. field:: __defaults__
+    .. field:: __defaults__ -> Func
     
-    .. field:: __destroy__
+    .. field:: __destroy__ -> Func
     
-    .. field:: __load__
+    .. field:: __load__ -> Func
     
 .. class:: Object
     
     .. memberfunction:: instanceOf (T: Class) -> Bool
         
-    .. field:: class
+    .. field:: class -> Class
     
 .. class:: Interface
     
@@ -261,9 +261,9 @@ lang/types
         
     .. memberfunction:: init (realThis, funcs: Object)
         
-    .. field:: realThis
+    .. field:: realThis -> Object
     
-    .. field:: funcs
+    .. field:: funcs -> Object
     
 .. class:: Exception
     
@@ -283,9 +283,9 @@ lang/types
         
     .. memberfunction:: throw
         
-    .. field:: origin
+    .. field:: origin -> Class
     
-    .. field:: msg
+    .. field:: msg -> String
     
 .. class:: None
     
@@ -299,19 +299,19 @@ lang/types
         
     .. memberfunction:: init (val: T)
         
-    .. field:: T
+    .. field:: T -> Class
     
-    .. field:: val
+    .. field:: val -> T
     
-.. data:: DBL_MAX
+.. data:: DBL_MAX -> Double
 
-.. data:: DBL_MIN
+.. data:: DBL_MIN -> Double
 
-.. data:: FLT_MAX
+.. data:: FLT_MAX -> Float
 
-.. data:: FLT_MIN
+.. data:: FLT_MIN -> Float
 
-.. data:: LDBL_MAX
+.. data:: LDBL_MAX -> LDouble
 
-.. data:: LDBL_MIN
+.. data:: LDBL_MIN -> LDouble
 

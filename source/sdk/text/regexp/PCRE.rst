@@ -25,13 +25,13 @@ text/regexp/PCRE
         
     .. memberfunction:: matches~withOptions (haystack: String, options: Int) -> Bool
         
-    .. field:: CASELESS
+    .. field:: CASELESS -> Int
     
-    .. field:: error
+    .. field:: error -> String
     
-    .. field:: errorNum
+    .. field:: errorNum -> Int
     
-    .. field:: re
+    .. field:: re -> Pcre
     
-.. data:: PCRE_DEBUG
+.. data:: PCRE_DEBUG -> Bool
 

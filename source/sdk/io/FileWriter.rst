@@ -35,5 +35,5 @@ io/FileWriter
         
     .. memberfunction:: vwritef (fmt: String, args: VaList)
         
-    .. field:: file
+    .. field:: file -> FStream
     

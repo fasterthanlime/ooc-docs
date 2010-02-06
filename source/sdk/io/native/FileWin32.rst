@@ -107,9 +107,9 @@ io/native/FileWin32
         Works only on directories, obviously
         
         
-.. data:: FILE_ATTRIBUTE_DIRECTORY
+.. data:: FILE_ATTRIBUTE_DIRECTORY -> Long
 
-.. data:: FILE_ATTRIBUTE_REPARSE_POINT
+.. data:: FILE_ATTRIBUTE_REPARSE_POINT -> Long
 
-.. data:: FILE_ATTRIBUTE_NORMAL
+.. data:: FILE_ATTRIBUTE_NORMAL -> Long
 

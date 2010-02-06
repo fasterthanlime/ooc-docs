@@ -30,19 +30,19 @@ text/StringTokenizer
         @return the next token, or null if we're at the end.
         
         
-    .. field:: input
+    .. field:: input -> String
     
-    .. field:: delim
+    .. field:: delim -> String
     
-    .. field:: index
+    .. field:: index -> Int
     
-    .. field:: length
+    .. field:: length -> Int
     
-    .. field:: maxSplits
+    .. field:: maxSplits -> Int
     
-    .. field:: splits
+    .. field:: splits -> Int
     
-    .. field:: empties
+    .. field:: empties -> Bool
     
 .. class:: StringTokenizerIterator<T>
     
@@ -60,9 +60,9 @@ text/StringTokenizer
         
     .. memberfunction:: remove -> Bool
         
-    .. field:: st
+    .. field:: st -> StringTokenizer
     
-    .. field:: index
+    .. field:: index -> Int
     
 .. cover:: String
     

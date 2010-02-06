@@ -45,5 +45,5 @@ io/FileReader
         
     .. memberfunction:: close
         
-    .. field:: file
+    .. field:: file -> FILE*
     

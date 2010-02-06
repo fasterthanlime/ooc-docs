@@ -31,5 +31,5 @@ structs/HashBag
         
     .. memberfunction:: exists (key: String) -> Bool
         
-    .. field:: myMap
+    .. field:: myMap -> HashMap<T>
     

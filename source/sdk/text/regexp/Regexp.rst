@@ -37,7 +37,7 @@ text/regexp/Regexp
         
     .. memberfunction:: getEngineName -> String
         
-    .. field:: regexpBackend
+    .. field:: regexpBackend -> RegexpBackend
     
-    .. field:: type
+    .. field:: type -> Int
     

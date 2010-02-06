@@ -27,9 +27,9 @@ structs/Array
         
     .. memberfunction:: each (f: Func)
         
-    .. field:: size
+    .. field:: size -> SizeT
     
-    .. field:: data
+    .. field:: data -> T*
     
 .. class:: ArrayIterator<T>
     
@@ -47,9 +47,9 @@ structs/Array
         
     .. memberfunction:: remove -> Bool
         
-    .. field:: T
+    .. field:: T -> Class
     
-    .. field:: array
+    .. field:: array -> Array<T>
     
-    .. field:: i
+    .. field:: i -> Int
     

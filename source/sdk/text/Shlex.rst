@@ -19,19 +19,19 @@ text/Shlex
         
     .. staticmemberfunction:: split (s: String) -> ArrayList<T>
         
-    .. field:: state
+    .. field:: state -> Int
     
-    .. field:: buffer
+    .. field:: buffer -> StringBuffer
     
-    .. field:: result
+    .. field:: result -> ArrayList<T>
     
-    .. field:: backslash
+    .. field:: backslash -> Bool
     
-.. data:: WAIT
+.. data:: WAIT -> Int
 
-.. data:: WORD
+.. data:: WORD -> Int
 
-.. data:: SQUOTED
+.. data:: SQUOTED -> Int
 
-.. data:: DQUOTED
+.. data:: DQUOTED -> Int
 

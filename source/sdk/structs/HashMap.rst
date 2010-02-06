@@ -9,11 +9,11 @@ structs/HashMap
         
     .. memberfunction:: init (key: String, value: T)
         
-    .. field:: T
+    .. field:: T -> Class
     
-    .. field:: key
+    .. field:: key -> String
     
-    .. field:: value
+    .. field:: value -> T
     
 .. class:: HashMap<T>
     
@@ -113,13 +113,13 @@ structs/HashMap
         
     .. memberfunction:: clear
         
-    .. field:: size
+    .. field:: size -> UInt
     
-    .. field:: capacity
+    .. field:: capacity -> UInt
     
-    .. field:: buckets
+    .. field:: buckets -> ArrayList<T>*
     
-    .. field:: keys
+    .. field:: keys -> ArrayList<T>
     
 .. class:: HashMapValueIterator<T>
     
@@ -137,7 +137,7 @@ structs/HashMap
         
     .. memberfunction:: remove -> Bool
         
-    .. field:: map
+    .. field:: map -> HashMap<T>
     
-    .. field:: index
+    .. field:: index -> Int
     
