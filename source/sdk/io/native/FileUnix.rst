@@ -87,6 +87,11 @@ io/native/FileUnix
         @return the time of creation
         
         
+    .. memberfunction:: isRelative -> Bool
+        
+        @return true if the function is relative to the current directory
+        
+        
     .. memberfunction:: getAbsolutePath -> String
         
         The absolute path, e.g. "my/dir" => "/current/directory/my/dir"

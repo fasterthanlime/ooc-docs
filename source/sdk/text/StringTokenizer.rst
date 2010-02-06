@@ -42,6 +42,8 @@ text/StringTokenizer
     
     .. field:: splits
     
+    .. field:: empties
+    
 .. class:: StringTokenizerIterator<T>
     
     .. staticmemberfunction:: new (st: StringTokenizer) -> StringTokenizerIterator<T>
@@ -71,4 +73,8 @@ text/StringTokenizer
     .. memberfunction:: split~withStringWithoutMaxSplits (s: String) -> StringTokenizer
         
     .. memberfunction:: split~withCharWithoutMaxSplits (c: Char) -> StringTokenizer
+        
+    .. memberfunction:: split~withStringWithEmpties (s: String, empties: Bool) -> StringTokenizer
+        
+    .. memberfunction:: split~withCharWithEmpties (c: Char, empties: Bool) -> StringTokenizer
         

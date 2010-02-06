@@ -21,6 +21,8 @@ os/Process
         
     .. memberfunction:: execute -> Int
         
+        Execute the process and wait for it to end 
+        
     .. memberfunction:: wait -> Int
         
         Wait for the process to end. Bad things will happen if you haven't called `executeNoWait` before. 

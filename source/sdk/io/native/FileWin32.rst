@@ -5,7 +5,13 @@ io/native/FileWin32
 
 .. function:: FindFirstFile (String, FindData*) -> Handle
     
+.. function:: FindNextFile (Handle, FindData*) -> Bool
+    
 .. function:: FindClose (Handle)
+    
+.. function:: GetFileAttributes (String) -> Long
+    
+.. function:: CreateDirectory (String, Pointer) -> Bool
     
 .. function:: _remove (path: String) -> Int
     
@@ -16,6 +22,12 @@ io/native/FileWin32
     .. staticmemberfunction:: new~win32 (path: String) -> FileWin32
         
     .. memberfunction:: init~win32 (path: String)
+        
+    .. memberfunction:: exists -> Bool
+        
+        @return true if the file exists and can be
+        opened for reading
+        
         
     .. memberfunction:: findSingle (ffdPtr: FindData*)
         
@@ -73,15 +85,14 @@ io/native/FileWin32
         @return the time of creation
         
         
+    .. memberfunction:: isRelative -> Bool
+        
+        @return true if the function is relative to the current directory
+        
+        
     .. memberfunction:: getAbsolutePath -> String
         
         The absolute path, e.g. "my/dir" => "/current/directory/my/dir"
-        
-        
-    .. memberfunction:: getAbsoluteFile -> String
-        
-        A file corresponding to the absolute path
-        @see getAbsolutePath
         
         
     .. memberfunction:: getChildrenNames -> ArrayList<T>

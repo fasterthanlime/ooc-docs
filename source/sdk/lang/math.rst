@@ -39,3 +39,15 @@ lang/math
     
 .. function:: round~dl (Double) -> Long
     
+.. function:: ceil~Double (Double) -> Double
+    
+.. function:: ceil~Float (Float) -> Float
+    
+.. function:: ceil~Long (LDouble) -> LDouble
+    
+.. function:: floor~Double (Double) -> Double
+    
+.. function:: floor~Float (Float) -> Float
+    
+.. function:: floor~Long (LDouble) -> LDouble
+    

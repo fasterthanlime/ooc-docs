@@ -3,33 +3,25 @@ os/Pipe
 
 .. module:: os/Pipe
 
-.. function:: open (String, Int) -> Int
-    
-.. function:: write (Int, Pointer, Int) -> Int
-    
-.. function:: read (Int, Pointer, Int) -> Int
-    
-.. function:: close (Int) -> Int
-    
 .. class:: Pipe
     
-    .. staticmemberfunction:: new~withFDs (readFD, writeFD: FileDescriptor) -> Pipe
-        
-    .. memberfunction:: init~withFDs (readFD, writeFD: FileDescriptor)
-        
     .. staticmemberfunction:: new -> Pipe
-        
-    .. memberfunction:: init
         
     .. memberfunction:: read (len: Int) -> Pointer
         
+        read 'len' bytes at most from the pipe 
+        
     .. memberfunction:: write~string (str: String) -> Int
+        
+        write a string to the pipe 
         
     .. memberfunction:: write (data: Pointer, len: Int) -> Int
         
-    .. memberfunction:: close (arg: Char) -> Int
+        write 'len' bytes of 'data' to the pipe 
         
-    .. field:: readFD
-    
-    .. field:: writeFD
-    
+    .. memberfunction:: close (mode: Char) -> Int
+        
+        close the pipe, either in reading or writing 
+        @param arg 'r' = close in reading, 'w' = close in writing
+        
+        

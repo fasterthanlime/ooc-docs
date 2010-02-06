@@ -28,6 +28,10 @@ text/EscapeSequence
         escape sequences. Unknown escape sequences will just get the '\\' stripped. ("\\u" -> "u")
         
         
+    .. staticmemberfunction:: escape (s: String) -> String
+        
+        Escape a string. This will replace non-printable characters with equivalents like \something or \x??. *
+        
     .. field:: valid
     
     .. field:: needMore

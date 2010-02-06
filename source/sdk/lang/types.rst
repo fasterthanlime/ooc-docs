@@ -303,3 +303,15 @@ lang/types
     
     .. field:: val
     
+.. data:: DBL_MAX
+
+.. data:: DBL_MIN
+
+.. data:: FLT_MAX
+
+.. data:: FLT_MIN
+
+.. data:: LDBL_MAX
+
+.. data:: LDBL_MIN
+
