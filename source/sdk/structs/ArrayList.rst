@@ -60,11 +60,11 @@ structs/ArrayList
         
     .. memberfunction:: grow
         
-        private 
+        private
         
     .. memberfunction:: checkIndex (index: :cover:`~lang/types Int` )
         
-        private 
+        private
         
     .. memberfunction:: iterator -> :class:`~lang/types Iterator<T>` 
         

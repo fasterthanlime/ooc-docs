@@ -22,15 +22,15 @@ os/Process
         
     .. memberfunction:: execute -> :cover:`~lang/types Int` 
         
-        Execute the process and wait for it to end 
+        Execute the process and wait for it to end
         
     .. memberfunction:: wait -> :cover:`~lang/types Int` 
         
-        Wait for the process to end. Bad things will happen if you haven't called `executeNoWait` before. 
+        Wait for the process to end. Bad things will happen if you haven't called `executeNoWait` before.
         
     .. memberfunction:: executeNoWait
         
-        Execute the process without waiting for it to end. You have to call `wait` manually. 
+        Execute the process without waiting for it to end. You have to call `wait` manually.
         
     .. memberfunction:: getOutput -> :cover:`~lang/types String` 
         

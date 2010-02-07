@@ -58,21 +58,21 @@ os/Terminal
         
     .. staticmemberfunction:: setColor (f, b: :cover:`~lang/types Int` )
         
-        Set foreground and background color 
+        Set foreground and background color
         
     .. staticmemberfunction:: setFgColor (c: :cover:`~lang/types Int` )
         
-        Set foreground color 
+        Set foreground color
         
     .. staticmemberfunction:: setBgColor (c: :cover:`~lang/types Int` )
         
-        Set background color 
+        Set background color
         
     .. staticmemberfunction:: setAttr (att: :cover:`~lang/types Int` )
         
-        Set text attribute 
+        Set text attribute
         
     .. staticmemberfunction:: reset
         
-        Reset the terminal colors and attributes 
+        Reset the terminal colors and attributes
         

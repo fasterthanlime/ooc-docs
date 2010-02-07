@@ -74,7 +74,7 @@ lang/types
         
     .. memberfunction:: compare (other: :cover:`~lang/types String` , start, length: :cover:`~lang/types SizeT` ) -> :cover:`~lang/types Bool` 
         
-        compare `length` characters of `this` with `other`, starting at `start`. 
+        compare `length` characters of `this` with `other`, starting at `start`.
         
     .. memberfunction:: compare~implicitLength (other: :cover:`~lang/types String` , start: :cover:`~lang/types SizeT` ) -> :cover:`~lang/types Bool` 
         
@@ -117,6 +117,8 @@ lang/types
     .. memberfunction:: trim~space -> :cover:`~lang/types String` 
         
     .. memberfunction:: trim (c: :cover:`~lang/types Char` ) -> :cover:`~lang/types String` 
+        
+    .. memberfunction:: trim~string (s: :cover:`~lang/types String` ) -> :cover:`~lang/types String` 
         
     .. memberfunction:: first -> :cover:`~lang/types SizeT` 
         

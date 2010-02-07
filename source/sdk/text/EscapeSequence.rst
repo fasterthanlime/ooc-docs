@@ -31,7 +31,7 @@ text/EscapeSequence
         
     .. staticmemberfunction:: escape (s: :cover:`~lang/types String` ) -> :cover:`~lang/types String` 
         
-        Escape a string. This will replace non-printable characters with equivalents like \something or \x??. *
+        Escape a string. This will replace non-printable characters with equivalents like \something or \x??.
         
     .. field:: valid -> :cover:`~lang/types Int` 
     
