@@ -57,6 +57,7 @@ lang/stdio
     
 .. cover:: FStream
     
+    :from: ``FILE*``
     .. memberfunction:: open (filename: :cover:`~lang/types String` , mode: :cover:`~lang/types String` ) -> :cover:`~lang/stdio FStream` 
         
     .. memberfunction:: close -> :cover:`~lang/types Int` 

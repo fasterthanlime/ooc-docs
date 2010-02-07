@@ -5,6 +5,7 @@ io/File
 
 .. class:: File
     
+    :extends: :class:`~lang/types Object` 
     .. memberfunction:: getPath -> :cover:`~lang/types String` 
         
     .. staticmemberfunction:: new (path: :cover:`~lang/types String` ) -> :class:`~io/File File` 

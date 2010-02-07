@@ -13,6 +13,7 @@ os/Env
     
 .. class:: Env
     
+    :extends: :class:`~lang/types Object` 
     .. staticmemberfunction:: new -> :class:`~os/Env Env` 
         
     .. memberfunction:: init

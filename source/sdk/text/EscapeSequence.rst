@@ -5,6 +5,7 @@ text/EscapeSequence
 
 .. class:: EscapeSequence
     
+    :extends: :class:`~lang/types Object` 
     .. staticmemberfunction:: new -> :class:`~text/EscapeSequence EscapeSequence` 
         
     .. memberfunction:: init

@@ -5,6 +5,7 @@ text/StringBuffer
 
 .. class:: StringBuffer
     
+    :extends: :class:`~io/Writer Writer` 
     .. staticmemberfunction:: new -> :class:`~text/StringBuffer StringBuffer` 
         
     .. memberfunction:: init

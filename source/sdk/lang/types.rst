@@ -9,12 +9,15 @@ lang/types
     
 .. cover:: Void
     
+    :from: ``void``
 .. cover:: Pointer
     
+    :from: ``void*``
     .. memberfunction:: toString -> :cover:`~lang/types String` 
         
 .. cover:: Char
     
+    :from: ``char``
     .. memberfunction:: isAlphaNumeric -> :cover:`~lang/types Bool` 
         
     .. memberfunction:: isAlpha -> :cover:`~lang/types Bool` 
@@ -53,12 +56,18 @@ lang/types
         
 .. cover:: SChar
     
+    :extends: :cover:`~lang/types Char` 
+    :from: ``signed char``
 .. cover:: UChar
     
+    :extends: :cover:`~lang/types Char` 
+    :from: ``unsigned char``
 .. cover:: WChar
     
+    :from: ``wchar_t``
 .. cover:: String
     
+    :from: ``Char*``
     .. memberfunction:: new~withLength (length: :cover:`~lang/types SizeT` ) -> :cover:`~lang/types String` 
         
     .. memberfunction:: new~withChar (c: :cover:`~lang/types Char` ) -> :cover:`~lang/types String` 
@@ -161,6 +170,7 @@ lang/types
         
 .. cover:: LLong
     
+    :from: ``signed long long``
     .. memberfunction:: toString -> :cover:`~lang/types String` 
         
     .. memberfunction:: toHexString -> :cover:`~lang/types String` 
@@ -173,54 +183,96 @@ lang/types
         
 .. cover:: Long
     
+    :extends: :cover:`~lang/types LLong` 
+    :from: ``signed long``
 .. cover:: Int
     
+    :extends: :cover:`~lang/types LLong` 
+    :from: ``signed int``
 .. cover:: Short
     
+    :extends: :cover:`~lang/types LLong` 
+    :from: ``signed short``
 .. cover:: ULLong
     
+    :extends: :cover:`~lang/types LLong` 
+    :from: ``unsigned long long``
     .. memberfunction:: toString -> :cover:`~lang/types String` 
         
     .. memberfunction:: in (range: :cover:`~lang/types Range` ) -> :cover:`~lang/types Bool` 
         
 .. cover:: ULong
     
+    :extends: :cover:`~lang/types ULLong` 
+    :from: ``unsigned long``
 .. cover:: UInt
     
+    :extends: :cover:`~lang/types ULLong` 
+    :from: ``unsigned int``
 .. cover:: UShort
     
+    :extends: :cover:`~lang/types ULLong` 
+    :from: ``unsigned short``
 .. cover:: Int8
     
+    :extends: :cover:`~lang/types LLong` 
+    :from: ``int8_t``
 .. cover:: Int16
     
+    :extends: :cover:`~lang/types LLong` 
+    :from: ``int16_t``
 .. cover:: Int32
     
+    :extends: :cover:`~lang/types LLong` 
+    :from: ``int32_t``
 .. cover:: Int64
     
+    :extends: :cover:`~lang/types LLong` 
+    :from: ``int64_t``
 .. cover:: UInt8
     
+    :extends: :cover:`~lang/types ULLong` 
+    :from: ``uint8_t``
 .. cover:: UInt16
     
+    :extends: :cover:`~lang/types ULLong` 
+    :from: ``uint16_t``
 .. cover:: UInt32
     
+    :extends: :cover:`~lang/types ULLong` 
+    :from: ``uint32_t``
 .. cover:: UInt64
     
+    :extends: :cover:`~lang/types ULLong` 
+    :from: ``uint64_t``
 .. cover:: Octet
     
+    :extends: :cover:`~lang/types ULLong` 
+    :from: ``UInt8``
 .. cover:: SizeT
     
+    :extends: :cover:`~lang/types LLong` 
+    :from: ``size_t``
 .. cover:: PtrDiffT
     
+    :extends: :cover:`~lang/types LLong` 
+    :from: ``ptrdiff_t``
 .. cover:: Bool
     
+    :from: ``bool``
     .. memberfunction:: toString -> :cover:`~lang/types String` 
         
 .. cover:: Float
     
+    :extends: :cover:`~lang/types LDouble` 
+    :from: ``float``
 .. cover:: Double
     
+    :extends: :cover:`~lang/types LDouble` 
+    :from: ``double``
 .. cover:: LDouble
     
+    :from: ``long double``
     .. memberfunction:: toString -> :cover:`~lang/types String` 
         
     .. memberfunction:: abs -> :cover:`~lang/types LDouble` 
@@ -231,6 +283,7 @@ lang/types
         
 .. class:: Class
     
+    :extends: :class:`~lang/types Object` 
     .. memberfunction:: alloc -> :class:`~lang/types Object` 
         
     .. memberfunction:: inheritsFrom (T: :class:`~lang/types Class` ) -> :cover:`~lang/types Bool` 
@@ -257,6 +310,7 @@ lang/types
     
 .. class:: Iterator<T>
     
+    :extends: :class:`~lang/types Object` 
     .. memberfunction:: hasNext -> :cover:`~lang/types Bool` 
         
     .. memberfunction:: next -> T 
@@ -271,6 +325,7 @@ lang/types
     
 .. class:: Iterable<T>
     
+    :extends: :class:`~lang/types Object` 
     .. memberfunction:: iterator -> :class:`~lang/types Iterator<T>` 
         
     .. memberfunction:: toArrayList -> :class:`~structs/ArrayList ArrayList<T>` 
@@ -282,6 +337,7 @@ lang/types
     
 .. class:: Interface
     
+    :extends: :class:`~lang/types Object` 
     .. staticmemberfunction:: new (realThis, funcs: :class:`~lang/types Object` ) -> :class:`~lang/types Interface` 
         
     .. memberfunction:: init (realThis, funcs: :class:`~lang/types Object` )
@@ -292,6 +348,7 @@ lang/types
     
 .. class:: Exception
     
+    :extends: :class:`~lang/types Object` 
     .. staticmemberfunction:: new (origin: :class:`~lang/types Class` , msg: :cover:`~lang/types String` ) -> :class:`~lang/types Exception` 
         
     .. memberfunction:: init (origin: :class:`~lang/types Class` , msg: :cover:`~lang/types String` )
@@ -314,6 +371,7 @@ lang/types
     
 .. class:: StringIterator<T>
     
+    :extends: :class:`~lang/types Iterator<T>` 
     .. staticmemberfunction:: new (str: :cover:`~lang/types String` ) -> :class:`~lang/types StringIterator<T>` 
         
     .. memberfunction:: init (str: :cover:`~lang/types String` )
@@ -334,12 +392,14 @@ lang/types
     
 .. class:: None
     
+    :extends: :class:`~lang/types Object` 
     .. staticmemberfunction:: new -> :class:`~lang/types None` 
         
     .. memberfunction:: init
         
 .. class:: Cell<T>
     
+    :extends: :class:`~lang/types Object` 
     .. staticmemberfunction:: new (val: T ) -> :class:`~lang/types Cell<T>` 
         
     .. memberfunction:: init (val: T )

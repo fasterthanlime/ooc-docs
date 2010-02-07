@@ -17,8 +17,10 @@ io/native/FileWin32
     
 .. cover:: FindData
     
+    :from: ``WIN32_FIND_DATA``
 .. class:: FileWin32
     
+    :extends: :class:`~io/File File` 
     .. staticmemberfunction:: new~win32 (path: :cover:`~lang/types String` ) -> :class:`~io/native/FileWin32 FileWin32` 
         
     .. memberfunction:: init~win32 (path: :cover:`~lang/types String` )

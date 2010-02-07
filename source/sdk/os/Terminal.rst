@@ -5,6 +5,7 @@ os/Terminal
 
 .. class:: Attr
     
+    :extends: :class:`~lang/types Object` 
     .. staticmemberfunction:: new -> :class:`~os/Terminal Attr` 
         
     .. memberfunction:: init
@@ -25,6 +26,7 @@ os/Terminal
     
 .. class:: Color
     
+    :extends: :class:`~lang/types Object` 
     .. staticmemberfunction:: new -> :class:`~os/Terminal Color` 
         
     .. memberfunction:: init
@@ -49,6 +51,7 @@ os/Terminal
     
 .. class:: Terminal
     
+    :extends: :class:`~lang/types Object` 
     .. staticmemberfunction:: new -> :class:`~os/Terminal Terminal` 
         
     .. memberfunction:: init

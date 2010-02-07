@@ -29,10 +29,13 @@ io/native/FileUnix
     
 .. cover:: ModeT
     
+    :from: ``mode_t``
 .. cover:: FileStat
     
+    :from: ``struct stat``
 .. class:: FileUnix
     
+    :extends: :class:`~io/File File` 
     .. staticmemberfunction:: new~unix (path: :cover:`~lang/types String` ) -> :class:`~io/native/FileUnix FileUnix` 
         
     .. memberfunction:: init~unix (path: :cover:`~lang/types String` )

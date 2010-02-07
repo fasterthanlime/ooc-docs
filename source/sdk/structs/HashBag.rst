@@ -5,6 +5,7 @@ structs/HashBag
 
 .. class:: HashBag
     
+    :extends: :class:`~lang/types Object` 
     .. staticmemberfunction:: new -> :class:`~structs/HashBag HashBag` 
         
     .. memberfunction:: init

@@ -21,6 +21,7 @@ io/FileReader
     
 .. class:: FileReader
     
+    :extends: :class:`~io/Reader Reader` 
     .. staticmemberfunction:: new~withFile (fileObject: :class:`~io/File File` ) -> :class:`~io/FileReader FileReader` 
         
     .. memberfunction:: init~withFile (fileObject: :class:`~io/File File` )

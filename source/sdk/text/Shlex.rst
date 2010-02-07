@@ -5,6 +5,7 @@ text/Shlex
 
 .. class:: Shlex
     
+    :extends: :class:`~lang/types Object` 
     .. staticmemberfunction:: new -> :class:`~text/Shlex Shlex` 
         
     .. memberfunction:: init

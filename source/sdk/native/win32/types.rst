@@ -11,11 +11,15 @@ native/win32/types
     
 .. cover:: Handle
     
+    :from: ``HANDLE``
 .. cover:: LargeInteger
     
+    :from: ``LARGE_INTEGER``
 .. cover:: ULargeInteger
     
+    :from: ``ULARGE_INTEGER``
 .. cover:: FileTime
     
+    :from: ``FILETIME``
 .. var:: INVALID_HANDLE_VALUE -> :cover:`~native/win32/types Handle` 
 

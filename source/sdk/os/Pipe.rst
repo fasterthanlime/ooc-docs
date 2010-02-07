@@ -5,6 +5,7 @@ os/Pipe
 
 .. class:: Pipe
     
+    :extends: :class:`~lang/types Object` 
     .. staticmemberfunction:: new -> :class:`~os/Pipe Pipe` 
         
     .. memberfunction:: read (len: :cover:`~lang/types Int` ) -> :cover:`~lang/types Pointer` 

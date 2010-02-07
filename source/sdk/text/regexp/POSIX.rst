@@ -5,6 +5,7 @@ text/regexp/POSIX
 
 .. class:: POSIX
     
+    :extends: :class:`~text/regexp/RegexpBackend RegexpBackend` 
     .. staticmemberfunction:: new -> :class:`~text/regexp/POSIX POSIX` 
         
     .. memberfunction:: init

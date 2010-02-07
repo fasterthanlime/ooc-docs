@@ -5,6 +5,7 @@ text/regexp/RegexpBackend
 
 .. class:: RegexpBackend
     
+    :extends: :class:`~lang/types Object` 
     .. memberfunction:: setPattern (pattern: :cover:`~lang/types String` , options: :cover:`~lang/types Int` )
         
     .. memberfunction:: getPattern -> :cover:`~lang/types String` 

@@ -5,6 +5,7 @@ structs/HashMap
 
 .. class:: HashEntry<T>
     
+    :extends: :class:`~lang/types Object` 
     .. staticmemberfunction:: new (key: :cover:`~lang/types String` , value: T ) -> :class:`~structs/HashMap HashEntry<T>` 
         
     .. memberfunction:: init (key: :cover:`~lang/types String` , value: T )
@@ -17,6 +18,7 @@ structs/HashMap
     
 .. class:: HashMap<T>
     
+    :extends: :class:`~lang/types Iterable<T>` 
     .. staticmemberfunction:: new -> :class:`~structs/HashMap HashMap<T>` 
         
     .. memberfunction:: init
@@ -123,6 +125,7 @@ structs/HashMap
     
 .. class:: HashMapValueIterator<T>
     
+    :extends: :class:`~lang/types Iterator<T>` 
     .. staticmemberfunction:: new (map: :class:`~structs/HashMap HashMap<T>` ) -> :class:`~structs/HashMap HashMapValueIterator<T>` 
         
     .. memberfunction:: init (map: :class:`~structs/HashMap HashMap<T>` )

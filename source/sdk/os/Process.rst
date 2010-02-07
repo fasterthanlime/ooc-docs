@@ -5,6 +5,7 @@ os/Process
 
 .. class:: Process
     
+    :extends: :class:`~lang/types Object` 
     .. staticmemberfunction:: new (args: :class:`~structs/ArrayList ArrayList<T>` ) -> :class:`~os/Process Process` 
         
     .. staticmemberfunction:: new~withEnv (args: :class:`~structs/ArrayList ArrayList<T>` , env: :class:`~structs/HashMap HashMap<T>` ) -> :class:`~os/Process Process` 

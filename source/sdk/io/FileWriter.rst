@@ -5,6 +5,7 @@ io/FileWriter
 
 .. class:: FileWriter
     
+    :extends: :class:`~io/Writer Writer` 
     .. staticmemberfunction:: new~withFile (fileObject: :class:`~io/File File` , append: :cover:`~lang/types Bool` ) -> :class:`~io/FileWriter FileWriter` 
         
     .. memberfunction:: init~withFile (fileObject: :class:`~io/File File` , append: :cover:`~lang/types Bool` )

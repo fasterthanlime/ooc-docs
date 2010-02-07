@@ -11,8 +11,10 @@ text/regexp/PCRE
     
 .. cover:: Pcre
     
+    :from: ``pcre*``
 .. class:: PCRE
     
+    :extends: :class:`~text/regexp/RegexpBackend RegexpBackend` 
     .. staticmemberfunction:: new -> :class:`~text/regexp/PCRE PCRE` 
         
     .. memberfunction:: init

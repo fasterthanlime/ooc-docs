@@ -5,6 +5,7 @@ structs/ArrayList
 
 .. class:: ArrayList<T>
     
+    :extends: :class:`~structs/List List<T>` 
     .. staticmemberfunction:: new -> :class:`~structs/ArrayList ArrayList<T>` 
         
     .. memberfunction:: init
@@ -81,6 +82,7 @@ structs/ArrayList
     
 .. class:: ArrayListIterator<T>
     
+    :extends: :class:`~lang/types Iterator<T>` 
     .. staticmemberfunction:: new (list: :class:`~structs/ArrayList ArrayList<T>` ) -> :class:`~structs/ArrayList ArrayListIterator<T>` 
         
     .. memberfunction:: init (list: :class:`~structs/ArrayList ArrayList<T>` )

@@ -19,5 +19,7 @@ io/native/dirent
     
 .. cover:: DirPtr
     
+    :from: ``DIR*``
 .. cover:: DirEnt
     
+    :from: ``struct dirent``

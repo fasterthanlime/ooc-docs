@@ -5,6 +5,7 @@ io/Reader
 
 .. class:: Reader
     
+    :extends: :class:`~lang/types Object` 
     .. memberfunction:: read (chars: :cover:`~lang/types String` , offset, count: :cover:`~lang/types Int` ) -> :cover:`~lang/types SizeT` 
         
     .. memberfunction:: read~char -> :cover:`~lang/types Char` 

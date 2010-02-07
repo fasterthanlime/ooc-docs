@@ -13,3 +13,4 @@ os/fcntl
     
 .. cover:: FileDescriptor
     
+    :from: ``Int``

@@ -5,6 +5,7 @@ structs/Stack
 
 .. class:: Stack<T>
     
+    :extends: :class:`~lang/types Iterable<T>` 
     .. staticmemberfunction:: new -> :class:`~structs/Stack Stack<T>` 
         
     .. memberfunction:: init

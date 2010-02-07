@@ -5,6 +5,7 @@ structs/Bag
 
 .. class:: Bag
     
+    :extends: :class:`~lang/types Object` 
     .. staticmemberfunction:: new~withCapacity (len: :cover:`~lang/types Int` ) -> :class:`~structs/Bag Bag` 
         
     .. memberfunction:: init~withCapacity (len: :cover:`~lang/types Int` )

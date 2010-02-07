@@ -5,6 +5,7 @@ os/PipeReader
 
 .. class:: PipeReader
     
+    :extends: :class:`~lang/types Object` 
     .. staticmemberfunction:: new (pipe: :class:`~os/Pipe Pipe` ) -> :class:`~os/PipeReader PipeReader` 
         
     .. memberfunction:: init (pipe: :class:`~os/Pipe Pipe` )

@@ -21,6 +21,12 @@ class OOCDesc(DescDirective):
     """
         Description of a ooc object.
     """
+    doc_fields_without_arg = DescDirective.doc_fields_without_arg.copy()
+    doc_fields_without_arg.update({
+        'extends': 'extends',
+        'from': 'from',
+    })
+
     def get_signature_prefix(self, sig):
         return ''
 

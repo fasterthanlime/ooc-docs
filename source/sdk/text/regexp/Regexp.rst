@@ -5,6 +5,7 @@ text/regexp/Regexp
 
 .. class:: Regexp
     
+    :extends: :class:`~lang/types Object` 
     .. staticmemberfunction:: new -> :class:`~text/regexp/Regexp Regexp` 
         
     .. memberfunction:: init

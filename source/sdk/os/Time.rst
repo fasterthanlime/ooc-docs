@@ -17,16 +17,22 @@ os/Time
     
 .. cover:: SystemTime
     
+    :from: ``SYSTEMTIME``
 .. cover:: TimeT
     
+    :from: ``time_t``
 .. cover:: TimeZone
     
+    :from: ``struct timezone``
 .. cover:: TMStruct
     
+    :from: ``struct tm``
 .. cover:: TimeVal
     
+    :from: ``struct timeval``
 .. class:: Time
     
+    :extends: :class:`~lang/types Object` 
     .. staticmemberfunction:: new -> :class:`~os/Time Time` 
         
     .. memberfunction:: init

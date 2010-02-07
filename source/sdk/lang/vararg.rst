@@ -11,3 +11,4 @@ lang/vararg
     
 .. cover:: VaList
     
+    :from: ``va_list``

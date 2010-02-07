@@ -13,6 +13,7 @@ os/FileDescriptor
     
 .. cover:: FileDescriptor
     
+    :from: ``Int``
     .. memberfunction:: write (data: :cover:`~lang/types Pointer` , len: :cover:`~lang/types Int` ) -> :cover:`~lang/types Int` 
         
     .. memberfunction:: write~string (str: :cover:`~lang/types String` ) -> :cover:`~lang/types Int` 

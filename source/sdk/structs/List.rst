@@ -5,6 +5,7 @@ structs/List
 
 .. class:: List<T>
     
+    :extends: :class:`~lang/types Iterable<T>` 
     .. memberfunction:: add (element: T )
         
         Appends the specified element to the end of this list.

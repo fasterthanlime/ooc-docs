@@ -5,6 +5,7 @@ structs/Array
 
 .. class:: Array<T>
     
+    :extends: :class:`~lang/types Iterable<T>` 
     .. staticmemberfunction:: new (size: :cover:`~lang/types SizeT` ) -> :class:`~structs/Array Array<T>` 
         
     .. memberfunction:: init (size: :cover:`~lang/types SizeT` )
@@ -33,6 +34,7 @@ structs/Array
     
 .. class:: ArrayIterator<T>
     
+    :extends: :class:`~lang/types Iterator<T>` 
     .. staticmemberfunction:: new (array: :class:`~structs/Array Array<T>` ) -> :class:`~structs/Array ArrayIterator<T>` 
         
     .. memberfunction:: init (array: :class:`~structs/Array Array<T>` )

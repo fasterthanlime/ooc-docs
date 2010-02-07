@@ -5,6 +5,7 @@ text/StringTokenizer
 
 .. class:: StringTokenizer
     
+    :extends: :class:`~lang/types Iterable<T>` 
     .. staticmemberfunction:: new~withCharWithoutMaxSplits (input: :cover:`~text/StringTokenizer String` , delim: :cover:`~lang/types Char` ) -> :class:`~text/StringTokenizer StringTokenizer` 
         
     .. memberfunction:: init~withCharWithoutMaxSplits (input: :cover:`~text/StringTokenizer String` , delim: :cover:`~lang/types Char` )
@@ -46,6 +47,7 @@ text/StringTokenizer
     
 .. class:: StringTokenizerIterator<T>
     
+    :extends: :class:`~lang/types Iterator<T>` 
     .. staticmemberfunction:: new (st: :class:`~text/StringTokenizer StringTokenizer` ) -> :class:`~text/StringTokenizer StringTokenizerIterator<T>` 
         
     .. memberfunction:: init (st: :class:`~text/StringTokenizer StringTokenizer` )
@@ -66,6 +68,7 @@ text/StringTokenizer
     
 .. cover:: String
     
+    :from: ``Char*``
     .. memberfunction:: split~withString (s: :cover:`~text/StringTokenizer String` , maxSplits: :cover:`~lang/types Int` ) -> :class:`~text/StringTokenizer StringTokenizer` 
         
     .. memberfunction:: split~withChar (c: :cover:`~lang/types Char` , maxSplits: :cover:`~lang/types Int` ) -> :class:`~text/StringTokenizer StringTokenizer` 

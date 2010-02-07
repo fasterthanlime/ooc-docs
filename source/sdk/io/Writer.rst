@@ -5,6 +5,7 @@ io/Writer
 
 .. class:: Writer
     
+    :extends: :class:`~lang/types Object` 
     .. memberfunction:: close
         
     .. memberfunction:: write~chr (chr: :cover:`~lang/types Char` )

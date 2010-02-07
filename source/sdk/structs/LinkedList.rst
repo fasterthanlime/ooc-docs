@@ -7,6 +7,7 @@ structs/LinkedList
     
 .. class:: LinkedList<T>
     
+    :extends: :class:`~structs/List List<T>` 
     .. staticmemberfunction:: new -> :class:`~structs/LinkedList LinkedList<T>` 
         
     .. memberfunction:: init
@@ -49,6 +50,7 @@ structs/LinkedList
     
 .. class:: Node<T>
     
+    :extends: :class:`~lang/types Object` 
     .. staticmemberfunction:: new -> :class:`~structs/LinkedList Node<T>` 
         
     .. memberfunction:: init
@@ -67,6 +69,7 @@ structs/LinkedList
     
 .. class:: LinkedListIterator<T>
     
+    :extends: :class:`~lang/types Iterator<T>` 
     .. staticmemberfunction:: new (list: :class:`~structs/LinkedList LinkedList<T>` ) -> :class:`~structs/LinkedList LinkedListIterator<T>` 
         
     .. memberfunction:: init (list: :class:`~structs/LinkedList LinkedList<T>` )
