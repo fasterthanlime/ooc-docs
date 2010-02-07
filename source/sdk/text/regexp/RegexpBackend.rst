@@ -5,21 +5,21 @@ text/regexp/RegexpBackend
 
 .. class:: RegexpBackend
     
-    .. memberfunction:: setPattern (pattern: String, options: Int)
+    .. memberfunction:: setPattern (pattern: :cover:`~lang/types String`, options: :cover:`~lang/types Int`)
         
-    .. memberfunction:: getPattern -> String
+    .. memberfunction:: getPattern -> :cover:`~lang/types String`
         
-    .. memberfunction:: getName -> String
+    .. memberfunction:: getName -> :cover:`~lang/types String`
         
-    .. memberfunction:: matches (haystack: String) -> Bool
+    .. memberfunction:: matches (haystack: :cover:`~lang/types String`) -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: matches~withOptions (haystack: String, options: Int) -> Bool
+    .. memberfunction:: matches~withOptions (haystack: :cover:`~lang/types String`, options: :cover:`~lang/types Int`) -> :cover:`~lang/types Bool`
         
-    .. field:: PCRE -> Int
+    .. field:: PCRE -> :cover:`~lang/types Int`
     
-    .. field:: POSIX -> Int
+    .. field:: POSIX -> :cover:`~lang/types Int`
     
-    .. field:: DEFAULT_TYPE -> Int
+    .. field:: DEFAULT_TYPE -> :cover:`~lang/types Int`
     
-    .. field:: pattern -> String
+    .. field:: pattern -> :cover:`~lang/types String`
     

@@ -40,21 +40,22 @@ def ooc_xfileref_role(typ, rawtext, text, lineno, inliner, options={}, content=[
     title = target = text
     titleistarget = True
     # look if explicit title and target are given with `foo <bar>` syntax
-    brace = text.find('<')
-    if brace != -1:
-        titleistarget = False
-        pnode['refcaption'] = True
-        m = caption_ref_re.match(text)
-        if m:
-            target = m.group(2)
-            title = m.group(1)
-        else:
-            # fallback: everything after '<' is the target
-            target = text[brace+1:]
-            title = text[:brace]
+#    brace = text.find('<')
+#    if brace != -1:
+#        titleistarget = False
+#        pnode['refcaption'] = True
+#        m = caption_ref_re.match(text)
+#        if m:
+#            target = m.group(2)
+#            title = m.group(1)
+#        else:
+#            # fallback: everything after '<' is the target
+#            target = text[brace+1:]
+#            title = text[:brace]
+    # TODO: kicked for generics. aarrrrghhh.
     # special target for Python object cross-references
-    if typ in ('data', 'exc', 'func', 'class', 'const', 'attr',
-               'meth', 'mod', 'obj'):
+    if typ in ('data', 'exc', 'func', 'class', 'const', 'field',
+               'mfunc', 'mod', 'obj', 'cover', 'var'):
         # fix-up parentheses in link title
         if titleistarget:
             title = title.lstrip('.')   # only has a meaning for the target
@@ -64,7 +65,7 @@ def ooc_xfileref_role(typ, rawtext, text, lineno, inliner, options={}, content=[
             # parts of the contents
             if title[0:1] == '~':
                 title = title[1:]
-                dot = title.rfind('/')
+                dot = title.rfind(' ')
                 if dot != -1:
                     title = title[dot+1:]
         # remove parentheses from the target too
@@ -110,5 +111,6 @@ def ooc_xfileref_role(typ, rawtext, text, lineno, inliner, options={}, content=[
                                                     classes=['xref'])
     return [pnode], []
 
-roles.register_local_role('cover', ooc_xfileref_role)
+for role in ('cover', 'class', 'func', 'mfunc', 'field', 'var'):
+    roles.register_local_role(role, ooc_xfileref_role)
 BuildEnvironment.descroles = frozenset(set(BuildEnvironment.descroles) | set(('cover',)))

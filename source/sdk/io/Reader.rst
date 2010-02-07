@@ -5,19 +5,19 @@ io/Reader
 
 .. class:: Reader
     
-    .. memberfunction:: read (chars: String, offset, count: Int) -> SizeT
+    .. memberfunction:: read (chars: :cover:`~lang/types String`, offset, count: :cover:`~lang/types Int`) -> :cover:`~lang/types SizeT`
         
-    .. memberfunction:: read~char -> Char
+    .. memberfunction:: read~char -> :cover:`~lang/types Char`
         
-    .. memberfunction:: hasNext -> Bool
+    .. memberfunction:: hasNext -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: rewind (offset: Int)
+    .. memberfunction:: rewind (offset: :cover:`~lang/types Int`)
         
-    .. memberfunction:: mark -> Long
+    .. memberfunction:: mark -> :cover:`~lang/types Long`
         
-    .. memberfunction:: reset (marker: Long)
+    .. memberfunction:: reset (marker: :cover:`~lang/types Long`)
         
-    .. memberfunction:: skip (offset: Int)
+    .. memberfunction:: skip (offset: :cover:`~lang/types Int`)
         
-    .. field:: marker -> Long
+    .. field:: marker -> :cover:`~lang/types Long`
     

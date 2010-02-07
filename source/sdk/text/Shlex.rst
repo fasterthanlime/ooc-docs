@@ -5,33 +5,33 @@ text/Shlex
 
 .. class:: Shlex
     
-    .. staticmemberfunction:: new -> Shlex
+    .. staticmemberfunction:: new -> :class:`~text/Shlex Shlex`
         
     .. memberfunction:: init
         
-    .. memberfunction:: _add (unquote: Bool)
+    .. memberfunction:: _add (unquote: :cover:`~lang/types Bool`)
         
-    .. memberfunction:: close -> ArrayList<T>
+    .. memberfunction:: close -> :class:`~structs/ArrayList ArrayList<T>`
         
-    .. memberfunction:: feed~char (chr: Char)
+    .. memberfunction:: feed~char (chr: :cover:`~lang/types Char`)
         
-    .. memberfunction:: feed~string (s: String)
+    .. memberfunction:: feed~string (s: :cover:`~lang/types String`)
         
-    .. staticmemberfunction:: split (s: String) -> ArrayList<T>
+    .. staticmemberfunction:: split (s: :cover:`~lang/types String`) -> :class:`~structs/ArrayList ArrayList<T>`
         
-    .. field:: state -> Int
+    .. field:: state -> :cover:`~lang/types Int`
     
-    .. field:: buffer -> StringBuffer
+    .. field:: buffer -> :class:`~text/StringBuffer StringBuffer`
     
-    .. field:: result -> ArrayList<T>
+    .. field:: result -> :class:`~structs/ArrayList ArrayList<T>`
     
-    .. field:: backslash -> Bool
+    .. field:: backslash -> :cover:`~lang/types Bool`
     
-.. data:: WAIT -> Int
+.. var:: WAIT -> :cover:`~lang/types Int`
 
-.. data:: WORD -> Int
+.. var:: WORD -> :cover:`~lang/types Int`
 
-.. data:: SQUOTED -> Int
+.. var:: SQUOTED -> :cover:`~lang/types Int`
 
-.. data:: DQUOTED -> Int
+.. var:: DQUOTED -> :cover:`~lang/types Int`
 

@@ -27,6 +27,9 @@ class OOCDesc(DescDirective):
     def needs_arglist(self):
         return False
 
+    def _resolve_typeref(self, text):
+        return self.state.inline_text(text, self.lineno)[0]
+
     def parse_signature(self, sig, signode):
         """
             Returns (fully qualified name, classname if any).
@@ -74,7 +77,7 @@ class OOCDesc(DescDirective):
                 # for callables, add an empty parameter list
                 signode += addnodes.desc_parameterlist()
             if retann:
-                signode += addnodes.desc_returns(retann, retann)
+                signode += addnodes.desc_returns('', '', *self._resolve_typeref(retann))
             return fullname, classname
         signode += addnodes.desc_parameterlist()
 
@@ -84,11 +87,15 @@ class OOCDesc(DescDirective):
                 pass
             else:
                 token = token.strip()
-                stack[-1] += addnodes.desc_parameter(token, token)
+                if ':' in token:
+                    stack[-1] += addnodes.desc_parameter('', '', *self._resolve_typeref(token))
+                else:
+                    stack[-1] += addnodes.desc_parameter(token, token)
         if len(stack) != 1:
             raise ValueError
         if retann:
-            signode += addnodes.desc_returns(retann, retann)
+            ret_nodes = self.state.inline_text(retann, self.lineno)[0]
+            signode += addnodes.desc_returns('', '', *self._resolve_typeref(retann))
         return fullname, classname
 
     def get_index_text(self, modname, name):
@@ -99,7 +106,7 @@ class OOCDesc(DescDirective):
 
     def add_target_and_index(self, name_cls, sig, signode):
         modname = self.options.get('module', self.env.currmodule)
-        fullname = (modname and modname + '/' or '') + name_cls[0]
+        fullname = (modname and modname + ' ' or '') + name_cls[0]
         # note target
         if fullname not in self.state.document.ids:
             signode['names'].append(fullname)
@@ -133,7 +140,7 @@ class ModulelevelDesc(OOCDesc):
             if not modname:
                 return _('%s() (built-in function)') % name_cls[0]
             return _('%s() (in module %s)') % (name_cls[0], modname)
-        elif self.desctype == 'data':
+        elif self.desctype == 'var':
             if not modname:
                 return _('%s (built-in variable)') % name_cls[0]
             return _('%s (in module %s)') % (name_cls[0], modname)
@@ -232,7 +239,7 @@ class ClassmemberDesc(OOCDesc):
 directives.register_directive('describe', directive_dwim(DescDirective))
 
 directives.register_directive('function', directive_dwim(ModulelevelDesc))
-directives.register_directive('data', directive_dwim(ModulelevelDesc))
+directives.register_directive('var', directive_dwim(ModulelevelDesc))
 directives.register_directive('class', directive_dwim(ClasslikeDesc))
 directives.register_directive('cover', directive_dwim(ClasslikeDesc))
 

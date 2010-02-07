@@ -3,11 +3,11 @@ lang/vararg
 
 .. module:: lang/vararg
 
-.. function:: va_start (VaList, ...)
+.. function:: va_start (:cover:`~lang/vararg VaList`, ...)
     
-.. function:: va_arg (VaList, ...)
+.. function:: va_arg (:cover:`~lang/vararg VaList`, ...)
     
-.. function:: va_end (VaList)
+.. function:: va_end (:cover:`~lang/vararg VaList`)
     
 .. cover:: VaList
     

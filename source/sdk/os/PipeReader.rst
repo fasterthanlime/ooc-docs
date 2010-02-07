@@ -5,17 +5,17 @@ os/PipeReader
 
 .. class:: PipeReader
     
-    .. staticmemberfunction:: new (pipe: Pipe) -> PipeReader
+    .. staticmemberfunction:: new (pipe: :class:`~os/Pipe Pipe`) -> :class:`~os/PipeReader PipeReader`
         
-    .. memberfunction:: init (pipe: Pipe)
+    .. memberfunction:: init (pipe: :class:`~os/Pipe Pipe`)
         
-    .. memberfunction:: read -> String
+    .. memberfunction:: read -> :cover:`~lang/types String`
         
-    .. memberfunction:: hasNext -> Bool
+    .. memberfunction:: hasNext -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: toString -> String
+    .. memberfunction:: toString -> :cover:`~lang/types String`
         
-    .. field:: pipe -> Pipe
+    .. field:: pipe -> :class:`~os/Pipe Pipe`
     
-    .. field:: buf -> String
+    .. field:: buf -> :cover:`~lang/types String`
     

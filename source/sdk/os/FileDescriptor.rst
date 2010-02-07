@@ -3,31 +3,31 @@ os/FileDescriptor
 
 .. module:: os/FileDescriptor
 
-.. function:: open (String, Int) -> Int
+.. function:: open (:cover:`~lang/types String`, :cover:`~lang/types Int`) -> :cover:`~lang/types Int`
     
-.. function:: write (FileDescriptor, Pointer, Int) -> Int
+.. function:: write (:cover:`~os/FileDescriptor FileDescriptor`, :cover:`~lang/types Pointer`, :cover:`~lang/types Int`) -> :cover:`~lang/types Int`
     
-.. function:: read (FileDescriptor, Pointer, Int) -> Int
+.. function:: read (:cover:`~os/FileDescriptor FileDescriptor`, :cover:`~lang/types Pointer`, :cover:`~lang/types Int`) -> :cover:`~lang/types Int`
     
-.. function:: close (FileDescriptor) -> Int
+.. function:: close (:cover:`~os/FileDescriptor FileDescriptor`) -> :cover:`~lang/types Int`
     
 .. cover:: FileDescriptor
     
-    .. memberfunction:: write (data: Pointer, len: Int) -> Int
+    .. memberfunction:: write (data: :cover:`~lang/types Pointer`, len: :cover:`~lang/types Int`) -> :cover:`~lang/types Int`
         
-    .. memberfunction:: write~string (str: String) -> Int
+    .. memberfunction:: write~string (str: :cover:`~lang/types String`) -> :cover:`~lang/types Int`
         
-    .. memberfunction:: read~toBuf (buf: Pointer, len: Int) -> Int
+    .. memberfunction:: read~toBuf (buf: :cover:`~lang/types Pointer`, len: :cover:`~lang/types Int`) -> :cover:`~lang/types Int`
         
-    .. memberfunction:: read~evilAlloc (len: Int) -> Pointer
+    .. memberfunction:: read~evilAlloc (len: :cover:`~lang/types Int`) -> :cover:`~lang/types Pointer`
         
-    .. memberfunction:: close -> Int
+    .. memberfunction:: close -> :cover:`~lang/types Int`
         
-    .. memberfunction:: _errMsg (var: Int, funcName: String)
+    .. memberfunction:: _errMsg (var: :cover:`~lang/types Int`, funcName: :cover:`~lang/types String`)
         
-.. data:: STDIN_FILENO -> FileDescriptor
+.. var:: STDIN_FILENO -> :cover:`~os/FileDescriptor FileDescriptor`
 
-.. data:: STDOUT_FILENO -> FileDescriptor
+.. var:: STDOUT_FILENO -> :cover:`~os/FileDescriptor FileDescriptor`
 
-.. data:: STDERR_FILENO -> FileDescriptor
+.. var:: STDERR_FILENO -> :cover:`~os/FileDescriptor FileDescriptor`
 

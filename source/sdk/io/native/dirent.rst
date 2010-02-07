@@ -3,19 +3,19 @@ io/native/dirent
 
 .. module:: io/native/dirent
 
-.. function:: closedir (DirPtr) -> Int
+.. function:: closedir (:cover:`~io/native/dirent DirPtr`) -> :cover:`~lang/types Int`
     
-.. function:: opendir (String) -> DirPtr
+.. function:: opendir (:cover:`~lang/types String`) -> :cover:`~io/native/dirent DirPtr`
     
-.. function:: readdir (DirPtr) -> DirEnt*
+.. function:: readdir (:cover:`~io/native/dirent DirPtr`) -> :cover:`~io/native/dirent DirEnt`*
     
-.. function:: readdir_r (DirPtr, DirEnt*, DirEnt**) -> Int
+.. function:: readdir_r (:cover:`~io/native/dirent DirPtr`, :cover:`~io/native/dirent DirEnt`*, :cover:`~io/native/dirent DirEnt`**) -> :cover:`~lang/types Int`
     
-.. function:: rewinddir (DirPtr)
+.. function:: rewinddir (:cover:`~io/native/dirent DirPtr`)
     
-.. function:: seekdir (DirPtr, Long)
+.. function:: seekdir (:cover:`~io/native/dirent DirPtr`, :cover:`~lang/types Long`)
     
-.. function:: telldir (DirPtr) -> Long
+.. function:: telldir (:cover:`~io/native/dirent DirPtr`) -> :cover:`~lang/types Long`
     
 .. cover:: DirPtr
     

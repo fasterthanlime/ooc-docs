@@ -3,5 +3,5 @@ lang/system
 
 .. module:: lang/system
 
-.. function:: exit (Int)
+.. function:: exit (:cover:`~lang/types Int`)
     

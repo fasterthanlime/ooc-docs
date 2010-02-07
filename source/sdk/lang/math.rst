@@ -3,51 +3,51 @@ lang/math
 
 .. module:: lang/math
 
-.. function:: cos (Double) -> Double
+.. function:: cos (:cover:`~lang/types Double`) -> :cover:`~lang/types Double`
     
-.. function:: sin (Double) -> Double
+.. function:: sin (:cover:`~lang/types Double`) -> :cover:`~lang/types Double`
     
-.. function:: tan (Double) -> Double
+.. function:: tan (:cover:`~lang/types Double`) -> :cover:`~lang/types Double`
     
-.. function:: acos (Double) -> Double
+.. function:: acos (:cover:`~lang/types Double`) -> :cover:`~lang/types Double`
     
-.. function:: asin (Double) -> Double
+.. function:: asin (:cover:`~lang/types Double`) -> :cover:`~lang/types Double`
     
-.. function:: atan (Double) -> Double
+.. function:: atan (:cover:`~lang/types Double`) -> :cover:`~lang/types Double`
     
-.. function:: atan2 (Double, Double) -> Double
+.. function:: atan2 (:cover:`~lang/types Double`, :cover:`~lang/types Double`) -> :cover:`~lang/types Double`
     
-.. function:: sqrt (Double) -> Double
+.. function:: sqrt (:cover:`~lang/types Double`) -> :cover:`~lang/types Double`
     
-.. function:: pow (Double, Double) -> Double
+.. function:: pow (:cover:`~lang/types Double`, :cover:`~lang/types Double`) -> :cover:`~lang/types Double`
     
-.. function:: srand (Int)
+.. function:: srand (:cover:`~lang/types Int`)
     
-.. function:: rand -> Int
+.. function:: rand -> :cover:`~lang/types Int`
     
-.. function:: log~Double (Double) -> Double
+.. function:: log~Double (:cover:`~lang/types Double`) -> :cover:`~lang/types Double`
     
-.. function:: log~Float (Float) -> Float
+.. function:: log~Float (:cover:`~lang/types Float`) -> :cover:`~lang/types Float`
     
-.. function:: log~Long (LDouble) -> LDouble
+.. function:: log~Long (:cover:`~lang/types LDouble`) -> :cover:`~lang/types LDouble`
     
-.. function:: log10~Double (Double) -> Double
+.. function:: log10~Double (:cover:`~lang/types Double`) -> :cover:`~lang/types Double`
     
-.. function:: log10~Float (Float) -> Float
+.. function:: log10~Float (:cover:`~lang/types Float`) -> :cover:`~lang/types Float`
     
-.. function:: log10~Long (LDouble) -> LDouble
+.. function:: log10~Long (:cover:`~lang/types LDouble`) -> :cover:`~lang/types LDouble`
     
-.. function:: round~dl (Double) -> Long
+.. function:: round~dl (:cover:`~lang/types Double`) -> :cover:`~lang/types Long`
     
-.. function:: ceil~Double (Double) -> Double
+.. function:: ceil~Double (:cover:`~lang/types Double`) -> :cover:`~lang/types Double`
     
-.. function:: ceil~Float (Float) -> Float
+.. function:: ceil~Float (:cover:`~lang/types Float`) -> :cover:`~lang/types Float`
     
-.. function:: ceil~Long (LDouble) -> LDouble
+.. function:: ceil~Long (:cover:`~lang/types LDouble`) -> :cover:`~lang/types LDouble`
     
-.. function:: floor~Double (Double) -> Double
+.. function:: floor~Double (:cover:`~lang/types Double`) -> :cover:`~lang/types Double`
     
-.. function:: floor~Float (Float) -> Float
+.. function:: floor~Float (:cover:`~lang/types Float`) -> :cover:`~lang/types Float`
     
-.. function:: floor~Long (LDouble) -> LDouble
+.. function:: floor~Long (:cover:`~lang/types LDouble`) -> :cover:`~lang/types LDouble`
     

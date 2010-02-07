@@ -3,17 +3,17 @@ os/Time
 
 .. module:: os/Time
 
-.. function:: GetLocalTime (SystemTime*)
+.. function:: GetLocalTime (:cover:`~os/Time SystemTime`*)
     
-.. function:: Sleep (UInt)
+.. function:: Sleep (:cover:`~lang/types UInt`)
     
-.. function:: time (TimeT*) -> TimeT
+.. function:: time (:cover:`~os/Time TimeT`*) -> :cover:`~os/Time TimeT`
     
-.. function:: localtime (TimeT*) -> TMStruct*
+.. function:: localtime (:cover:`~os/Time TimeT`*) -> :cover:`~os/Time TMStruct`*
     
-.. function:: gettimeofday (TimeVal*, TimeZone*) -> Int
+.. function:: gettimeofday (:cover:`~os/Time TimeVal`*, :cover:`~os/Time TimeZone`*) -> :cover:`~lang/types Int`
     
-.. function:: usleep (UInt)
+.. function:: usleep (:cover:`~lang/types UInt`)
     
 .. cover:: SystemTime
     
@@ -27,31 +27,31 @@ os/Time
     
 .. class:: Time
     
-    .. staticmemberfunction:: new -> Time
+    .. staticmemberfunction:: new -> :class:`~os/Time Time`
         
     .. memberfunction:: init
         
-    .. staticmemberfunction:: microtime -> LLong
+    .. staticmemberfunction:: microtime -> :cover:`~lang/types LLong`
         
-    .. staticmemberfunction:: microsec -> UInt
+    .. staticmemberfunction:: microsec -> :cover:`~lang/types UInt`
         
-    .. staticmemberfunction:: sec -> UInt
+    .. staticmemberfunction:: sec -> :cover:`~lang/types UInt`
         
-    .. staticmemberfunction:: min -> UInt
+    .. staticmemberfunction:: min -> :cover:`~lang/types UInt`
         
-    .. staticmemberfunction:: hour -> UInt
+    .. staticmemberfunction:: hour -> :cover:`~lang/types UInt`
         
-    .. staticmemberfunction:: sleepSec (duration: Float)
+    .. staticmemberfunction:: sleepSec (duration: :cover:`~lang/types Float`)
         
-    .. staticmemberfunction:: sleepMilli (duration: UInt)
+    .. staticmemberfunction:: sleepMilli (duration: :cover:`~lang/types UInt`)
         
-    .. staticmemberfunction:: sleepMicro (duration: UInt)
+    .. staticmemberfunction:: sleepMicro (duration: :cover:`~lang/types UInt`)
         
-.. data:: st -> SystemTime
+.. var:: st -> :cover:`~os/Time SystemTime`
 
-.. data:: tv -> TimeVal
+.. var:: tv -> :cover:`~os/Time TimeVal`
 
-.. data:: tt -> TimeT
+.. var:: tt -> :cover:`~os/Time TimeT`
 
-.. data:: val -> TMStruct*
+.. var:: val -> :cover:`~os/Time TMStruct`*
 

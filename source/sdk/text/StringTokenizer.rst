@@ -5,76 +5,76 @@ text/StringTokenizer
 
 .. class:: StringTokenizer
     
-    .. staticmemberfunction:: new~withCharWithoutMaxSplits (input: String, delim: Char) -> StringTokenizer
+    .. staticmemberfunction:: new~withCharWithoutMaxSplits (input: :cover:`~text/StringTokenizer String`, delim: :cover:`~lang/types Char`) -> :class:`~text/StringTokenizer StringTokenizer`
         
-    .. memberfunction:: init~withCharWithoutMaxSplits (input: String, delim: Char)
+    .. memberfunction:: init~withCharWithoutMaxSplits (input: :cover:`~text/StringTokenizer String`, delim: :cover:`~lang/types Char`)
         
-    .. staticmemberfunction:: new~withStringWithoutMaxSplits (input, delim: String) -> StringTokenizer
+    .. staticmemberfunction:: new~withStringWithoutMaxSplits (input, delim: :cover:`~text/StringTokenizer String`) -> :class:`~text/StringTokenizer StringTokenizer`
         
-    .. memberfunction:: init~withStringWithoutMaxSplits (input, delim: String)
+    .. memberfunction:: init~withStringWithoutMaxSplits (input, delim: :cover:`~text/StringTokenizer String`)
         
-    .. staticmemberfunction:: new~withChar (input: String, delim: Char, maxSplits: Int) -> StringTokenizer
+    .. staticmemberfunction:: new~withChar (input: :cover:`~text/StringTokenizer String`, delim: :cover:`~lang/types Char`, maxSplits: :cover:`~lang/types Int`) -> :class:`~text/StringTokenizer StringTokenizer`
         
-    .. memberfunction:: init~withChar (input: String, delim: Char, maxSplits: Int)
+    .. memberfunction:: init~withChar (input: :cover:`~text/StringTokenizer String`, delim: :cover:`~lang/types Char`, maxSplits: :cover:`~lang/types Int`)
         
-    .. staticmemberfunction:: new~withString (input, delim: String, maxSplits: Int) -> StringTokenizer
+    .. staticmemberfunction:: new~withString (input, delim: :cover:`~text/StringTokenizer String`, maxSplits: :cover:`~lang/types Int`) -> :class:`~text/StringTokenizer StringTokenizer`
         
-    .. memberfunction:: init~withString (input, delim: String, maxSplits: Int)
+    .. memberfunction:: init~withString (input, delim: :cover:`~text/StringTokenizer String`, maxSplits: :cover:`~lang/types Int`)
         
-    .. memberfunction:: iterator -> Iterator<T>
+    .. memberfunction:: iterator -> :class:`~lang/types Iterator<T>`
         
-    .. memberfunction:: hasNext -> Bool
+    .. memberfunction:: hasNext -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: nextToken -> String
+    .. memberfunction:: nextToken -> :cover:`~text/StringTokenizer String`
         
         @return the next token, or null if we're at the end.
         
         
-    .. field:: input -> String
+    .. field:: input -> :cover:`~text/StringTokenizer String`
     
-    .. field:: delim -> String
+    .. field:: delim -> :cover:`~text/StringTokenizer String`
     
-    .. field:: index -> Int
+    .. field:: index -> :cover:`~lang/types Int`
     
-    .. field:: length -> Int
+    .. field:: length -> :cover:`~lang/types Int`
     
-    .. field:: maxSplits -> Int
+    .. field:: maxSplits -> :cover:`~lang/types Int`
     
-    .. field:: splits -> Int
+    .. field:: splits -> :cover:`~lang/types Int`
     
-    .. field:: empties -> Bool
+    .. field:: empties -> :cover:`~lang/types Bool`
     
 .. class:: StringTokenizerIterator<T>
     
-    .. staticmemberfunction:: new (st: StringTokenizer) -> StringTokenizerIterator<T>
+    .. staticmemberfunction:: new (st: :class:`~text/StringTokenizer StringTokenizer`) -> :class:`~text/StringTokenizer StringTokenizerIterator<T>`
         
-    .. memberfunction:: init (st: StringTokenizer)
+    .. memberfunction:: init (st: :class:`~text/StringTokenizer StringTokenizer`)
         
-    .. memberfunction:: hasNext -> Bool
+    .. memberfunction:: hasNext -> :cover:`~lang/types Bool`
         
     .. memberfunction:: next -> T
         
-    .. memberfunction:: hasPrev -> Bool
+    .. memberfunction:: hasPrev -> :cover:`~lang/types Bool`
         
     .. memberfunction:: prev -> T
         
-    .. memberfunction:: remove -> Bool
+    .. memberfunction:: remove -> :cover:`~lang/types Bool`
         
-    .. field:: st -> StringTokenizer
+    .. field:: st -> :class:`~text/StringTokenizer StringTokenizer`
     
-    .. field:: index -> Int
+    .. field:: index -> :cover:`~lang/types Int`
     
 .. cover:: String
     
-    .. memberfunction:: split~withString (s: String, maxSplits: Int) -> StringTokenizer
+    .. memberfunction:: split~withString (s: :cover:`~text/StringTokenizer String`, maxSplits: :cover:`~lang/types Int`) -> :class:`~text/StringTokenizer StringTokenizer`
         
-    .. memberfunction:: split~withChar (c: Char, maxSplits: Int) -> StringTokenizer
+    .. memberfunction:: split~withChar (c: :cover:`~lang/types Char`, maxSplits: :cover:`~lang/types Int`) -> :class:`~text/StringTokenizer StringTokenizer`
         
-    .. memberfunction:: split~withStringWithoutMaxSplits (s: String) -> StringTokenizer
+    .. memberfunction:: split~withStringWithoutMaxSplits (s: :cover:`~text/StringTokenizer String`) -> :class:`~text/StringTokenizer StringTokenizer`
         
-    .. memberfunction:: split~withCharWithoutMaxSplits (c: Char) -> StringTokenizer
+    .. memberfunction:: split~withCharWithoutMaxSplits (c: :cover:`~lang/types Char`) -> :class:`~text/StringTokenizer StringTokenizer`
         
-    .. memberfunction:: split~withStringWithEmpties (s: String, empties: Bool) -> StringTokenizer
+    .. memberfunction:: split~withStringWithEmpties (s: :cover:`~text/StringTokenizer String`, empties: :cover:`~lang/types Bool`) -> :class:`~text/StringTokenizer StringTokenizer`
         
-    .. memberfunction:: split~withCharWithEmpties (c: Char, empties: Bool) -> StringTokenizer
+    .. memberfunction:: split~withCharWithEmpties (c: :cover:`~lang/types Char`, empties: :cover:`~lang/types Bool`) -> :class:`~text/StringTokenizer StringTokenizer`
         

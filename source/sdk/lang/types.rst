@@ -3,49 +3,49 @@ lang/types
 
 .. module:: lang/types
 
-.. function:: atoi (String) -> Int
+.. function:: atoi (:cover:`~lang/types String`) -> :cover:`~lang/types Int`
     
-.. function:: atol (String) -> Long
+.. function:: atol (:cover:`~lang/types String`) -> :cover:`~lang/types Long`
     
 .. cover:: Void
     
 .. cover:: Pointer
     
-    .. memberfunction:: toString -> String
+    .. memberfunction:: toString -> :cover:`~lang/types String`
         
 .. cover:: Char
     
-    .. memberfunction:: isAlphaNumeric -> Bool
+    .. memberfunction:: isAlphaNumeric -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: isAlpha -> Bool
+    .. memberfunction:: isAlpha -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: isLower -> Bool
+    .. memberfunction:: isLower -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: isUpper -> Bool
+    .. memberfunction:: isUpper -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: isDigit -> Bool
+    .. memberfunction:: isDigit -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: isHexDigit -> Bool
+    .. memberfunction:: isHexDigit -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: isControl -> Bool
+    .. memberfunction:: isControl -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: isGraph -> Bool
+    .. memberfunction:: isGraph -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: isPrintable -> Bool
+    .. memberfunction:: isPrintable -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: isPunctuation -> Bool
+    .. memberfunction:: isPunctuation -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: isWhitespace -> Bool
+    .. memberfunction:: isWhitespace -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: isBlank -> Bool
+    .. memberfunction:: isBlank -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: toInt -> Int
+    .. memberfunction:: toInt -> :cover:`~lang/types Int`
         
-    .. memberfunction:: toLower -> Char
+    .. memberfunction:: toLower -> :cover:`~lang/types Char`
         
-    .. memberfunction:: toUpper -> Char
+    .. memberfunction:: toUpper -> :cover:`~lang/types Char`
         
-    .. memberfunction:: toString -> String
+    .. memberfunction:: toString -> :cover:`~lang/types String`
         
     .. memberfunction:: print
         
@@ -59,117 +59,117 @@ lang/types
     
 .. cover:: String
     
-    .. memberfunction:: new~withLength (length: SizeT) -> String
+    .. memberfunction:: new~withLength (length: :cover:`~lang/types SizeT`) -> :cover:`~lang/types String`
         
-    .. memberfunction:: new~withChar (c: Char) -> String
+    .. memberfunction:: new~withChar (c: :cover:`~lang/types Char`) -> :cover:`~lang/types String`
         
-    .. memberfunction:: compare (other: String, start, length: SizeT) -> Bool
+    .. memberfunction:: compare (other: :cover:`~lang/types String`, start, length: :cover:`~lang/types SizeT`) -> :cover:`~lang/types Bool`
         
         compare `length` characters of `this` with `other`, starting at `start`. 
         
-    .. memberfunction:: compare~implicitLength (other: String, start: SizeT) -> Bool
+    .. memberfunction:: compare~implicitLength (other: :cover:`~lang/types String`, start: :cover:`~lang/types SizeT`) -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: compare~whole (other: String) -> Bool
+    .. memberfunction:: compare~whole (other: :cover:`~lang/types String`) -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: length -> SizeT
+    .. memberfunction:: length -> :cover:`~lang/types SizeT`
         
-    .. memberfunction:: equals (other: String) -> Bool
+    .. memberfunction:: equals (other: :cover:`~lang/types String`) -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: toInt -> Int
+    .. memberfunction:: toInt -> :cover:`~lang/types Int`
         
-    .. memberfunction:: toLong -> Long
+    .. memberfunction:: toLong -> :cover:`~lang/types Long`
         
-    .. memberfunction:: toLLong -> LLong
+    .. memberfunction:: toLLong -> :cover:`~lang/types LLong`
         
-    .. memberfunction:: toDouble -> Double
+    .. memberfunction:: toDouble -> :cover:`~lang/types Double`
         
-    .. memberfunction:: toFloat -> Float
+    .. memberfunction:: toFloat -> :cover:`~lang/types Float`
         
-    .. memberfunction:: isEmpty -> Bool
+    .. memberfunction:: isEmpty -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: startsWith (s: String) -> Bool
+    .. memberfunction:: startsWith (s: :cover:`~lang/types String`) -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: startsWith~withChar (c: Char) -> Bool
+    .. memberfunction:: startsWith~withChar (c: :cover:`~lang/types Char`) -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: endsWith (s: String) -> Bool
+    .. memberfunction:: endsWith (s: :cover:`~lang/types String`) -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: indexOf~charZero (c: Char) -> Int
+    .. memberfunction:: indexOf~charZero (c: :cover:`~lang/types Char`) -> :cover:`~lang/types Int`
         
-    .. memberfunction:: indexOf~char (c: Char, start: Int) -> Int
+    .. memberfunction:: indexOf~char (c: :cover:`~lang/types Char`, start: :cover:`~lang/types Int`) -> :cover:`~lang/types Int`
         
-    .. memberfunction:: indexOf~stringZero (s: String) -> Int
+    .. memberfunction:: indexOf~stringZero (s: :cover:`~lang/types String`) -> :cover:`~lang/types Int`
         
-    .. memberfunction:: indexOf~string (s: String, start: Int) -> Int
+    .. memberfunction:: indexOf~string (s: :cover:`~lang/types String`, start: :cover:`~lang/types Int`) -> :cover:`~lang/types Int`
         
-    .. memberfunction:: contains~char (c: Char) -> Bool
+    .. memberfunction:: contains~char (c: :cover:`~lang/types Char`) -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: contains~string (s: String) -> Bool
+    .. memberfunction:: contains~string (s: :cover:`~lang/types String`) -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: trim~space -> String
+    .. memberfunction:: trim~space -> :cover:`~lang/types String`
         
-    .. memberfunction:: trim (c: Char) -> String
+    .. memberfunction:: trim (c: :cover:`~lang/types Char`) -> :cover:`~lang/types String`
         
-    .. memberfunction:: first -> SizeT
+    .. memberfunction:: first -> :cover:`~lang/types SizeT`
         
-    .. memberfunction:: lastIndex -> SizeT
+    .. memberfunction:: lastIndex -> :cover:`~lang/types SizeT`
         
-    .. memberfunction:: last -> Char
+    .. memberfunction:: last -> :cover:`~lang/types Char`
         
-    .. memberfunction:: lastIndexOf (c: Char) -> SizeT
+    .. memberfunction:: lastIndexOf (c: :cover:`~lang/types Char`) -> :cover:`~lang/types SizeT`
         
-    .. memberfunction:: substring~tillEnd (start: SizeT) -> String
+    .. memberfunction:: substring~tillEnd (start: :cover:`~lang/types SizeT`) -> :cover:`~lang/types String`
         
-    .. memberfunction:: substring (start, end: SizeT) -> String
+    .. memberfunction:: substring (start, end: :cover:`~lang/types SizeT`) -> :cover:`~lang/types String`
         
-    .. memberfunction:: reverse -> String
+    .. memberfunction:: reverse -> :cover:`~lang/types String`
         
     .. memberfunction:: print
         
     .. memberfunction:: println
         
-    .. memberfunction:: times (count: Int) -> String
+    .. memberfunction:: times (count: :cover:`~lang/types Int`) -> :cover:`~lang/types String`
         
-    .. memberfunction:: clone -> String
+    .. memberfunction:: clone -> :cover:`~lang/types String`
         
-    .. memberfunction:: append (other: String) -> String
+    .. memberfunction:: append (other: :cover:`~lang/types String`) -> :cover:`~lang/types String`
         
-    .. memberfunction:: append~char (other: Char) -> String
+    .. memberfunction:: append~char (other: :cover:`~lang/types Char`) -> :cover:`~lang/types String`
         
-    .. memberfunction:: count~char (what: Char) -> SizeT
+    .. memberfunction:: count~char (what: :cover:`~lang/types Char`) -> :cover:`~lang/types SizeT`
         
-    .. memberfunction:: count~string (what: String) -> SizeT
+    .. memberfunction:: count~string (what: :cover:`~lang/types String`) -> :cover:`~lang/types SizeT`
         
-    .. memberfunction:: replace (oldie, kiddo: Char) -> String
+    .. memberfunction:: replace (oldie, kiddo: :cover:`~lang/types Char`) -> :cover:`~lang/types String`
         
-    .. memberfunction:: replace~string (oldie, kiddo: String) -> String
+    .. memberfunction:: replace~string (oldie, kiddo: :cover:`~lang/types String`) -> :cover:`~lang/types String`
         
-    .. memberfunction:: prepend (other: String) -> String
+    .. memberfunction:: prepend (other: :cover:`~lang/types String`) -> :cover:`~lang/types String`
         
-    .. memberfunction:: prepend~char (other: Char) -> String
+    .. memberfunction:: prepend~char (other: :cover:`~lang/types Char`) -> :cover:`~lang/types String`
         
-    .. memberfunction:: toLower -> String
+    .. memberfunction:: toLower -> :cover:`~lang/types String`
         
-    .. memberfunction:: toUpper -> String
+    .. memberfunction:: toUpper -> :cover:`~lang/types String`
         
-    .. memberfunction:: charAt (index: SizeT) -> Char
+    .. memberfunction:: charAt (index: :cover:`~lang/types SizeT`) -> :cover:`~lang/types Char`
         
-    .. memberfunction:: format (...) -> String
+    .. memberfunction:: format (...) -> :cover:`~lang/types String`
         
-    .. memberfunction:: scanf (format: String, ...) -> Int
+    .. memberfunction:: scanf (format: :cover:`~lang/types String`, ...) -> :cover:`~lang/types Int`
         
-    .. memberfunction:: iterator -> StringIterator<T>
+    .. memberfunction:: iterator -> :class:`~lang/types StringIterator<T>`
         
 .. cover:: LLong
     
-    .. memberfunction:: toString -> String
+    .. memberfunction:: toString -> :cover:`~lang/types String`
         
-    .. memberfunction:: toHexString -> String
+    .. memberfunction:: toHexString -> :cover:`~lang/types String`
         
-    .. memberfunction:: isOdd -> Bool
+    .. memberfunction:: isOdd -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: isEven -> Bool
+    .. memberfunction:: isEven -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: in (range: Range) -> Bool
+    .. memberfunction:: in (range: :cover:`~lang/types Range`) -> :cover:`~lang/types Bool`
         
 .. cover:: Long
     
@@ -179,9 +179,9 @@ lang/types
     
 .. cover:: ULLong
     
-    .. memberfunction:: toString -> String
+    .. memberfunction:: toString -> :cover:`~lang/types String`
         
-    .. memberfunction:: in (range: Range) -> Bool
+    .. memberfunction:: in (range: :cover:`~lang/types Range`) -> :cover:`~lang/types Bool`
         
 .. cover:: ULong
     
@@ -213,7 +213,7 @@ lang/types
     
 .. cover:: Bool
     
-    .. memberfunction:: toString -> String
+    .. memberfunction:: toString -> :cover:`~lang/types String`
         
 .. cover:: Float
     
@@ -221,27 +221,27 @@ lang/types
     
 .. cover:: LDouble
     
-    .. memberfunction:: toString -> String
+    .. memberfunction:: toString -> :cover:`~lang/types String`
         
-    .. memberfunction:: abs -> LDouble
+    .. memberfunction:: abs -> :cover:`~lang/types LDouble`
         
 .. cover:: Range
     
-    .. memberfunction:: new (min, max: Int) -> Range
+    .. memberfunction:: new (min, max: :cover:`~lang/types Int`) -> :cover:`~lang/types Range`
         
 .. class:: Class
     
-    .. memberfunction:: alloc -> Object
+    .. memberfunction:: alloc -> :class:`~lang/types Object`
         
-    .. memberfunction:: inheritsFrom (T: Class) -> Bool
+    .. memberfunction:: inheritsFrom (T: :class:`~lang/types Class`) -> :cover:`~lang/types Bool`
         
-    .. field:: instanceSize -> SizeT
+    .. field:: instanceSize -> :cover:`~lang/types SizeT`
     
-    .. field:: size -> SizeT
+    .. field:: size -> :cover:`~lang/types SizeT`
     
-    .. field:: name -> String
+    .. field:: name -> :cover:`~lang/types String`
     
-    .. field:: super -> Class
+    .. field:: super -> :class:`~lang/types Class`
     
     .. field:: __defaults__ -> Func
     
@@ -251,67 +251,67 @@ lang/types
     
 .. class:: Object
     
-    .. memberfunction:: instanceOf (T: Class) -> Bool
+    .. memberfunction:: instanceOf (T: :class:`~lang/types Class`) -> :cover:`~lang/types Bool`
         
-    .. field:: class -> Class
+    .. field:: class -> :class:`~lang/types Class`
     
 .. class:: Interface
     
-    .. staticmemberfunction:: new (realThis, funcs: Object) -> Interface
+    .. staticmemberfunction:: new (realThis, funcs: :class:`~lang/types Object`) -> :class:`~lang/types Interface`
         
-    .. memberfunction:: init (realThis, funcs: Object)
+    .. memberfunction:: init (realThis, funcs: :class:`~lang/types Object`)
         
-    .. field:: realThis -> Object
+    .. field:: realThis -> :class:`~lang/types Object`
     
-    .. field:: funcs -> Object
+    .. field:: funcs -> :class:`~lang/types Object`
     
 .. class:: Exception
     
-    .. staticmemberfunction:: new (origin: Class, msg: String) -> Exception
+    .. staticmemberfunction:: new (origin: :class:`~lang/types Class`, msg: :cover:`~lang/types String`) -> :class:`~lang/types Exception`
         
-    .. memberfunction:: init (origin: Class, msg: String)
+    .. memberfunction:: init (origin: :class:`~lang/types Class`, msg: :cover:`~lang/types String`)
         
-    .. staticmemberfunction:: new~noOrigin (msg: String) -> Exception
+    .. staticmemberfunction:: new~noOrigin (msg: :cover:`~lang/types String`) -> :class:`~lang/types Exception`
         
-    .. memberfunction:: init~noOrigin (msg: String)
+    .. memberfunction:: init~noOrigin (msg: :cover:`~lang/types String`)
         
     .. memberfunction:: crash
         
-    .. memberfunction:: getMessage -> String
+    .. memberfunction:: getMessage -> :cover:`~lang/types String`
         
     .. memberfunction:: print
         
     .. memberfunction:: throw
         
-    .. field:: origin -> Class
+    .. field:: origin -> :class:`~lang/types Class`
     
-    .. field:: msg -> String
+    .. field:: msg -> :cover:`~lang/types String`
     
 .. class:: None
     
-    .. staticmemberfunction:: new -> None
+    .. staticmemberfunction:: new -> :class:`~lang/types None`
         
     .. memberfunction:: init
         
 .. class:: Cell<T>
     
-    .. staticmemberfunction:: new (val: T) -> Cell<T>
+    .. staticmemberfunction:: new (val: T) -> :class:`~lang/types Cell<T>`
         
     .. memberfunction:: init (val: T)
         
-    .. field:: T -> Class
+    .. field:: T -> :class:`~lang/types Class`
     
     .. field:: val -> T
     
-.. data:: DBL_MAX -> Double
+.. var:: DBL_MAX -> :cover:`~lang/types Double`
 
-.. data:: DBL_MIN -> Double
+.. var:: DBL_MIN -> :cover:`~lang/types Double`
 
-.. data:: FLT_MAX -> Float
+.. var:: FLT_MAX -> :cover:`~lang/types Float`
 
-.. data:: FLT_MIN -> Float
+.. var:: FLT_MIN -> :cover:`~lang/types Float`
 
-.. data:: LDBL_MAX -> LDouble
+.. var:: LDBL_MAX -> :cover:`~lang/types LDouble`
 
-.. data:: LDBL_MIN -> LDouble
+.. var:: LDBL_MIN -> :cover:`~lang/types LDouble`
 

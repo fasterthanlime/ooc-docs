@@ -5,35 +5,35 @@ io/FileWriter
 
 .. class:: FileWriter
     
-    .. staticmemberfunction:: new~withFile (fileObject: File, append: Bool) -> FileWriter
+    .. staticmemberfunction:: new~withFile (fileObject: :class:`~io/File File`, append: :cover:`~lang/types Bool`) -> :class:`~io/FileWriter FileWriter`
         
-    .. memberfunction:: init~withFile (fileObject: File, append: Bool)
+    .. memberfunction:: init~withFile (fileObject: :class:`~io/File File`, append: :cover:`~lang/types Bool`)
         
-    .. staticmemberfunction:: new~withFileOverwrite (fileObject: File) -> FileWriter
+    .. staticmemberfunction:: new~withFileOverwrite (fileObject: :class:`~io/File File`) -> :class:`~io/FileWriter FileWriter`
         
-    .. memberfunction:: init~withFileOverwrite (fileObject: File)
+    .. memberfunction:: init~withFileOverwrite (fileObject: :class:`~io/File File`)
         
-    .. staticmemberfunction:: new~withName (fileName: String, append: Bool) -> FileWriter
+    .. staticmemberfunction:: new~withName (fileName: :cover:`~lang/types String`, append: :cover:`~lang/types Bool`) -> :class:`~io/FileWriter FileWriter`
         
-    .. memberfunction:: init~withName (fileName: String, append: Bool)
+    .. memberfunction:: init~withName (fileName: :cover:`~lang/types String`, append: :cover:`~lang/types Bool`)
         
-    .. staticmemberfunction:: new~withNameAndFileOverwrite (fileName: String) -> FileWriter
+    .. staticmemberfunction:: new~withNameAndFileOverwrite (fileName: :cover:`~lang/types String`) -> :class:`~io/FileWriter FileWriter`
         
-    .. memberfunction:: init~withNameAndFileOverwrite (fileName: String)
+    .. memberfunction:: init~withNameAndFileOverwrite (fileName: :cover:`~lang/types String`)
         
-    .. staticmemberfunction:: new~withNameOverwrite (fileName: String) -> FileWriter
+    .. staticmemberfunction:: new~withNameOverwrite (fileName: :cover:`~lang/types String`) -> :class:`~io/FileWriter FileWriter`
         
-    .. memberfunction:: init~withNameOverwrite (fileName: String)
+    .. memberfunction:: init~withNameOverwrite (fileName: :cover:`~lang/types String`)
         
-    .. memberfunction:: write (chars: String, length: SizeT) -> SizeT
+    .. memberfunction:: write (chars: :cover:`~lang/types String`, length: :cover:`~lang/types SizeT`) -> :cover:`~lang/types SizeT`
         
-    .. memberfunction:: write~chr (chr: Char)
+    .. memberfunction:: write~chr (chr: :cover:`~lang/types Char`)
         
     .. memberfunction:: close
         
-    .. memberfunction:: writef (fmt: String, ...)
+    .. memberfunction:: writef (fmt: :cover:`~lang/types String`, ...)
         
-    .. memberfunction:: vwritef (fmt: String, args: VaList)
+    .. memberfunction:: vwritef (fmt: :cover:`~lang/types String`, args: :cover:`~lang/vararg VaList`)
         
-    .. field:: file -> FStream
+    .. field:: file -> :cover:`~lang/stdio FStream`
     

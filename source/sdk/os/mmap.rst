@@ -3,75 +3,75 @@ os/mmap
 
 .. module:: os/mmap
 
-.. function:: mmap (Pointer, SizeT, Int, Int, Int, Int) -> Pointer
+.. function:: mmap (:cover:`~lang/types Pointer`, :cover:`~lang/types SizeT`, :cover:`~lang/types Int`, :cover:`~lang/types Int`, :cover:`~lang/types Int`, :cover:`~lang/types Int`) -> :cover:`~lang/types Pointer`
     
-.. function:: munmap (Pointer, SizeT) -> Int
+.. function:: munmap (:cover:`~lang/types Pointer`, :cover:`~lang/types SizeT`) -> :cover:`~lang/types Int`
     
-.. function:: mprotect (Pointer, SizeT, Int) -> Int
+.. function:: mprotect (:cover:`~lang/types Pointer`, :cover:`~lang/types SizeT`, :cover:`~lang/types Int`) -> :cover:`~lang/types Int`
     
-.. function:: madvise (Pointer, SizeT, Int) -> Int
+.. function:: madvise (:cover:`~lang/types Pointer`, :cover:`~lang/types SizeT`, :cover:`~lang/types Int`) -> :cover:`~lang/types Int`
     
-.. function:: mincore (Pointer, SizeT, Char*) -> Int
+.. function:: mincore (:cover:`~lang/types Pointer`, :cover:`~lang/types SizeT`, :cover:`~lang/types Char`*) -> :cover:`~lang/types Int`
     
-.. function:: minherit (Pointer, SizeT, Int) -> Int
+.. function:: minherit (:cover:`~lang/types Pointer`, :cover:`~lang/types SizeT`, :cover:`~lang/types Int`) -> :cover:`~lang/types Int`
     
-.. function:: msync (Pointer, SizeT, Int) -> Int
+.. function:: msync (:cover:`~lang/types Pointer`, :cover:`~lang/types SizeT`, :cover:`~lang/types Int`) -> :cover:`~lang/types Int`
     
-.. function:: mlock (Pointer, SizeT) -> Int
+.. function:: mlock (:cover:`~lang/types Pointer`, :cover:`~lang/types SizeT`) -> :cover:`~lang/types Int`
     
-.. function:: munlock (Pointer, SizeT) -> Int
+.. function:: munlock (:cover:`~lang/types Pointer`, :cover:`~lang/types SizeT`) -> :cover:`~lang/types Int`
     
-.. data:: PROT_EXEC -> Int
+.. var:: PROT_EXEC -> :cover:`~lang/types Int`
 
-.. data:: PROT_WRITE -> Int
+.. var:: PROT_WRITE -> :cover:`~lang/types Int`
 
-.. data:: PROT_READ -> Int
+.. var:: PROT_READ -> :cover:`~lang/types Int`
 
-.. data:: PROT_NONE -> Int
+.. var:: PROT_NONE -> :cover:`~lang/types Int`
 
-.. data:: MAP_FIXED -> Int
+.. var:: MAP_FIXED -> :cover:`~lang/types Int`
 
-.. data:: MAP_SHARED -> Int
+.. var:: MAP_SHARED -> :cover:`~lang/types Int`
 
-.. data:: MAP_PRIVATE -> Int
+.. var:: MAP_PRIVATE -> :cover:`~lang/types Int`
 
-.. data:: MAP_DENYWRITE -> Int
+.. var:: MAP_DENYWRITE -> :cover:`~lang/types Int`
 
-.. data:: MAP_EXECUTABLE -> Int
+.. var:: MAP_EXECUTABLE -> :cover:`~lang/types Int`
 
-.. data:: MAP_NORESERVE -> Int
+.. var:: MAP_NORESERVE -> :cover:`~lang/types Int`
 
-.. data:: MAP_LOCKED -> Int
+.. var:: MAP_LOCKED -> :cover:`~lang/types Int`
 
-.. data:: MAP_GROWSDOWN -> Int
+.. var:: MAP_GROWSDOWN -> :cover:`~lang/types Int`
 
-.. data:: MAP_ANONYMOUS -> Int
+.. var:: MAP_ANONYMOUS -> :cover:`~lang/types Int`
 
-.. data:: MAP_ANON -> Int
+.. var:: MAP_ANON -> :cover:`~lang/types Int`
 
-.. data:: MAP_FILE -> Int
+.. var:: MAP_FILE -> :cover:`~lang/types Int`
 
-.. data:: MAP_32BIT -> Int
+.. var:: MAP_32BIT -> :cover:`~lang/types Int`
 
-.. data:: MAP_POPULATE -> Int
+.. var:: MAP_POPULATE -> :cover:`~lang/types Int`
 
-.. data:: MAP_NONBLOCK -> Int
+.. var:: MAP_NONBLOCK -> :cover:`~lang/types Int`
 
-.. data:: MAP_FAILED -> Pointer
+.. var:: MAP_FAILED -> :cover:`~lang/types Pointer`
 
-.. data:: MADV_NORMAL -> Int
+.. var:: MADV_NORMAL -> :cover:`~lang/types Int`
 
-.. data:: MADV_SEQUENTIAL -> Int
+.. var:: MADV_SEQUENTIAL -> :cover:`~lang/types Int`
 
-.. data:: MADV_RANDOM -> Int
+.. var:: MADV_RANDOM -> :cover:`~lang/types Int`
 
-.. data:: MADV_WILLNEED -> Int
+.. var:: MADV_WILLNEED -> :cover:`~lang/types Int`
 
-.. data:: MADV_DONTNEED -> Int
+.. var:: MADV_DONTNEED -> :cover:`~lang/types Int`
 
-.. data:: MS_ASYNC -> Int
+.. var:: MS_ASYNC -> :cover:`~lang/types Int`
 
-.. data:: MS_SYNC -> Int
+.. var:: MS_SYNC -> :cover:`~lang/types Int`
 
-.. data:: MS_INVALIDATE -> Int
+.. var:: MS_INVALIDATE -> :cover:`~lang/types Int`
 

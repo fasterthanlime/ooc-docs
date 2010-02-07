@@ -3,11 +3,11 @@ native/win32/types
 
 .. module:: native/win32/types
 
-.. function:: toLLong~twoPartsLargeInteger (lowPart, highPart: Long) -> LLong
+.. function:: toLLong~twoPartsLargeInteger (lowPart, highPart: :cover:`~lang/types Long`) -> :cover:`~lang/types LLong`
     
-.. function:: toULLong~twoPartsLargeInteger (lowPart, highPart: Long) -> ULLong
+.. function:: toULLong~twoPartsLargeInteger (lowPart, highPart: :cover:`~lang/types Long`) -> :cover:`~lang/types ULLong`
     
-.. function:: toTimestamp~fromFiletime (fileTime: FileTime) -> Long
+.. function:: toTimestamp~fromFiletime (fileTime: :cover:`~native/win32/types FileTime`) -> :cover:`~lang/types Long`
     
 .. cover:: Handle
     
@@ -17,5 +17,5 @@ native/win32/types
     
 .. cover:: FileTime
     
-.. data:: INVALID_HANDLE_VALUE -> Handle
+.. var:: INVALID_HANDLE_VALUE -> :cover:`~native/win32/types Handle`
 

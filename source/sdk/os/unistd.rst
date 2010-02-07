@@ -3,25 +3,25 @@ os/unistd
 
 .. module:: os/unistd
 
-.. function:: chdir (String) -> Int
+.. function:: chdir (:cover:`~lang/types String`) -> :cover:`~lang/types Int`
     
-.. function:: dup2 (Int, Int) -> Int
+.. function:: dup2 (:cover:`~lang/types Int`, :cover:`~lang/types Int`) -> :cover:`~lang/types Int`
     
-.. function:: execv (String, String*) -> Int
+.. function:: execv (:cover:`~lang/types String`, :cover:`~lang/types String`*) -> :cover:`~lang/types Int`
     
-.. function:: execvp (String, String*) -> Int
+.. function:: execvp (:cover:`~lang/types String`, :cover:`~lang/types String`*) -> :cover:`~lang/types Int`
     
-.. function:: execve (String, String*, String*) -> Int
+.. function:: execve (:cover:`~lang/types String`, :cover:`~lang/types String`*, :cover:`~lang/types String`*) -> :cover:`~lang/types Int`
     
-.. function:: fileno (FILE*) -> Int
+.. function:: fileno (:cover:`~lang/stdio FILE`*) -> :cover:`~lang/types Int`
     
-.. function:: fork -> Int
+.. function:: fork -> :cover:`~lang/types Int`
     
-.. function:: pipe (arg: Int*) -> Int
+.. function:: pipe (arg: :cover:`~lang/types Int`*) -> :cover:`~lang/types Int`
     
-.. data:: PIPE_BUF -> Int
+.. var:: PIPE_BUF -> :cover:`~lang/types Int`
 
-.. data:: STDOUT_FILENO -> Int
+.. var:: STDOUT_FILENO -> :cover:`~lang/types Int`
 
-.. data:: STDERR_FILENO -> Int
+.. var:: STDERR_FILENO -> :cover:`~lang/types Int`
 

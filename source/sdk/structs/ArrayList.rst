@@ -5,21 +5,21 @@ structs/ArrayList
 
 .. class:: ArrayListIterator<T>
     
-    .. staticmemberfunction:: new (list: ArrayList<T>) -> ArrayListIterator<T>
+    .. staticmemberfunction:: new (list: :class:`~structs/ArrayList ArrayList<T>`) -> :class:`~structs/ArrayList ArrayListIterator<T>`
         
-    .. memberfunction:: init (list: ArrayList<T>)
+    .. memberfunction:: init (list: :class:`~structs/ArrayList ArrayList<T>`)
         
-    .. memberfunction:: hasNext -> Bool
+    .. memberfunction:: hasNext -> :cover:`~lang/types Bool`
         
     .. memberfunction:: next -> T
         
-    .. memberfunction:: hasPrev -> Bool
+    .. memberfunction:: hasPrev -> :cover:`~lang/types Bool`
         
     .. memberfunction:: prev -> T
         
-    .. memberfunction:: remove -> Bool
+    .. memberfunction:: remove -> :cover:`~lang/types Bool`
         
-    .. field:: list -> ArrayList<T>
+    .. field:: list -> :class:`~structs/ArrayList ArrayList<T>`
     
-    .. field:: index -> Int
+    .. field:: index -> :cover:`~lang/types Int`
     

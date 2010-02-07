@@ -3,11 +3,11 @@ os/wait
 
 .. module:: os/wait
 
-.. function:: WEXITSTATUS (Int) -> Int
+.. function:: WEXITSTATUS (:cover:`~lang/types Int`) -> :cover:`~lang/types Int`
     
-.. function:: WIFEXITED (Int) -> Int
+.. function:: WIFEXITED (:cover:`~lang/types Int`) -> :cover:`~lang/types Int`
     
-.. function:: wait (Int*) -> Int
+.. function:: wait (:cover:`~lang/types Int`*) -> :cover:`~lang/types Int`
     
-.. function:: waitpid (Int, Int*, Int) -> Int
+.. function:: waitpid (:cover:`~lang/types Int`, :cover:`~lang/types Int`*, :cover:`~lang/types Int`) -> :cover:`~lang/types Int`
     

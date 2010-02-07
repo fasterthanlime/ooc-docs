@@ -5,37 +5,37 @@ text/StringBuffer
 
 .. class:: StringBuffer
     
-    .. staticmemberfunction:: new -> StringBuffer
+    .. staticmemberfunction:: new -> :class:`~text/StringBuffer StringBuffer`
         
     .. memberfunction:: init
         
-    .. staticmemberfunction:: new~withCapa (capacity: SizeT) -> StringBuffer
+    .. staticmemberfunction:: new~withCapa (capacity: :cover:`~lang/types SizeT`) -> :class:`~text/StringBuffer StringBuffer`
         
-    .. memberfunction:: init~withCapa (capacity: SizeT)
+    .. memberfunction:: init~withCapa (capacity: :cover:`~lang/types SizeT`)
         
-    .. staticmemberfunction:: new~withContent (data: String) -> StringBuffer
+    .. staticmemberfunction:: new~withContent (data: :cover:`~lang/types String`) -> :class:`~text/StringBuffer StringBuffer`
         
-    .. memberfunction:: init~withContent (data: String)
+    .. memberfunction:: init~withContent (data: :cover:`~lang/types String`)
         
     .. memberfunction:: close
         
-    .. memberfunction:: write~chr (chr: Char)
+    .. memberfunction:: write~chr (chr: :cover:`~lang/types Char`)
         
-    .. memberfunction:: write (chars: String, length: SizeT) -> SizeT
+    .. memberfunction:: write (chars: :cover:`~lang/types String`, length: :cover:`~lang/types SizeT`) -> :cover:`~lang/types SizeT`
         
-    .. memberfunction:: append~str (str: String)
+    .. memberfunction:: append~str (str: :cover:`~lang/types String`)
         
-    .. memberfunction:: append~strWithLength (str: String, length: SizeT)
+    .. memberfunction:: append~strWithLength (str: :cover:`~lang/types String`, length: :cover:`~lang/types SizeT`)
         
-    .. memberfunction:: append~chr (chr: Char)
+    .. memberfunction:: append~chr (chr: :cover:`~lang/types Char`)
         
-    .. memberfunction:: checkLength (min: SizeT)
+    .. memberfunction:: checkLength (min: :cover:`~lang/types SizeT`)
         
-    .. memberfunction:: toString -> String
+    .. memberfunction:: toString -> :cover:`~lang/types String`
         
-    .. field:: size -> SizeT
+    .. field:: size -> :cover:`~lang/types SizeT`
     
-    .. field:: capacity -> SizeT
+    .. field:: capacity -> :cover:`~lang/types SizeT`
     
-    .. field:: data -> String
+    .. field:: data -> :cover:`~lang/types String`
     

@@ -7,9 +7,9 @@ io/Writer
     
     .. memberfunction:: close
         
-    .. memberfunction:: write~chr (chr: Char)
+    .. memberfunction:: write~chr (chr: :cover:`~lang/types Char`)
         
-    .. memberfunction:: write (chars: String, length: SizeT) -> SizeT
+    .. memberfunction:: write (chars: :cover:`~lang/types String`, length: :cover:`~lang/types SizeT`) -> :cover:`~lang/types SizeT`
         
-    .. memberfunction:: write~implicitLength (chars: String) -> SizeT
+    .. memberfunction:: write~implicitLength (chars: :cover:`~lang/types String`) -> :cover:`~lang/types SizeT`
         

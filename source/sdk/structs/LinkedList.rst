@@ -7,43 +7,43 @@ structs/LinkedList
     
 .. class:: LinkedList<T>
     
-    .. staticmemberfunction:: new -> LinkedList<T>
+    .. staticmemberfunction:: new -> :class:`~structs/LinkedList LinkedList<T>`
         
     .. memberfunction:: init
         
     .. memberfunction:: add (data: T)
         
-    .. memberfunction:: add~withIndex (index: Int, data: T)
+    .. memberfunction:: add~withIndex (index: :cover:`~lang/types Int`, data: T)
         
     .. memberfunction:: clear
         
-    .. memberfunction:: get (index: Int) -> T
+    .. memberfunction:: get (index: :cover:`~lang/types Int`) -> T
         
-    .. memberfunction:: getNode (index: Int) -> Node<T>
+    .. memberfunction:: getNode (index: :cover:`~lang/types Int`) -> :class:`~structs/LinkedList Node<T>`
         
-    .. memberfunction:: indexOf (data: T) -> Int
+    .. memberfunction:: indexOf (data: T) -> :cover:`~lang/types Int`
         
-    .. memberfunction:: lastIndexOf (data: T) -> Int
+    .. memberfunction:: lastIndexOf (data: T) -> :cover:`~lang/types Int`
         
-    .. memberfunction:: removeAt (index: Int) -> T
+    .. memberfunction:: removeAt (index: :cover:`~lang/types Int`) -> T
         
-    .. memberfunction:: remove (data: T) -> Bool
+    .. memberfunction:: remove (data: T) -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: removeNode (toRemove: Node<T>) -> Bool
+    .. memberfunction:: removeNode (toRemove: :class:`~structs/LinkedList Node<T>`) -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: set (index: Int, data: T) -> T
+    .. memberfunction:: set (index: :cover:`~lang/types Int`, data: T) -> T
         
-    .. memberfunction:: size -> Int
+    .. memberfunction:: size -> :cover:`~lang/types Int`
         
-    .. memberfunction:: iterator -> LinkedListIterator<T>
+    .. memberfunction:: iterator -> :class:`~structs/LinkedList LinkedListIterator<T>`
         
-    .. memberfunction:: clone -> LinkedList<T>
+    .. memberfunction:: clone -> :class:`~structs/LinkedList LinkedList<T>`
         
     .. memberfunction:: print
         
-    .. field:: size -> Int
+    .. field:: size -> :cover:`~lang/types Int`
     
-    .. field:: first -> Node<T>
+    .. field:: first -> :class:`~structs/LinkedList Node<T>`
     
-    .. field:: last -> Node<T>
+    .. field:: last -> :class:`~structs/LinkedList Node<T>`
     

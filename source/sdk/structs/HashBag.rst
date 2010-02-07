@@ -5,31 +5,31 @@ structs/HashBag
 
 .. class:: HashBag
     
-    .. staticmemberfunction:: new -> HashBag
+    .. staticmemberfunction:: new -> :class:`~structs/HashBag HashBag`
         
     .. memberfunction:: init
         
-    .. staticmemberfunction:: new~withCapacity (capacity: Int) -> HashBag
+    .. staticmemberfunction:: new~withCapacity (capacity: :cover:`~lang/types Int`) -> :class:`~structs/HashBag HashBag`
         
-    .. memberfunction:: init~withCapacity (capacity: Int)
+    .. memberfunction:: init~withCapacity (capacity: :cover:`~lang/types Int`)
         
-    .. memberfunction:: get (key: String, T: Class) -> T
+    .. memberfunction:: get (key: :cover:`~lang/types String`, T: :class:`~lang/types Class`) -> T
         
-    .. memberfunction:: getEntry (key: String, T: Class) -> HashEntry<T>
+    .. memberfunction:: getEntry (key: :cover:`~lang/types String`, T: :class:`~lang/types Class`) -> :class:`~structs/HashMap HashEntry<T>`
         
-    .. memberfunction:: put (key: String, value: T) -> Bool
+    .. memberfunction:: put (key: :cover:`~lang/types String`, value: T) -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: add (key: String, value: T) -> Bool
+    .. memberfunction:: add (key: :cover:`~lang/types String`, value: T) -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: isEmpty -> Bool
+    .. memberfunction:: isEmpty -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: contains (key: String, T: Class) -> Bool
+    .. memberfunction:: contains (key: :cover:`~lang/types String`, T: :class:`~lang/types Class`) -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: remove (key: String) -> Bool
+    .. memberfunction:: remove (key: :cover:`~lang/types String`) -> :cover:`~lang/types Bool`
         
-    .. memberfunction:: size -> Int
+    .. memberfunction:: size -> :cover:`~lang/types Int`
         
-    .. memberfunction:: exists (key: String) -> Bool
+    .. memberfunction:: exists (key: :cover:`~lang/types String`) -> :cover:`~lang/types Bool`
         
-    .. field:: myMap -> HashMap<T>
+    .. field:: myMap -> :class:`~structs/HashMap HashMap<T>`
     
