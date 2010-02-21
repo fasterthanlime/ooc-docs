@@ -3,9 +3,17 @@ lang/types
 
 .. module:: lang/types
 
-.. function:: atoi (:cover:`~lang/types String` ) -> :cover:`~lang/types Int` 
+.. function:: strtol (:cover:`~lang/types String` , :cover:`~lang/types Pointer` , :cover:`~lang/types Int` ) -> :cover:`~lang/types Long` 
     
-.. function:: atol (:cover:`~lang/types String` ) -> :cover:`~lang/types Long` 
+.. function:: strtoll (:cover:`~lang/types String` , :cover:`~lang/types Pointer` , :cover:`~lang/types Int` ) -> :cover:`~lang/types LLong` 
+    
+.. function:: strtoul (:cover:`~lang/types String` , :cover:`~lang/types Pointer` , :cover:`~lang/types Int` ) -> :cover:`~lang/types ULong` 
+    
+.. function:: strtof (:cover:`~lang/types String` , :cover:`~lang/types Pointer` ) -> :cover:`~lang/types Float` 
+    
+.. function:: strtod (:cover:`~lang/types String` , :cover:`~lang/types Pointer` ) -> :cover:`~lang/types Double` 
+    
+.. function:: strtold (:cover:`~lang/types String` , :cover:`~lang/types Pointer` ) -> :cover:`~lang/types LDouble` 
     
 .. cover:: Void
     
@@ -141,21 +149,37 @@ lang/types
         
         convert the string's contents to Int.
         
+    .. memberfunction:: toInt~withBase (base: :cover:`~lang/types Int` ) -> :cover:`~lang/types Int` 
+        
     .. memberfunction:: toLong -> :cover:`~lang/types Long` 
         
         convert the string's contents to Long.
         
+    .. memberfunction:: toLong~withBase (base: :cover:`~lang/types Long` ) -> :cover:`~lang/types Long` 
+        
     .. memberfunction:: toLLong -> :cover:`~lang/types LLong` 
         
-        convert the string's contents to LLong.
+        convert the string's contents to Long Long.
+        
+    .. memberfunction:: toLLong~withBase (base: :cover:`~lang/types LLong` ) -> :cover:`~lang/types LLong` 
+        
+    .. memberfunction:: toULong -> :cover:`~lang/types ULong` 
+        
+        convert the string's contents to Unsigned Long.
+        
+    .. memberfunction:: toULong~withBase (base: :cover:`~lang/types ULong` ) -> :cover:`~lang/types ULong` 
+        
+    .. memberfunction:: toFloat -> :cover:`~lang/types Float` 
+        
+        convert the string's contents to Float.
         
     .. memberfunction:: toDouble -> :cover:`~lang/types Double` 
         
         convert the string's contents to Double.
         
-    .. memberfunction:: toFloat -> :cover:`~lang/types Float` 
+    .. memberfunction:: toLDouble -> :cover:`~lang/types LDouble` 
         
-        convert the string's contents to Float.
+        convert the string's contents to Long Double.
         
     .. memberfunction:: isEmpty -> :cover:`~lang/types Bool` 
         
@@ -197,11 +221,15 @@ lang/types
         
     .. memberfunction:: contains~char (c: :cover:`~lang/types Char` ) -> :cover:`~lang/types Bool` 
         
+        return *true* if *this* contains the character *c
+        
     .. memberfunction:: contains~string (s: :cover:`~lang/types String` ) -> :cover:`~lang/types Bool` 
+        
+        return *true* if *this* contains the string *s
         
     .. memberfunction:: trim~space -> :cover:`~lang/types String` 
         
-        return a copy of *this* with space characters stripped at both ends.
+        return a copy of *this* with space characters (ASCII 32) stripped at both ends.
         
     .. memberfunction:: trim (c: :cover:`~lang/types Char` ) -> :cover:`~lang/types String` 
         
@@ -487,9 +515,9 @@ lang/types
 .. class:: Exception
     
     :extends: :class:`~lang/types Object` 
-    .. staticmemberfunction:: new (origin: :class:`~lang/types Class` , msg: :cover:`~lang/types String` ) -> :class:`~lang/types Exception` 
+    .. staticmemberfunction:: new~origin (origin: :class:`~lang/types Class` , msg: :cover:`~lang/types String` ) -> :class:`~lang/types Exception` 
         
-    .. memberfunction:: init (origin: :class:`~lang/types Class` , msg: :cover:`~lang/types String` )
+    .. memberfunction:: init~origin (origin: :class:`~lang/types Class` , msg: :cover:`~lang/types String` )
         
     .. staticmemberfunction:: new~noOrigin (msg: :cover:`~lang/types String` ) -> :class:`~lang/types Exception` 
         

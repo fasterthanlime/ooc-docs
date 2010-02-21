@@ -35,7 +35,9 @@ os/Process
     .. memberfunction:: getOutput -> :cover:`~lang/types String` 
         
         Execute the process, and return all the output to stdout
-        as a string
+        as a string, if the program exited normally.
+        If there was an error (e.g. the return code wasn't 0), this function
+        will return null
         
         
     .. memberfunction:: getErrOutput -> :cover:`~lang/types String` 

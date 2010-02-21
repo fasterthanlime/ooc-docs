@@ -115,6 +115,10 @@ structs/HashMap
         
     .. memberfunction:: clear
         
+    .. memberfunction:: size -> :cover:`~lang/types UInt` 
+        
+    .. memberfunction:: getKeys -> :class:`~structs/ArrayList ArrayList<T>` 
+        
     .. field:: size -> :cover:`~lang/types UInt` 
     
     .. field:: capacity -> :cover:`~lang/types UInt` 

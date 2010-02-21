@@ -6,8 +6,6 @@ io/File
 .. class:: File
     
     :extends: :class:`~lang/types Object` 
-    .. memberfunction:: getPath -> :cover:`~lang/types String` 
-        
     .. staticmemberfunction:: new (path: :cover:`~lang/types String` ) -> :class:`~io/File File` 
         
     .. staticmemberfunction:: new~parentFile (parent: :class:`~io/File File` , path: :cover:`~lang/types String` ) -> :class:`~io/File File` 
@@ -121,6 +119,11 @@ io/File
     .. memberfunction:: isRelative -> :cover:`~lang/types Bool` 
         
         :return: true if the function is relative to the current directory
+        
+        
+    .. memberfunction:: getPath -> :cover:`~lang/types String` 
+        
+        the path this file has been created with
         
         
     .. memberfunction:: getAbsolutePath -> :cover:`~lang/types String` 
