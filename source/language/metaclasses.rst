@@ -114,7 +114,7 @@ is::
     Cat growl(cat) // the first argument is 'this'
 
 So yeah, doing 'Cat growl' essentially gives you the adress of the growl
-function in the Cat class.
+function in the Cat class. Nice.
 
 
 
