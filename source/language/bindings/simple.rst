@@ -78,7 +78,7 @@ first argument, and the pseudo-constructor (``create_entry``) returns a
 	print: extern(print_entry) func -> Int
     }
 
-Now, we've added some "extern member functions" very easily. Like we did for
+Now, we've added some "extern methods" very easily. Like we did for
 the struct members, we just pass the real name of the C function to the
 ``extern`` keyword. In the argument list, we let out the first argument (the
 *this pointer*).
@@ -90,7 +90,7 @@ as a static method called ``new``::
 	new: extern(create_entry) func -> Entry
     }
 
-Since we have defined all our C functions as extern member functions now, we
+Since we have defined all our C functions as extern methods now, we
 can skip the definitions as extern functions; so our glue code looks like
 that::
 
