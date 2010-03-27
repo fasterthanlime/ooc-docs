@@ -77,7 +77,7 @@ Some examples for valid tags::
     array(Int, 10)
     memberFunction(MyClass, yeaahh)
 
-Tags for ordinary functions (i.e. not member functions), classes, covers and global variables are just the name of the symbol.
+Tags for ordinary functions (i.e. not methods), classes, covers and global variables are just the name of the symbol.
 
 Tags for members are consisting of a describing modifier and the class tag and the member name as parameters:
 
@@ -139,7 +139,7 @@ A function entity has the following attributes:
 ``memberFunction``
 ~~~~~~~~~~~~~~~~~~
 
-A member function entity has the same attributes as the :ref:`function entity <json-function-entity>`,
+A method entity has the same attributes as the :ref:`function entity <json-function-entity>`,
 but a ``memberFunction`` tag.
 
 .. note:: The convenient ``This`` type has to be resolved by the compiler.
