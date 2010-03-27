@@ -618,7 +618,7 @@ extern symbols aliasing
       c_exit(); // translates to exit() in C
     }
 
-for member functions (ie. methods)
+for methods
 
 .. code-block:: ooc
 
