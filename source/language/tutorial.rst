@@ -29,9 +29,9 @@ Well, in fact it does.
 
 ooc is a little bit different. 
 
-First: ooc doesn't have a print statement like Python. In ooc, the ``String`` class (which is the type of the ``"KALAMAZOO"`` literal) has a member function (other languages might call this "method") called ``println`` that takes no arguments and will just print the string.
+First: ooc doesn't have a print statement like Python. In ooc, the ``String`` class (which is the type of the ``"KALAMAZOO"`` literal) has a method (other languages might call this "method") called ``println`` that takes no arguments and will just print the string.
 
-Second: There Is No Dot In ooc. To call a member function of an object, just add a space and write the method name, followed by arguments. Yeah, this feels strange at first. But you'll get used to it. Just look at this::
+Second: There Is No Dot In ooc. To call a method of an object, just add a space and write the method name, followed by arguments. Yeah, this feels strange at first. But you'll get used to it. Just look at this::
 
     "%s --- %s" format("ABC", "DEF") toUpper() println()
 
@@ -40,7 +40,7 @@ It's just beautiful.
 
 Enough chit-chat, let's run the program. As expected, this prints a beatiful, awesome and stylish KALAMAZOO.
 
-More member functions!
+More methods!
 ----------------------
 
 Let's improve this. My code looks so aggressive if it contains KALAMAZOO in upper case. I get headache every time I look at it. I really want to change this.
@@ -51,7 +51,7 @@ For peace's sake::
 
     "kalamazoo" toUpper() println()
 
-I suppose you already got the concept here. ``"kalamazoo"``'s member function ``toUpper`` gets called, and ``println`` gets called on the resulting string (our uppercased "kalamazoo").
+I suppose you already got the concept here. ``"kalamazoo"``'s method ``toUpper`` gets called, and ``println`` gets called on the resulting string (our uppercased "kalamazoo").
 
 Yay.
 
@@ -119,7 +119,7 @@ Our ``iterable`` is created via the range syntax::
 
 ``start`` is the first value that will get returned. ``end`` is the exclusive end marker: The last value isn't ``end``, but actually ``end-1``. It's important to know that.
 
-The third line introduces a new member function:: ``toString`` called on numeric values will return the value of the number, but converted to a string.
+The third line introduces a new method:: ``toString`` called on numeric values will return the value of the number, but converted to a string.
 
 The fourth line is easy again.
 
