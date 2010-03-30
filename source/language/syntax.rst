@@ -123,7 +123,7 @@ include, import, use
 ^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: ooc
-
+    
     include header1, path/header2
     include ./mylocalheader
     import my/package/MyModule
@@ -274,7 +274,13 @@ classes
     }
     
     Dog: class extends Animal {
-    
+      mouthSize: Int
+      
+      //this is the constructor with the super constructor call
+      init: func (.name, .age, =mouthSize){
+        super (name, age)
+      }
+      
       shout: func {
         "Woof, woof!" println()
       }
@@ -372,7 +378,7 @@ pointer syntax
       printf("ptr's value is now %d\n", ptr@)
     }
     
-    add: func(ptr: Int*, value: Int) {
+    add: func (ptr: Int*, value: Int) {
       ptr@ += value
     }
 
@@ -389,7 +395,7 @@ reference syntax
       printf("ptr's value is now %d\n", ptr@)
     }
     
-    add: func(ptr: Int@, value: Int) {
+    add: func (ptr: Int@, value: Int) {
       ptr += value
     }
 
@@ -405,7 +411,7 @@ more fun with pointers & references
       printf("number is now %d\n", number)
     }
     
-    add: func(ptr: Int@, value: Int) {
+    add: func (ptr: Int@, value: Int) {
       ptr += value
     }
 
@@ -455,7 +461,7 @@ typed function pointers
 
 .. code-block:: ooc
 
-    applyOperator: func(operator: Func (Int, Int) -> Int, left, right: Int) {
+    applyOperator: func (operator: Func (Int, Int) -> Int, left, right: Int) {
       return operator(left, right)
     }
     
@@ -516,9 +522,9 @@ The following code:
     
     Container: class <T> {
       content: T
-      init: func(=content)
+      init: func (=content)
       get: func -> T { content }
-      set: func(=content)
+      set: func (=content)
     }
     
     main: func {
