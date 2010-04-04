@@ -55,7 +55,7 @@ def ooc_xfileref_role(typ, rawtext, text, lineno, inliner, options={}, content=[
     # TODO: kicked for generics. aarrrrghhh.
     # special target for Python object cross-references
     if typ in ('data', 'exc', 'func', 'class', 'const', 'field',
-               'mfunc', 'mod', 'obj', 'cover', 'var'):
+               'meth', 'mod', 'obj', 'cover', 'var'):
         # fix-up parentheses in link title
         if titleistarget:
             title = title.lstrip('.')   # only has a meaning for the target
@@ -111,6 +111,6 @@ def ooc_xfileref_role(typ, rawtext, text, lineno, inliner, options={}, content=[
                                                     classes=['xref'])
     return [pnode], []
 
-for role in ('cover', 'class', 'func', 'mfunc', 'field', 'var'):
+for role in ('cover', 'class', 'func', 'meth', 'field', 'var'):
     roles.register_local_role(role, ooc_xfileref_role)
 BuildEnvironment.descroles = frozenset(set(BuildEnvironment.descroles) | set(('cover',)))

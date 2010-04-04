@@ -186,16 +186,16 @@ class ClassmemberDesc(OOCDesc):
         return self.desctype.endswith('function')
 
     def get_signature_prefix(self, sig):
-        if self.desctype == 'staticmemberfunction':
-            return 'static member function '
-        elif self.desctype == 'memberfunction':
-            return 'member function '
+        if self.desctype == 'staticmethod':
+            return 'static method '
+        elif self.desctype == 'method':
+            return 'method '
         return ''
 
     def get_index_text(self, modname, name_cls):
         name, cls = name_cls
         add_modules = self.env.config.add_module_names
-        if self.desctype == 'memberfunction':
+        if self.desctype == 'method':
             try:
                 clsname, methname = name.rsplit(' ', 1)
             except ValueError:
@@ -204,10 +204,10 @@ class ClassmemberDesc(OOCDesc):
                 else:
                     return '%s()' % name
             if modname and add_modules:
-                return _('%s() (%s/%s member function)') % (methname, modname, clsname)
+                return _('%s() (%s/%s method)') % (methname, modname, clsname)
             else:
-                return _('%s() (%s member function)') % (methname, clsname)
-        elif self.desctype == 'staticmemberfunction':
+                return _('%s() (%s method)') % (methname, clsname)
+        elif self.desctype == 'staticmethod':
             try:
                 clsname, methname = name.rsplit(' ', 1)
             except ValueError:
@@ -216,10 +216,10 @@ class ClassmemberDesc(OOCDesc):
                 else:
                     return '%s()' % name
             if modname and add_modules:
-                return _('%s() (%s/%s static member function)') % (methname, modname,
+                return _('%s() (%s/%s static method)') % (methname, modname,
                                                           clsname)
             else:
-                return _('%s() (%s static member function)') % (methname, clsname)
+                return _('%s() (%s static method)') % (methname, clsname)
         elif self.desctype == 'field':
             try:
                 clsname, attrname = name.rsplit(' ', 1)
@@ -249,8 +249,8 @@ directives.register_directive('var', directive_dwim(ModulelevelDesc))
 directives.register_directive('class', directive_dwim(ClasslikeDesc))
 directives.register_directive('cover', directive_dwim(ClasslikeDesc))
 
-directives.register_directive('memberfunction', directive_dwim(ClassmemberDesc))
-directives.register_directive('staticmemberfunction', directive_dwim(ClassmemberDesc))
+directives.register_directive('method', directive_dwim(ClassmemberDesc))
+directives.register_directive('staticmethod', directive_dwim(ClassmemberDesc))
 directives.register_directive('field', directive_dwim(ClassmemberDesc))
 
 
