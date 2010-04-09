@@ -1,6 +1,8 @@
 Language reference
 ==================
 
+You can learn more about the ooc language here.
+
 .. toctree::
     :maxdepth: 2
 
