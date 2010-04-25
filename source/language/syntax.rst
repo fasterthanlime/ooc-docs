@@ -299,7 +299,7 @@ static fields in classes
     }
     
     main: func {
-      list := ArrayList<Ant>
+      list := ArrayList<Ant> new()
       for(i in 0..20) {
         list add(Ant new())
       }
