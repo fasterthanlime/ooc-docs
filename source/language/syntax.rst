@@ -294,8 +294,8 @@ static fields in classes
 
     Ant: class {
       total = 0 : static Int
-      init: func { total += 1 }
-      getTotal: static func -> Int { total }
+      init: func { This total += 1 }
+      getTotal: static func -> Int { This total }
     }
     
     main: func {
