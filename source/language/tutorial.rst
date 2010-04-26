@@ -58,7 +58,7 @@ Yay.
 Variables
 ---------
 
-Hoh. I have an idea how to write an ever more awesome program. I'll print KALAMAZOO not once, not twice - I'LL PRINT IT THREE FUCKING TIMES! For additional coolness, we'll store it in a variable.
+Hoh. I have an idea how to write an ever more awesome program. I'll print KALAMAZOO not once, not twice - but three times! For additional coolness, we'll store it in a variable.
 
 But how will be do it?
 
