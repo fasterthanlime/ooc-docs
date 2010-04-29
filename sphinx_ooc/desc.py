@@ -88,8 +88,21 @@ class OOCDesc(DescDirective):
         signode += addnodes.desc_parameterlist()
 
         stack = [signode[-1]]
+        token_before = None
         for token in ooc_paramlist_re.split(arglist):
-            if not token or token == ',' or token.isspace():
+            if token_before is not None:
+                if token == ',':
+                    # add commas yay.
+                    token_before += token
+                    continue
+                else:
+                    token = token_before + token
+                    print 'NOW TOKEN: %r' % token
+                    token_before = None
+            if token.count('<') != token.count('>'):
+                # splitted in the middle of a <A, B, C> declaration :(
+                token_before = token
+            elif not token or token == ',' or token.isspace():
                 pass
             else:
                 token = token.strip()
