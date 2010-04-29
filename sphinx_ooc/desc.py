@@ -9,8 +9,8 @@ from sphinx.directives.desc import DescDirective
 from sphinx.util.compat import Directive, directive_dwim
 
 ooc_sig_re = re.compile(
-    r'''^ ([\w<>/]*[ /])?            # class name(s)
-          ([\w<>~]+)  \s*             # thing name
+    r'''^ ([\w<>/,]*[ /])?            # class name(s)
+          ([\w<>~,]+)  \s*             # thing name
           (?: \((.*)\))?           # optional: arguments
           (?:\s* -> \s* (.*))?  #           return annotation
           $                   # and nothing more
