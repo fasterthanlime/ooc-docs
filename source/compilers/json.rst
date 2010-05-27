@@ -31,32 +31,34 @@ Example ooc code
 The JSON format
 ---------------
 
-The root structure is a list of 2-element lists that contain symbol names (first element) and objects (second element);
-let's call them entities.
+The root structure is an object containing some meta-information about the sourcefile. The rule: One sourcefile = one
+module = one .json file.
 
-It only contains the "root" entities which are part of the global namespaces (no class members).
+All required keys:
 
-Now, each entity has some essential keys:
+``path``
+    An absolute module path (e.g. ``"io/File"``)
+``entities``
+    See `entities`_.
+``globalImports``
+    A list of module paths that got imported globally explicitly (e.g. ``["io/File", "os/Process"]``)
+``namespacedImports``
+    An object mapping namespace names to imported module paths.
 
-``type``
-    describes the type of the entity. Possible values are:
-     * ``"function"``
-     * ``"memberFunction"``
-     * ``"globalVariable"``
-     * ``"field"``
-     * ``"class"``
-     * ``"cover"``
-``tag``
-    defines an unique name for the entity.
+    Example::
 
-The following keys exist for all entity types **except** ``field``:
+	import io/File into IO
+	import io/FileReader into IO
+	import os/Process into OS
 
-``unmangled``
-    If the user has marked the entity as ``unmangled``, but didn't specify
-    a name, this is ``true``. If the user has marked this entity and
-    provided a name, this is the name. Otherwise, this is ``false``.
-``fullName``
-    The full, mangled name of the entity, like it appears in the C sourcecode.
+    gets translated to::
+
+	{
+	    "IO": ["io/File", "io/FileReader"],
+	    "OS": ["os/Process"]
+	}
+``uses``
+    A list of "used" usefiles (e.g. ``["mycoollib"]``)
 
 Tags
 ~~~~
@@ -89,8 +91,35 @@ Tags for pointer and reference types just consist of the ``pointer``/``reference
 .. function:: pointer(type)
 .. function:: reference(type)
 
+.. _entities:
+
 Entities
 --------
+
+Entities are described by a list of 2-element lists that contain symbol names (first element) and objects (second element).
+It only contains the "root" entities which are part of the global namespaces (no class members).
+
+Now, each entity has some essential keys:
+
+``type``
+    describes the type of the entity. Possible values are:
+     * ``"function"``
+     * ``"memberFunction"``
+     * ``"globalVariable"``
+     * ``"field"``
+     * ``"class"``
+     * ``"cover"``
+``tag``
+    defines an unique name for the entity.
+
+The following keys exist for all entity types **except** ``field``:
+
+``unmangled``
+    If the user has marked the entity as ``unmangled``, but didn't specify
+    a name, this is ``true``. If the user has marked this entity and
+    provided a name, this is the name. Otherwise, this is ``false``.
+``fullName``
+    The full, mangled name of the entity, like it appears in the C sourcecode.
 
 .. _json-function-entity:
 
@@ -108,7 +137,7 @@ A function entity has the following attributes:
      * ``static``
      * ``final``
      * ``inline``
-     * ``proto`` (TODO: what's that?)
+     * ``proto``
 ``genericTypes``
     The names of generic parameter types as a list.
 ``extern``
@@ -165,6 +194,14 @@ but a ``memberFunction`` tag.
 ``extern``
     Either ``true`` (if it's an extern field, but not aliased) or a string containing the original name of
     the field (if it's an aliased extern field).
+``property``
+    Boolean that describes if the field is a property.
+``hasGetter``
+    Boolean that describes if the field has a (default or user-defined) getter. Only needed if ``property``
+    is ``true``.
+``hasSetter``
+    Boolean that describes if the field has a (default or user-defined) setter. Only needed if ``property``
+    is ``true``.
 
 ``field``
 ~~~~~~~~~
