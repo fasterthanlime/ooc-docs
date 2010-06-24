@@ -194,15 +194,29 @@ but a ``memberFunction`` tag.
 ``extern``
     Either ``true`` (if it's an extern field, but not aliased) or a string containing the original name of
     the field (if it's an aliased extern field).
-``property``
-    Boolean that describes if the field is a property.
-``hasGetter``
-    Boolean that describes if the field has a (default or user-defined) getter. Only needed if ``property``
-    is ``true``.
-``hasSetter``
-    Boolean that describes if the field has a (default or user-defined) setter. Only needed if ``property``
-    is ``true``.
+``property_data``
+    An object that is only present if the variable is a property. Otherwise, it's ``null``.
 
+    See `property_data`_.
+
+.. _property_data:
+
+``property_data``
+^^^^^^^^^^^^^^^^^
+
+An object holding information on the property. Can be present in ``field`` and ``globalVariable`` entities.
+
+``hasGetter``
+    ``true`` if the property has a getter (custom or default)
+``hasSetter``
+    ``true`` if the property has a setter (custom or default)
+``fullGetterName``
+    The full, mangled name of the getter function, like it appears in the C sourcecode or ``null`` if there
+    is no getter.
+``fullSetterName``
+    The full, mangled name of the setter function, like it appears in the C sourcecode or ``null`` if there
+    is no setter.
+    
 ``field``
 ~~~~~~~~~
 
@@ -234,3 +248,4 @@ Same attributes as :ref:`class <json-class-entity>`, but additionally:
 
 ``from``
     The tag of the type we're covering.
+
