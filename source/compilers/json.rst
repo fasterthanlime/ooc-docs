@@ -77,13 +77,13 @@ Some examples for valid tags::
     test
     pointer(test)
     array(Int, 10)
-    memberFunction(MyClass, yeaahh)
+    method(MyClass, yeaahh)
 
 Tags for ordinary functions (i.e. not methods), classes, covers and global variables are just the name of the symbol.
 
 Tags for members are consisting of a describing modifier and the class tag and the member name as parameters:
 
-.. function:: memberFunction(class, name)
+.. function:: method(class, name)
 .. function:: field(class, name)
 
 Tags for pointer and reference types just consist of the ``pointer``/``reference`` modifier and the type tag as parameter:
@@ -104,7 +104,7 @@ Now, each entity has some essential keys:
 ``type``
     describes the type of the entity. Possible values are:
      * ``"function"``
-     * ``"memberFunction"``
+     * ``"method"``
      * ``"globalVariable"``
      * ``"field"``
      * ``"class"``
@@ -118,6 +118,9 @@ The following keys exist for all entity types **except** ``field``:
     If the user has marked the entity as ``unmangled``, but didn't specify
     a name, this is ``true``. If the user has marked this entity and
     provided a name, this is the name. Otherwise, this is ``false``.
+    
+.. note:: In the current implementation, ``unmangled`` is only given for functions, methods, global variables and fields, because classes and covers can't have an ``unmangled`` name yet.
+
 ``fullName``
     The full, mangled name of the entity, like it appears in the C sourcecode.
 
@@ -165,11 +168,11 @@ A function entity has the following attributes:
 
 .. note:: If a function has varargs, the last element in the "arguments" list will be an argument named "..." with the type "": ``["...", "", null]``.
 
-``memberFunction``
+``method``
 ~~~~~~~~~~~~~~~~~~
 
 A method entity has the same attributes as the :ref:`function entity <json-function-entity>`,
-but a ``memberFunction`` tag.
+but a ``method`` tag.
 
 .. note:: The convenient ``This`` type has to be resolved by the compiler.
 	
