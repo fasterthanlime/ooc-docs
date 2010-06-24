@@ -241,14 +241,22 @@ A field entity has the same attributes as the :ref:`globalVariable entity <json-
     A list of 2-element lists ``[name, entity]``.
 ``abstract``
     A boolean that describes if the class is abstract or not.
+``final``
+    A boolean that describes if the class is final or not.
 ``doc``
     A string containing the oocdoc comment if available, or ``null``.
 
 ``cover``
 ~~~~~~~~~
 
-Same attributes as :ref:`class <json-class-entity>`, but additionally:
-
+``name``
+    ...
 ``from``
     The tag of the type we're covering.
+``extends``
+    The tag of the class this class extends, or ``null``.
+``members``
+    A list of 2-element lists ``[name, entity]``.
+``doc``
+    A string containing the oocdoc comment if available, or ``null``.
 
