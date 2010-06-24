@@ -197,15 +197,15 @@ but a ``method`` tag.
 ``extern``
     Either ``true`` (if it's an extern field, but not aliased) or a string containing the original name of
     the field (if it's an aliased extern field).
-``property_data``
+``propertyData``
     An object that is only present if the variable is a property. Otherwise, it's ``null``.
 
-    See `property_data`_.
+    See `propertyData`_.
 
-.. _property_data:
+.. _propertyData:
 
-``property_data``
-^^^^^^^^^^^^^^^^^
+``propertyData``
+^^^^^^^^^^^^^^^^
 
 An object holding information on the property. Can be present in ``field`` and ``globalVariable`` entities.
 
