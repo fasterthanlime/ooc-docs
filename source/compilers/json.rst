@@ -130,6 +130,7 @@ Now, each entity has some essential keys:
      * ``"cover"``
      * ``"enum"``
      * ``"enumElement"``
+     * ``"operator"``
 ``tag``
     defines an unique name for the entity.
 ``doc``
@@ -313,3 +314,6 @@ A field entity has the same attributes as the :ref:`globalVariable entity <json-
     Name of the symbol as string like ``"PLUS"``. Used in operator tags.
 ``function``
     Subentity describing the generated function. Really like an ordinary function entity.
+
+.. note:: The ``doc`` field is always an empty string here because rock has no support for
+          oocdoc'ed operator declarations yet.
