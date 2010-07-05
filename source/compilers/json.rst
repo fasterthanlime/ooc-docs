@@ -85,6 +85,7 @@ Tags for members are consisting of a describing modifier and the class tag and t
 
 .. function:: method(class, name)
 .. function:: field(class, name)
+.. function:: enumElement(enum, name)
 
 Tags for pointer and reference types just consist of the ``pointer``/``reference`` modifier and the type tag as parameter:
 
@@ -109,20 +110,26 @@ Now, each entity has some essential keys:
      * ``"field"``
      * ``"class"``
      * ``"cover"``
+     * ``"enum"``
+     * ``"enumElement"``
 ``tag``
     defines an unique name for the entity.
+``doc``
+    The oocdoc documentation if given (defaults to an empty string)
 
-The following keys exist for all entity types **except** ``field``:
+The following keys are somewhat special:
 
 ``unmangled``
     If the user has marked the entity as ``unmangled``, but didn't specify
     a name, this is ``true``. If the user has marked this entity and
     provided a name, this is the name. Otherwise, this is ``false``.
     
-.. note:: In the current implementation, ``unmangled`` is only given for functions, methods, global variables and fields, because classes and covers can't have an ``unmangled`` name yet.
+.. note:: In the current implementation, ``unmangled`` is only given for functions, methods, global variables and fields, because classes, covers, enums and enum elements can't have an ``unmangled`` name.
 
 ``fullName``
     The full, mangled name of the entity, like it appears in the C sourcecode.
+
+.. note:: ``fullName`` is given for all types except ``enumElement`` and ``field``.
 
 .. _json-function-entity:
 
@@ -148,8 +155,6 @@ A function entity has the following attributes:
     the function (if it's an aliased extern function).
 ``returnType``
     Either ``null`` if the function has no return value or the tag of the return type.
-``doc``
-    The oocdoc comment if available, or ``null``.
 ``arguments``
     A list of 2-element lists ``[name, argument tag, modifiers or null]``.
     Example::
@@ -243,8 +248,6 @@ A field entity has the same attributes as the :ref:`globalVariable entity <json-
     A boolean that describes if the class is abstract or not.
 ``final``
     A boolean that describes if the class is final or not.
-``doc``
-    A string containing the oocdoc comment if available, or ``null``.
 
 ``cover``
 ~~~~~~~~~
@@ -257,6 +260,28 @@ A field entity has the same attributes as the :ref:`globalVariable entity <json-
     The tag of the class this class extends, or ``null``.
 ``members``
     A list of 2-element lists ``[name, entity]``.
-``doc``
-    A string containing the oocdoc comment if available, or ``null``.
 
+``enum``
+~~~~~~~~
+
+``name``
+    !
+``extern``
+    Either ``true`` (if it's an extern field, but not aliased) or a string containing the original name of
+    the field (if it's an aliased extern field).
+``incrementOper``
+    Increment operator as string. Either ``"+"`` (default) or ``"*"``.
+``incrementStep``
+    Increment step as int (defaults to ``1``)
+``elements``
+    A list of 2-element lists ``[name, element]`` where ``element`` is of the type ``enumElement``.
+
+``enumElement``
+~~~~~~~~~~~~
+
+``name``
+    hihi
+``extern``
+    A string containing the element's extern name or null.
+``value``
+    The value as integer.
