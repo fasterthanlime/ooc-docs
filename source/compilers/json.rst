@@ -92,6 +92,24 @@ Tags for pointer and reference types just consist of the ``pointer``/``reference
 .. function:: pointer(type)
 .. function:: reference(type)
 
+Tags for operators are a bit more complicated. They carry information about all types:
+
+.. function:: operator(name, generics(...), arguments(...), return(...))
+
+Nonexistent chunks can be omitted (e.g. ``operator(IDX, arguments(...), return(...)``).
+
+.. function:: generics(T, U, V, ...)
+    
+    holds the generic types names
+
+.. function:: arguments(Int, pointer(String), T, ...)
+
+    holds the arguments types tags
+
+.. function:: return(Int)
+
+    holds the return type tag
+
 .. _entities:
 
 Entities
@@ -277,7 +295,7 @@ A field entity has the same attributes as the :ref:`globalVariable entity <json-
     A list of 2-element lists ``[name, element]`` where ``element`` is of the type ``enumElement``.
 
 ``enumElement``
-~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
 
 ``name``
     hihi
@@ -285,3 +303,13 @@ A field entity has the same attributes as the :ref:`globalVariable entity <json-
     A string containing the element's extern name or null.
 ``value``
     The value as integer.
+
+``operator``
+~~~~~~~~~~~~
+
+``symbol``
+    The operator symbol as string. ``"+"`` or something.
+``name``
+    Name of the symbol as string like ``"PLUS"``. Used in operator tags.
+``function``
+    Subentity describing the generated function. Really like an ordinary function entity.
