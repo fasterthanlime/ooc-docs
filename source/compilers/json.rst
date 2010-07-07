@@ -79,7 +79,13 @@ Some examples for valid tags::
     array(Int, 10)
     method(MyClass, yeaahh)
 
-Tags for ordinary functions (i.e. not methods), classes, covers and global variables are just the name of the symbol.
+Tags for ordinary functions (i.e. not methods), classes, covers, global variables and interfaces are just the name of the symbol.
+
+Tags for interface implementations are like this:
+
+.. function:: interfaceImpl(interface, for)
+
+    See `interfaceImpl`_.
 
 Tags for members are consisting of a describing modifier and the class tag and the member name as parameters:
 
@@ -131,6 +137,8 @@ Now, each entity has some essential keys:
      * ``"enum"``
      * ``"enumElement"``
      * ``"operator"``
+     * ``"interface"``
+     * ``"interfaceImpl"``
 ``tag``
     defines an unique name for the entity.
 ``doc``
@@ -193,7 +201,7 @@ A function entity has the following attributes:
 .. note:: If a function has varargs, the last element in the "arguments" list will be an argument named "..." with the type "": ``["...", "", null]``.
 
 ``method``
-~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
 
 A method entity has the same attributes as the :ref:`function entity <json-function-entity>`,
 but a ``method`` tag.
@@ -317,3 +325,23 @@ A field entity has the same attributes as the :ref:`globalVariable entity <json-
 
 .. note:: The ``doc`` field is always an empty string here because rock has no support for
           oocdoc'ed operator declarations yet.
+
+``interface``
+~~~~~~~~~~~~~
+
+``name``
+    yaay
+``members``
+    A list of 2-element lists ``[name, entity]``.
+
+.. _interfaceImpl:
+
+``interfaceImpl``
+~~~~~~~~~~~~~~~~~
+
+``for``
+    Tag of the target class/cover.
+``interface``
+    Tag of the interface.
+
+.. note:: The ``doc`` field is always empty for ``interfaceImpl``. A possible TODO.
