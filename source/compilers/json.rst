@@ -158,6 +158,40 @@ The following keys are somewhat special:
 
 .. note:: ``fullName`` is given for all types except ``enumElement`` and ``field``.
 
+``version``
+    A version spec or null. See `version specs`_.
+
+.. note:: ``version`` is given for all entities, but will always be null for globalVariable, field and operator entities.
+
+.. _version specs:
+
+version specs
+~~~~~~~~~~~~~
+
+Version specs are represented in the tag mini language with these modifiers:
+
+.. function:: and(spec1, spec2)
+
+    Equivalent of ``version(spec1 && spec2)``
+
+.. function:: or(spec1, spec2)
+
+    Equivalent of ``version(spec1 || spec2)``
+
+.. function:: not(spec)
+
+    Equivalent of ``version(!(spec))``
+
+``spec`` can either be another sub-spec or a version name.
+
+Example::
+
+    version(!(gc && (win32 || win64)))
+    
+    =>
+
+    "not(and(gc,or(win32,win64)))"
+
 .. _json-function-entity:
 
 ``function``
