@@ -121,7 +121,7 @@ Nonexistent chunks can be omitted (e.g. ``operator(IDX, arguments(...), return(.
 Entities
 --------
 
-Entities are described by a list of 2-element lists that contain symbol names (first element) and objects (second element).
+Entities are described by a `members`_ list-of-lists.
 It only contains the "root" entities which are part of the global namespaces (no class members).
 
 Now, each entity has some essential keys:
@@ -191,6 +191,22 @@ Example::
     =>
 
     "not(and(gc,or(win32,win64)))"
+
+.. _members:
+
+members
+~~~~~~~
+
+Since there can exist multiple versions for every member always, members are organized in a
+way that allows multiple entities with equal tags to coexist in peace and harmony.
+
+Members are organized as a list-of-lists. One sublist describes one member with all its versions.
+So a sublist has this format::
+
+    [name, member_versionA, member_versionB, ...]
+
+Where the elements 2 to infinity are just real subentities with the same tag, but different
+``version`` fields.
 
 .. _json-function-entity:
 
@@ -304,7 +320,7 @@ A field entity has the same attributes as the :ref:`globalVariable entity <json-
 ``extends``
     The tag of the class this class extends, or ``null``.
 ``members``
-    A list of 2-element lists ``[name, entity]``.
+    `members`_
 ``abstract``
     A boolean that describes if the class is abstract or not.
 ``final``
@@ -320,8 +336,7 @@ A field entity has the same attributes as the :ref:`globalVariable entity <json-
 ``extends``
     The tag of the class this class extends, or ``null``.
 ``members``
-    A list of 2-element lists ``[name, entity]``.
-
+    `members`_
 ``enum``
 ~~~~~~~~
 
@@ -366,7 +381,7 @@ A field entity has the same attributes as the :ref:`globalVariable entity <json-
 ``name``
     yaay
 ``members``
-    A list of 2-element lists ``[name, entity]``.
+    `members`_
 
 .. _interfaceImpl:
 
