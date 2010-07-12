@@ -67,7 +67,7 @@ A tag defines an unique name for an entity. It is a mini description language:
 
 .. productionlist:: 
     tag: modifier "(" parameters ")" 
-       : identifier
+       | identifier
     parameters: tag { "," tag }
     identifier: [a-zA-Z0-9_ ]+
     modifier: [a-zA-Z0-9_]+
