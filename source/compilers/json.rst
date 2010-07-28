@@ -98,6 +98,10 @@ Tags for pointer and reference types just consist of the ``pointer``/``reference
 .. function:: pointer(type)
 .. function:: reference(type)
 
+Tags for multi types (only occur in return types) consist of the ``multi`` modifier and the type tags as parameters:
+
+.. function:: multi(type1, type2, ...)
+
 Tags for operators are a bit more complicated. They carry information about all types:
 
 .. function:: operator(name, generics(...), arguments(...), return(...))
