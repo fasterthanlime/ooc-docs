@@ -5,7 +5,7 @@ from docutils.parsers.rst import directives, roles
 
 from sphinx import addnodes
 from sphinx.roles import xfileref_role
-from sphinx.directives.desc import DescDirective
+from sphinx.directives import DescDirective
 from sphinx.util.compat import Directive, directive_dwim
 
 ooc_sig_re = re.compile(
@@ -21,11 +21,11 @@ class OOCDesc(DescDirective):
     """
         Description of a ooc object.
     """
-    doc_fields_without_arg = DescDirective.doc_fields_without_arg.copy()
-    doc_fields_without_arg.update({
-        'extends': 'extends',
-        'from': 'from',
-    })
+#    doc_fields_without_arg = DescDirective.doc_fields_without_arg.copy()
+#    doc_fields_without_arg.update({
+#        'extends': 'extends',
+#        'from': 'from',
+#    })
 
     def get_signature_prefix(self, sig):
         return ''
